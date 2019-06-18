@@ -4,21 +4,31 @@
 # @File : SQL_execute.py
 # 封装mysql  mysql_info 连接池配置信息
 
-
-
-import pymysql
-from utx import *
-
 #连接数据库
+#测试数据库
+# config={
+#     "host":"192.168.3.216",
+#     "user":"root",
+#     "password":"66ifuel",
+#     "database":"charging",
+#     "charset": "utf8"}
+#外网测试数据库
+import pymysql
+from Common.log import Log
+
+#连接数据库 port必须为int %d类型
 config={
-    "host":"192.168.3.216",
+    "host":"123.157.219.74",
     "user":"root",
     "password":"66ifuel",
+    "port":33066,
     "database":"charging",
     "charset": "utf8"}
+
 try:
     db = pymysql.connect(**config)
 except Exception  as a:
+    print("数据库连接异常：%s" % a)
     Log().debug("数据库连接异常：%s" % a)
 
 def mysql_execute(sql, number=None):
@@ -26,6 +36,8 @@ def mysql_execute(sql, number=None):
     # with db.cursor(cursor=pymysql.cursors.DictCursor) as cursor:#获取数据库连接的对象以字典形式
     with db.cursor() as cursor:
         try:
+
+
             if number == 'one':
                 cursor.execute(sql)
             elif number == 'more':
@@ -68,8 +80,10 @@ def mysql_getstring(sql):
         # for i in row:
         # 	print(i)
 
-# sql = "select validCode FROM cp_messagecode WHERE phone=15027863095"
-# print(mysql_getrows(sql, number='one')[0])
+sql="select validCode FROM cp_messagecode WHERE phone='{}';".format('15025139784')
+print(sql)
+code=mysql_getrows(sql, number='one')[0]
+print(code)
 
 
 

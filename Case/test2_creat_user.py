@@ -2,11 +2,14 @@ import unittest, string,random
 # from ddt import ddt,data,unpack
 from Common.SQL_execute import *
 from Common.variables_func import *
-
+from Common.Html_miaoshu import miaoshu
 yaml.warnings({'YAMLLoadWarning': False})
 
 
-class login(unittest.TestCase):
+import time
+
+
+class Creat_user(unittest.TestCase):
     with open('{}'.format(os.path.join(os.path.dirname(os.getcwd()),'Config')+'\conf.yaml'), 'r', encoding="utf-8") as r:
         config = yaml.load(r)  # 解析并读写yaml文件
         app_host = config['app_host']
@@ -28,7 +31,7 @@ class login(unittest.TestCase):
         data = {"phone": self.phone}
         res = RunMethod().run_main('post', host, lujing, data, headers)
         self.assertTrue(res['code'] == 0, msg=res['msg'])
-        print(res)
+        miaoshu(url=host+lujing,method='post',data=data,check={'code': 0,'msg': 'success'},respons=res)
 
     def test_send_CreatPhone_mess(self):
         '''
@@ -42,22 +45,27 @@ class login(unittest.TestCase):
 
         res = RunMethod().run_main('post', host,lujing, data,headers)
         self.assertTrue(res['code'] == 0, msg=res['msg'])
-        print(res)
+        miaoshu(url=host+lujing,method='post',data=data,check={'code': 0,'msg': 'success'},respons=res)
 
     def test_creat_user(self):
         '''
         注册用户-检查验证码
         :return:
         '''
-        sql="select validCode FROM cp_messagecode WHERE phone={};".format(self.phone)
-        code=mysql_getrows(sql, number='one')
+        sql="select validCode FROM cp_messagecode WHERE phone='{}';".format(self.phone)
+        print(sql)
+        time.sleep(1)
+        code=mysql_getrows(sql,number='one')[0]
+        print(code)
         host = self.app_host
         headers = self.headers
         lujing = '/system/v1/message_code/check'
-        data = {"phone": self.phone, "code":code[0]}
+        data = {"phone": self.phone, "code":code}
+        print(data)
         res = RunMethod().run_main('post', host, lujing, data, headers)
-        self.assertTrue(res['code'] == 0, msg=res['msg'])
         print(res)
+        # self.assertTrue(res['code'] == 0, msg=res['msg'])
+        miaoshu(url=host+lujing,method='post',data=data,check={'code': 0,'msg': 'success'},respons=res)
         code_session=res['data']['code_session']
         # print(code_session)
         write_yaml_variable("code_session", code_session)
@@ -81,7 +89,7 @@ class login(unittest.TestCase):
                 "invitation_code":self.phone}
         res = RunMethod().run_main('post', host,lujing,data,headers)
         self.assertTrue(res['code'] == 0, msg=res['msg'])
-        print(res)
+        miaoshu(url=host+lujing,method='post',data=data,check={'code': 0,'msg': 'success'},respons=res)
 
     def test_login_pwd(self):
         '''
@@ -94,7 +102,7 @@ class login(unittest.TestCase):
         data={"phone":self.phone,"password":"dc483e80a7a0bd9ef71d8cf973673924"}
         res = RunMethod().run_main('post', host, lujing, data, headers)
         self.assertTrue(res['code'] == 0, msg=res['msg'])
-        print(res)
+        miaoshu(url=host + lujing, method='post', data=data, check={'code': 0, 'msg': 'success'}, respons=res)
 
 if __name__ == "__main__":
     unittest.main()

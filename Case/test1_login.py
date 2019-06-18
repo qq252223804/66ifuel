@@ -4,13 +4,16 @@
 @data 传入数据 将接口结果写入到excel
 '''
 import unittest, yaml,os
-from utx import *
-# from ddt import ddt,data,unpack
+# from utx import *
+from ddt import ddt,data,unpack
 from Base.runmethod import RunMethod
+from Common.Html_miaoshu import miaoshu
 
 yaml.warnings({'YAMLLoadWarning': False})
 
 print(os.path.dirname('conf.yaml'))
+
+@ddt
 class login(unittest.TestCase):
     with open('{}'.format(os.path.join(os.path.dirname(os.getcwd()),'Config')+'\conf.yaml'), 'r', encoding="utf-8") as r:
         config = yaml.load(r)  # 解析并读写yaml文件
@@ -21,7 +24,7 @@ class login(unittest.TestCase):
           {"phone": "18600000000", "password": "a123456"},
           {"phone": "", "password": "a123456"},
           {"phone": "18657738815", "password": ""},
-            {},unpack=False)
+          {})
     def test_login_pwd(self, data):
         '''
         66快充登录:密码方式
@@ -33,7 +36,7 @@ class login(unittest.TestCase):
         lujing = '/customer/v1/member/login'
         res = RunMethod().run_main('post', host, lujing, data, headers)
         # self.assertTrue(res['code'] == 0, msg=res['msg'])
-        print(res)
+        miaoshu(url=host+lujing,method='post',data=data,check={"code and msg"},respons=res)
 
 
 if __name__ == "__main__":

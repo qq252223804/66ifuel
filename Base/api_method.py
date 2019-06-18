@@ -5,7 +5,7 @@
 """excel 读取用例封装的请求方法"""
 import json
 
-from utx import Log
+from Common.log import Log
 from Common.Operate_Excel import UtilExcel
 
 from Common.variables_func import cms_cookies

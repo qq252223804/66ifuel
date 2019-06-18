@@ -9,15 +9,15 @@
 
 import hmac
 
-def hmac_md5(key, s):
+def hmac_md5(SigSecret,s):
     '''
-    :param key:key就是你们的秘钥
+    :param key:key就是签名秘匙
     :param s:s就是你要去拼接的参数
     :return:
     '''
-    return hmac.new(key.encode('utf-8'), s.encode('utf-8'), 'MD5').hexdigest().upper()
+    return hmac.new(SigSecret.encode('utf-8'), s.encode('utf-8'), 'MD5').hexdigest().upper()
 
 
-key='1234567890abcdef'
-s='12345ABCDmYvffpNoFf4E/ZTC1tOw4xAtlzJ8iDQ7piNNiKgQpHlhTiJwbO5Ehc1CPOF1fk9JngohSuu7jgBIEPvCb2PILg==201708221132320001'
-print(hmac_md5(key=key,s=s))
+SigSecret='a77b249029c22ee5'
+sig='MA35PU38X2/cNwWYNSKtY94JOwMyBdNfXm8xlA+CjCJGFm1+/Hr53BWx9N2Kt5qiHBaWEn3Qth7am4MTQ8t1d9TE884ht6g==201906181745370001'
+print(hmac_md5(SigSecret,sig))

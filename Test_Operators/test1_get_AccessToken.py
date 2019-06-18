@@ -23,11 +23,11 @@ class Test_get_AccessToken(unittest.TestCase):
         '''
         host=self.host
         lujing='query_token'
-        data={"OperatorID":"12345ABCD",
-              "Data":"mYvffpNoFf4E/ZTC1tOw4xAtlzJ8iDQ7piNNiKgQpHlhTiJwbO5Ehc1CPOF1fk9JngohSuu7jgBIEPvCb2PILg==",
-              "TimeStamp":"20170822113232",
+        data={"OperatorID":"MA35PU38X",
+              "Data":"2/cNwWYNSKtY94JOwMyBdNfXm8xlA+CjCJGFm1+/Hr53BWx9N2Kt5qiHBaWEn3Qth7am4MTQ8t1d9TE884ht6g==",
+              "TimeStamp":"20190618174537",
               "Seq":"0001",
-              "Sig":"C863EB33E0D56A89182B4B987E48D369"}
+              "Sig":"43932EB5EBEAB5598525FDFE9B58C8EC"}
         headers=self.headers
         res=RunMethod().run_main('post', host, lujing, data, headers)
         print(res)

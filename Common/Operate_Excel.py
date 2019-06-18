@@ -8,7 +8,7 @@ import sys
 import xlrd
 from xlutils.copy import copy
 
-from utx import Log
+from Common.log import Log
 
 
 class UtilExcel:

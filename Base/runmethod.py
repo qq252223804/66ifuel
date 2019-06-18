@@ -2,7 +2,7 @@
 """接口模块/流程性封装的请求方法"""
 import requests
 
-from utx import Log
+from Common.log import Log
 
 
 class RunMethod():

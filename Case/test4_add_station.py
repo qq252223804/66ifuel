@@ -1,12 +1,12 @@
 import unittest, yaml,os
-from utx import *
+
 # from ddt import ddt,data,unpack
 from Base.runmethod import RunMethod
 from Common.variables_func import cms_cookies
-
+from Common.Html_miaoshu import miaoshu
 yaml.warnings({'YAMLLoadWarning': False})
 
-@skip
+@unittest.skip('未完成用例，跳过')
 class station(unittest.TestCase):
 
 
@@ -26,7 +26,7 @@ class station(unittest.TestCase):
         url=self.app_host+'/station/station/create'
         data={}
         res=self.session.request('post',url=url,data=data)
-        print(res.text())
+        miaoshu(url=url,method='post',data=data,check={"code and msg"},respons=res)
 
 if __name__ == "__main__":
     unittest.main()

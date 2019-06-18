@@ -8,8 +8,10 @@ from colorama import Fore, Style
 给handler添加formatter
 给logger添加handler
 '''
+cur_path=os.path.dirname(os.path.abspath(__file__))
+#os.path.dirname(cur_path) 获取Common上级目录
 # 这个是日志保存本地的路径
-log_path = 'C:\\Users\\p\\Desktop\\66ifuel\\log'
+log_path = os.path.join(os.path.dirname(cur_path),'log')#获得d所在的目录,即d的父级目录
 if not os.path.exists(log_path):
     os.makedirs(log_path)
 

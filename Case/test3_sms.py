@@ -2,12 +2,16 @@
 验证码相关的接口,单接口测试
 '''
 import unittest,os
-from utx import *
+# from utx import *
+from ddt import ddt,data,unpack
 from Base.runmethod import RunMethod
-import yaml,time
+import yaml
 yaml.warnings({'YAMLLoadWarning': False})
+from Common.Html_miaoshu import miaoshu
 
-# @skip
+
+# @unittest.skip("发送短信接口用例跳过")
+@ddt
 class sms(unittest.TestCase):
     def setUp(self):
         self.run = RunMethod()
@@ -22,7 +26,7 @@ class sms(unittest.TestCase):
     @data({"phone":"18657738815","type":3,"voice":0},
           {"phone":"18657738816","type":1,"voice":0},
           {"phone":"18657738817", "type": 2, "voice": 0},
-          {},unpack=False)
+          {})
     def test_send_sms(self,data):
         """
         登录页发送短信验证码
@@ -34,7 +38,7 @@ class sms(unittest.TestCase):
         lujing = '/system/v1/message_code/send'
         res = self.run.run_main('post', host, lujing,data, headers)
         # self.assertTrue(res['code'] == 0, msg=res['msg'])
-        print(res)
+        miaoshu(url=host+lujing,method='post',data=data,check={'code and msg'},respons=res)
 
 
 

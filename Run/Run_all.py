@@ -17,7 +17,8 @@ print(file_path)
 if __name__=='__main__':
 	suit=unittest.defaultTestLoader.discover('Case',pattern='test*_*.py')
 	report=BeautifulReport(suit)
-	report.report(filename='测试报告'.format(time),description='66快充流程接口报告',report_dir=report_path,log_path=file_path)
+	report.report(filename='测试报告',description='66快充流程接口报告',report_dir=report_path,log_path=file_path)
 	send_email(file_path)
+	os.system("start {}".format(os.path.join(os.path.dirname(os.getcwd()), 'Report_html')))
 
 

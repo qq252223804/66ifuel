@@ -9,3 +9,6 @@
 #
 # test2(test1())
 # from Common.variables_func import dealer_Session,cms_cookies,get_yaml_variable,write_yaml_variable
+# import datetime
+# print(datetime.datetime.now().strftime("%Y%m%d%H%M%S"))
+
