@@ -71,12 +71,15 @@ def decrypt(key, content):
     result = pkcs5unpadding(result)
     return result
 
-# DataSecret = 'bed30540c54dda5d'
-# #加密
-# text ='{"OperatorID":"MA35PU38X","OperatorSecret":"08083ebe79bc48a9"}'
-# data = encrypt(DataSecret,text)
-# print(data)
-# #解密
+DataSecret = 'bed30540c54dda5d'
+#加密
+text ='{"OperatorID":"MA35PU38X","OperatorSecret":"08083ebe79bc48a9"}'
+data = encrypt(DataSecret,text)
+print(data)
+#解密
 # untext='h0N5kfvVWFAi6mu31Ebna+Rf6pYNxXwsXQkaYx0y3R1U2rh9GAI/Po/jsVS+1OfglhTKiTwkthiDAUpaUgOvvQw18nt36laKO/mTgnth57oIad16CVHFgtTIyHa/1Y0K6j/hdCza3fdkfZhNmuYbLyOwAmkzDLB4gm5eIddj7uWfsyMCSaCcmgcImvDfzguq'
 # undata=decrypt(DataSecret,untext)
-# print(undata)
+# a=eval(undata)['AccessToken']
+# b={"token":""}
+# b['token']=a
+# print(b)
