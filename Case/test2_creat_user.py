@@ -19,7 +19,7 @@ class Creat_user(unittest.TestCase):
     numbers = list(string.digits)
     mobile = ['130', '132', '150', '155', '177', '186']
     phone=random.choice(mobile) + ''.join(random.sample(numbers, 8))
-    def test1_check_user(self):
+    def test1_member_check_phone(self):
         '''
         验证手机号是否注册
         :return:
@@ -33,7 +33,7 @@ class Creat_user(unittest.TestCase):
         self.assertTrue(res['code'] == 0, msg=res['msg'])
         miaoshu(url=host+lujing,method='post',data=data,check={'code': 0,'msg': 'success'},respons=res)
 
-    def test2_send_CreatPhone_mess(self):
+    def test2_message_code_send(self):
         '''
         发送注册验证码
         :return:
@@ -47,7 +47,7 @@ class Creat_user(unittest.TestCase):
         self.assertTrue(res['code'] == 0, msg=res['msg'])
         miaoshu(url=host+lujing,method='post',data=data,check={'code': 0,'msg': 'success'},respons=res)
 
-    def test3_creat_user(self):
+    def test3_message_code_check(self):
         '''
         注册用户-检查验证码
         :return:
@@ -68,7 +68,7 @@ class Creat_user(unittest.TestCase):
         # print(code_session)
         write_yaml_variable("code_session", code_session)
 
-    def test4_set_user_pwd(self):
+    def test4_member_create(self):
         '''
         注册用户-设置密码
         :param datas:

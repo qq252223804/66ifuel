@@ -27,7 +27,7 @@ def encrypt(DataSecret,content):
     '''
     AES加密
     :param key: key为消息秘匙
-    :param content: contest为拼接后的字符串
+    :param content: contest为加密内容
     :return:
     '''
     # 消息秘钥初始化向量(DataSecretIV):
@@ -56,7 +56,7 @@ def decrypt(key, content):
     '''
     AES 128位加密，加密模式采用CBC
     :param key: key为消息秘匙
-    :param content: contest为拼接后的字符串
+    :param content: content为解密内容
     :return:
     '''
     # 消息秘钥初始化向量(DataSecretIV):
@@ -71,10 +71,12 @@ def decrypt(key, content):
     result = pkcs5unpadding(result)
     return result
 
-DataSecret = 'bed30540c54dda5d'
-text ='{"OperatorID":"MA35PU38X","OperatorSecret":"08083ebe79bc48a9"}'
-
-data = encrypt(DataSecret,text)
-print(data)
-
-undata=""
+# DataSecret = 'bed30540c54dda5d'
+# #加密
+# text ='{"OperatorID":"MA35PU38X","OperatorSecret":"08083ebe79bc48a9"}'
+# data = encrypt(DataSecret,text)
+# print(data)
+# #解密
+# untext='h0N5kfvVWFAi6mu31Ebna+Rf6pYNxXwsXQkaYx0y3R1U2rh9GAI/Po/jsVS+1OfglhTKiTwkthiDAUpaUgOvvQw18nt36laKO/mTgnth57oIad16CVHFgtTIyHa/1Y0K6j/hdCza3fdkfZhNmuYbLyOwAmkzDLB4gm5eIddj7uWfsyMCSaCcmgcImvDfzguq'
+# undata=decrypt(DataSecret,untext)
+# print(undata)

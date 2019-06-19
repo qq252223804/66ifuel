@@ -18,6 +18,6 @@ def hmac_md5(SigSecret,s):
     return hmac.new(SigSecret.encode('utf-8'), s.encode('utf-8'), 'MD5').hexdigest().upper()
 
 
-SigSecret='a77b249029c22ee5'
-sig='MA35PU38X2/cNwWYNSKtY94JOwMyBdNfXm8xlA+CjCJGFm1+/Hr53BWx9N2Kt5qiHBaWEn3Qth7am4MTQ8t1d9TE884ht6g==201906181745370001'
-print(hmac_md5(SigSecret,sig))
+# SigSecret='a77b249029c22ee5'
+# sig='MA35PU38X2/cNwWYNSKtY94JOwMyBdNfXm8xlA+CjCJGFm1+/Hr53BWx9N2Kt5qiHBaWEn3Qth7am4MTQ8t1d9TE884ht6g==201906191034560001'
+# print(hmac_md5(SigSecret,sig))
