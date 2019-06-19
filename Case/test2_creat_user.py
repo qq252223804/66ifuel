@@ -1,6 +1,6 @@
 import unittest, string,random
 # from ddt import ddt,data,unpack
-from Common.SQL_execute import *
+from Common.SQL_execute import mysql_getrows,mysql_getstring,mysql_execute
 from Common.variables_func import *
 from Common.Html_miaoshu import miaoshu
 yaml.warnings({'YAMLLoadWarning': False})
@@ -19,7 +19,7 @@ class Creat_user(unittest.TestCase):
     numbers = list(string.digits)
     mobile = ['130', '132', '150', '155', '177', '186']
     phone=random.choice(mobile) + ''.join(random.sample(numbers, 8))
-    def test_check_user(self):
+    def test1_check_user(self):
         '''
         验证手机号是否注册
         :return:
@@ -33,7 +33,7 @@ class Creat_user(unittest.TestCase):
         self.assertTrue(res['code'] == 0, msg=res['msg'])
         miaoshu(url=host+lujing,method='post',data=data,check={'code': 0,'msg': 'success'},respons=res)
 
-    def test_send_CreatPhone_mess(self):
+    def test2_send_CreatPhone_mess(self):
         '''
         发送注册验证码
         :return:
@@ -47,14 +47,12 @@ class Creat_user(unittest.TestCase):
         self.assertTrue(res['code'] == 0, msg=res['msg'])
         miaoshu(url=host+lujing,method='post',data=data,check={'code': 0,'msg': 'success'},respons=res)
 
-    def test_creat_user(self):
+    def test3_creat_user(self):
         '''
         注册用户-检查验证码
         :return:
         '''
         sql="select validCode FROM cp_messagecode WHERE phone='{}';".format(self.phone)
-        print(sql)
-        time.sleep(1)
         code=mysql_getrows(sql,number='one')[0]
         print(code)
         host = self.app_host
@@ -70,7 +68,7 @@ class Creat_user(unittest.TestCase):
         # print(code_session)
         write_yaml_variable("code_session", code_session)
 
-    def test_set_user_pwd(self):
+    def test4_set_user_pwd(self):
         '''
         注册用户-设置密码
         :param datas:
@@ -91,7 +89,7 @@ class Creat_user(unittest.TestCase):
         self.assertTrue(res['code'] == 0, msg=res['msg'])
         miaoshu(url=host+lujing,method='post',data=data,check={'code': 0,'msg': 'success'},respons=res)
 
-    def test_login_pwd(self):
+    def test5_login_pwd(self):
         '''
         66快充登录:刚注册进行密码登录
         :return:

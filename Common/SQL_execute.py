@@ -36,10 +36,9 @@ def mysql_execute(sql, number=None):
     # with db.cursor(cursor=pymysql.cursors.DictCursor) as cursor:#获取数据库连接的对象以字典形式
     with db.cursor() as cursor:
         try:
-
-
             if number == 'one':
                 cursor.execute(sql)
+                print('执行成功')
             elif number == 'more':
                 cursor.executemany(sql)
             else:
@@ -56,20 +55,23 @@ def mysql_getrows(sql, number=None):
     ''' 返回查询结果'''
     with db.cursor() as cursor:
         try:
-            cursor.execute(sql)
+            if number == 'one':
+                cursor.execute(sql)
+                # print('执行成功')
+                row = cursor.fetchone()
+                return row
+            elif number == 'more':
+                cursor.executemany(sql)
+                rows =cursor.fetchall()
+                return rows
+            else:
+                pass
         except Exception as a:
+            print("查询结果错误：%s" % a)
             Log().debug("查询结果错误：%s" % a)
-        # print("查询结果错误：%s" % a)
-        if number == 'one':
-            row = cursor.fetchone()
-            return row
-        elif number == 'more':
-            rows =cursor.fetchall()
-            return rows
         else:
-            pass
-        cursor.close()
-        db.close()
+            cursor.close()
+            db.close()
 def mysql_getstring(sql):
     '''查询一行的所有值'''
     rows = mysql_getrows(sql, 'one')
@@ -80,10 +82,9 @@ def mysql_getstring(sql):
         # for i in row:
         # 	print(i)
 
-sql="select validCode FROM cp_messagecode WHERE phone='{}';".format('15025139784')
-print(sql)
-code=mysql_getrows(sql, number='one')[0]
-print(code)
+# sql="select validCode FROM cp_messagecode WHERE phone='13279612508';"
+# code=mysql_getrows(sql, number='one')[0]
+# print(code)
 
 
 

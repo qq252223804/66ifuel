@@ -57,4 +57,5 @@ def send_email(file_path):
         # print(e)
         Log().warning('邮件发送失败:%s' % e)
 
-send_email(file_path)
+# send_email(file_path)
+#
