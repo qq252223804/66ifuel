@@ -1,0 +1,1094 @@
+[2019-06-12 12:15:22,841]- log.py]- INFO: [32mstart to test login.test_login_pwd (1/5)
+[2019-06-12 12:15:23,106]- log.py]- INFO: [32mstart to test login.test_login_pwd (2/5)
+[2019-06-12 12:15:23,575]- log.py]- INFO: [32mstart to test login.test_login_pwd (3/5)
+[2019-06-12 12:15:23,903]- log.py]- INFO: [32mstart to test login.test_login_pwd (4/5)
+[2019-06-12 12:15:25,349]- log.py]- INFO: [32mstart to test login.test_login_pwd (5/5)
+[2019-06-12 12:33:08,238]- log.py]- INFO: [32m开始进行测试
+[2019-06-12 12:33:08,351]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (1/13)
+[2019-06-12 12:33:08,714]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (2/13)
+[2019-06-12 12:33:08,838]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:33:08,838]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 密码错误！请重新输入
+
+[2019-06-12 12:33:08,944]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (3/13)
+[2019-06-12 12:33:09,116]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:33:09,116]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 没有找到用户！请先注册
+
+[2019-06-12 12:33:09,221]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (4/13)
+[2019-06-12 12:33:09,354]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:33:09,354]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 手机号 不能为空!
+
+[2019-06-12 12:33:09,459]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (5/13)
+[2019-06-12 12:33:09,564]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:33:09,565]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 密码 不能为空!
+
+[2019-06-12 12:33:09,671]- log.py]- INFO: [32mstart to test test_ceat_user.test_send_Creatphone_mess (6/13)
+[2019-06-12 12:33:09,671]- log.py]- INFO: [32mpost 请求错误 错误原因为invalid syntax (<string>, line 1)
+[2019-06-12 12:33:09,778]- log.py]- INFO: [32mstart to test test_ceat_user.test_creat_user (7/13)
+[2019-06-12 12:33:09,884]- log.py]- INFO: [32mstart to test test_ceat_user.test_send_login_mess (8/13)
+[2019-06-12 12:33:09,884]- log.py]- INFO: [32mpost 请求错误 错误原因为invalid syntax (<string>, line 1)
+[2019-06-12 12:33:09,885]- log.py]- ERROR: [34mTestCase Error
+[2019-06-12 12:33:09,885]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test_ceat_user.py", line 51, in test_send_login_mess
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+TypeError: string indices must be integers
+
+[2019-06-12 12:33:09,990]- log.py]- INFO: [32mstart to test test_ceat_user.test_login_mess (9/13)
+[2019-06-12 12:33:09,996]- log.py]- ERROR: [34mTestCase Error
+[2019-06-12 12:33:09,996]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\Case\test_sms.py", line 16, in setUp
+    self.app_host=config['https_app_host']
+KeyError: 'https_app_host'
+
+[2019-06-12 12:33:10,001]- log.py]- ERROR: [34mTestCase Error
+[2019-06-12 12:33:10,002]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\Case\test_sms.py", line 16, in setUp
+    self.app_host=config['https_app_host']
+KeyError: 'https_app_host'
+
+[2019-06-12 12:33:10,009]- log.py]- ERROR: [34mTestCase Error
+[2019-06-12 12:33:10,009]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\Case\test_sms.py", line 16, in setUp
+    self.app_host=config['https_app_host']
+KeyError: 'https_app_host'
+
+[2019-06-12 12:33:10,015]- log.py]- ERROR: [34mTestCase Error
+[2019-06-12 12:33:10,015]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\Case\test_sms.py", line 16, in setUp
+    self.app_host=config['https_app_host']
+KeyError: 'https_app_host'
+
+[2019-06-12 12:33:10,018]- log.py]- INFO: [32mTime Elapsed: 0:00:01.778102
+[2019-06-12 12:33:10,393]- log.py]- INFO: [32m开始进行测试
+[2019-06-12 12:33:10,528]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (1/13)
+[2019-06-12 12:33:11,038]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (2/13)
+[2019-06-12 12:33:11,191]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:33:11,192]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 密码错误！请重新输入
+
+[2019-06-12 12:33:11,298]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (3/13)
+[2019-06-12 12:33:11,433]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:33:11,433]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 没有找到用户！请先注册
+
+[2019-06-12 12:33:11,538]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (4/13)
+[2019-06-12 12:33:11,647]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:33:11,648]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 手机号 不能为空!
+
+[2019-06-12 12:33:11,753]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (5/13)
+[2019-06-12 12:33:11,871]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:33:11,871]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 密码 不能为空!
+
+[2019-06-12 12:33:11,982]- log.py]- INFO: [32mstart to test test_ceat_user.test_send_Creatphone_mess (6/13)
+[2019-06-12 12:33:11,982]- log.py]- INFO: [32mpost 请求错误 错误原因为invalid syntax (<string>, line 1)
+[2019-06-12 12:33:12,098]- log.py]- INFO: [32mstart to test test_ceat_user.test_creat_user (7/13)
+[2019-06-12 12:33:12,210]- log.py]- INFO: [32mstart to test test_ceat_user.test_send_login_mess (8/13)
+[2019-06-12 12:33:12,211]- log.py]- INFO: [32mpost 请求错误 错误原因为invalid syntax (<string>, line 1)
+[2019-06-12 12:33:12,211]- log.py]- ERROR: [34mTestCase Error
+[2019-06-12 12:33:12,212]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test_ceat_user.py", line 51, in test_send_login_mess
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+TypeError: string indices must be integers
+
+[2019-06-12 12:33:12,325]- log.py]- INFO: [32mstart to test test_ceat_user.test_login_mess (9/13)
+[2019-06-12 12:33:12,335]- log.py]- ERROR: [34mTestCase Error
+[2019-06-12 12:33:12,335]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\Case\test_sms.py", line 16, in setUp
+    self.app_host=config['https_app_host']
+KeyError: 'https_app_host'
+
+[2019-06-12 12:33:12,346]- log.py]- ERROR: [34mTestCase Error
+[2019-06-12 12:33:12,346]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\Case\test_sms.py", line 16, in setUp
+    self.app_host=config['https_app_host']
+KeyError: 'https_app_host'
+
+[2019-06-12 12:33:12,356]- log.py]- ERROR: [34mTestCase Error
+[2019-06-12 12:33:12,356]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\Case\test_sms.py", line 16, in setUp
+    self.app_host=config['https_app_host']
+KeyError: 'https_app_host'
+
+[2019-06-12 12:33:12,362]- log.py]- ERROR: [34mTestCase Error
+[2019-06-12 12:33:12,363]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\Case\test_sms.py", line 16, in setUp
+    self.app_host=config['https_app_host']
+KeyError: 'https_app_host'
+
+[2019-06-12 12:33:12,370]- log.py]- INFO: [32mTime Elapsed: 0:00:01.970112
+[2019-06-12 12:36:13,123]- log.py]- INFO: [32m开始进行测试
+[2019-06-12 12:36:13,126]- log.py]- INFO: [32mTime Elapsed: 0:00:00.001000
+[2019-06-12 12:36:13,798]- log.py]- INFO: [32m开始进行测试
+[2019-06-12 12:36:13,800]- log.py]- INFO: [32mTime Elapsed: 0:00:00
+[2019-06-12 12:36:21,404]- log.py]- INFO: [32m开始进行测试
+[2019-06-12 12:36:21,407]- log.py]- INFO: [32mTime Elapsed: 0:00:00.001000
+[2019-06-12 12:36:22,044]- log.py]- INFO: [32m开始进行测试
+[2019-06-12 12:36:22,046]- log.py]- INFO: [32mTime Elapsed: 0:00:00
+[2019-06-12 12:37:28,387]- log.py]- INFO: [32m开始进行测试
+[2019-06-12 12:37:28,568]- log.py]- INFO: [32mstart to test test_ceat_user.test_send_Creatphone_mess (1/9)
+[2019-06-12 12:37:28,568]- log.py]- INFO: [32mpost 请求错误 错误原因为invalid syntax (<string>, line 1)
+[2019-06-12 12:37:28,734]- log.py]- INFO: [32mstart to test test_ceat_user.test_creat_user (2/9)
+[2019-06-12 12:37:28,851]- log.py]- INFO: [32mstart to test test_ceat_user.test_send_login_mess (3/9)
+[2019-06-12 12:37:28,852]- log.py]- INFO: [32mpost 请求错误 错误原因为invalid syntax (<string>, line 1)
+[2019-06-12 12:37:28,854]- log.py]- ERROR: [34mTestCase Error
+[2019-06-12 12:37:28,854]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test_ceat_user.py", line 51, in test_send_login_mess
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+TypeError: string indices must be integers
+
+[2019-06-12 12:37:28,987]- log.py]- INFO: [32mstart to test test_ceat_user.test_login_mess (4/9)
+[2019-06-12 12:37:29,118]- log.py]- INFO: [32mstart to test test_login.test_login_pwd (5/9)
+[2019-06-12 12:37:29,495]- log.py]- INFO: [32mstart to test test_login.test_login_pwd (6/9)
+[2019-06-12 12:37:29,671]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:37:29,671]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 密码错误！请重新输入
+
+[2019-06-12 12:37:29,779]- log.py]- INFO: [32mstart to test test_login.test_login_pwd (7/9)
+[2019-06-12 12:37:30,143]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:37:30,143]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 没有找到用户！请先注册
+
+[2019-06-12 12:37:30,248]- log.py]- INFO: [32mstart to test test_login.test_login_pwd (8/9)
+[2019-06-12 12:37:30,367]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:37:30,368]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 手机号 不能为空!
+
+[2019-06-12 12:37:30,494]- log.py]- INFO: [32mstart to test test_login.test_login_pwd (9/9)
+[2019-06-12 12:37:30,676]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:37:30,676]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 密码 不能为空!
+
+[2019-06-12 12:37:30,679]- log.py]- INFO: [32mTime Elapsed: 0:00:02.289131
+[2019-06-12 12:37:32,676]- log.py]- INFO: [32m开始进行测试
+[2019-06-12 12:37:32,898]- log.py]- INFO: [32mstart to test test_ceat_user.test_send_Creatphone_mess (1/9)
+[2019-06-12 12:37:32,898]- log.py]- INFO: [32mpost 请求错误 错误原因为invalid syntax (<string>, line 1)
+[2019-06-12 12:37:33,155]- log.py]- INFO: [32mstart to test test_ceat_user.test_creat_user (2/9)
+[2019-06-12 12:37:33,270]- log.py]- INFO: [32mstart to test test_ceat_user.test_send_login_mess (3/9)
+[2019-06-12 12:37:33,270]- log.py]- INFO: [32mpost 请求错误 错误原因为invalid syntax (<string>, line 1)
+[2019-06-12 12:37:33,271]- log.py]- ERROR: [34mTestCase Error
+[2019-06-12 12:37:33,271]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test_ceat_user.py", line 51, in test_send_login_mess
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+TypeError: string indices must be integers
+
+[2019-06-12 12:37:34,107]- log.py]- INFO: [32mstart to test test_ceat_user.test_login_mess (4/9)
+[2019-06-12 12:37:34,234]- log.py]- INFO: [32mstart to test test_login.test_login_pwd (5/9)
+[2019-06-12 12:37:34,537]- log.py]- INFO: [32mstart to test test_login.test_login_pwd (6/9)
+[2019-06-12 12:37:34,671]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:37:34,671]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 密码错误！请重新输入
+
+[2019-06-12 12:37:34,777]- log.py]- INFO: [32mstart to test test_login.test_login_pwd (7/9)
+[2019-06-12 12:37:34,897]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:37:34,897]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 没有找到用户！请先注册
+
+[2019-06-12 12:37:35,003]- log.py]- INFO: [32mstart to test test_login.test_login_pwd (8/9)
+[2019-06-12 12:37:35,149]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:37:35,150]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 手机号 不能为空!
+
+[2019-06-12 12:37:35,256]- log.py]- INFO: [32mstart to test test_login.test_login_pwd (9/9)
+[2019-06-12 12:37:35,384]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:37:35,384]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 密码 不能为空!
+
+[2019-06-12 12:37:35,387]- log.py]- INFO: [32mTime Elapsed: 0:00:02.709155
+[2019-06-12 12:41:59,693]- log.py]- INFO: [32m开始进行测试
+[2019-06-12 12:41:59,812]- log.py]- INFO: [32mstart to test test_ceat_user.test_send_Creatphone_mess (1/9)
+[2019-06-12 12:41:59,812]- log.py]- INFO: [32mpost 请求错误 错误原因为invalid syntax (<string>, line 1)
+[2019-06-12 12:41:59,919]- log.py]- INFO: [32mstart to test test_ceat_user.test_creat_user (2/9)
+[2019-06-12 12:42:00,027]- log.py]- INFO: [32mstart to test test_ceat_user.test_send_login_mess (3/9)
+[2019-06-12 12:42:00,027]- log.py]- INFO: [32mpost 请求错误 错误原因为invalid syntax (<string>, line 1)
+[2019-06-12 12:42:00,028]- log.py]- ERROR: [34mTestCase Error
+[2019-06-12 12:42:00,029]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test_ceat_user.py", line 51, in test_send_login_mess
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+TypeError: string indices must be integers
+
+[2019-06-12 12:42:00,139]- log.py]- INFO: [32mstart to test test_ceat_user.test_login_mess (4/9)
+[2019-06-12 12:42:00,251]- log.py]- INFO: [32mstart to test test_login.test_login_pwd (5/9)
+[2019-06-12 12:42:00,702]- log.py]- INFO: [32mstart to test test_login.test_login_pwd (6/9)
+[2019-06-12 12:42:00,831]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:42:00,831]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 密码错误！请重新输入
+
+[2019-06-12 12:42:00,936]- log.py]- INFO: [32mstart to test test_login.test_login_pwd (7/9)
+[2019-06-12 12:42:01,058]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:42:01,058]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 没有找到用户！请先注册
+
+[2019-06-12 12:42:01,163]- log.py]- INFO: [32mstart to test test_login.test_login_pwd (8/9)
+[2019-06-12 12:42:01,283]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:42:01,284]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 手机号 不能为空!
+
+[2019-06-12 12:42:01,389]- log.py]- INFO: [32mstart to test test_login.test_login_pwd (9/9)
+[2019-06-12 12:42:01,529]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:42:01,530]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 密码 不能为空!
+
+[2019-06-12 12:42:01,531]- log.py]- INFO: [32mTime Elapsed: 0:00:01.837105
+[2019-06-12 12:42:52,057]- log.py]- INFO: [32m开始进行测试
+[2019-06-12 12:42:52,167]- log.py]- INFO: [32mstart to test test_ceat_user.test_send_Creatphone_mess (1/9)
+[2019-06-12 12:42:52,167]- log.py]- INFO: [32mpost 请求错误 错误原因为invalid syntax (<string>, line 1)
+[2019-06-12 12:42:52,276]- log.py]- INFO: [32mstart to test test_ceat_user.test_creat_user (2/9)
+[2019-06-12 12:42:52,381]- log.py]- INFO: [32mstart to test test_ceat_user.test_send_login_mess (3/9)
+[2019-06-12 12:42:52,381]- log.py]- INFO: [32mpost 请求错误 错误原因为invalid syntax (<string>, line 1)
+[2019-06-12 12:42:52,382]- log.py]- ERROR: [34mTestCase Error
+[2019-06-12 12:42:52,383]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test_ceat_user.py", line 51, in test_send_login_mess
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+TypeError: string indices must be integers
+
+[2019-06-12 12:42:52,488]- log.py]- INFO: [32mstart to test test_ceat_user.test_login_mess (4/9)
+[2019-06-12 12:42:52,594]- log.py]- INFO: [32mstart to test test_login.test_login_pwd (5/9)
+[2019-06-12 12:42:52,851]- log.py]- INFO: [32mstart to test test_login.test_login_pwd (6/9)
+[2019-06-12 12:42:52,986]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:42:52,987]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 密码错误！请重新输入
+
+[2019-06-12 12:42:53,096]- log.py]- INFO: [32mstart to test test_login.test_login_pwd (7/9)
+[2019-06-12 12:42:53,247]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:42:53,247]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 没有找到用户！请先注册
+
+[2019-06-12 12:42:53,354]- log.py]- INFO: [32mstart to test test_login.test_login_pwd (8/9)
+[2019-06-12 12:42:53,491]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:42:53,491]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 手机号 不能为空!
+
+[2019-06-12 12:42:53,600]- log.py]- INFO: [32mstart to test test_login.test_login_pwd (9/9)
+[2019-06-12 12:42:53,755]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:42:53,755]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 密码 不能为空!
+
+[2019-06-12 12:42:53,756]- log.py]- INFO: [32mTime Elapsed: 0:00:01.698097
+[2019-06-12 12:44:31,836]- log.py]- INFO: [32m开始进行测试
+[2019-06-12 12:44:31,993]- log.py]- INFO: [32mstart to test test_ceat_user.test_send_Creatphone_mess (1/9)
+[2019-06-12 12:44:31,993]- log.py]- INFO: [32mpost 请求错误 错误原因为invalid syntax (<string>, line 1)
+[2019-06-12 12:44:32,115]- log.py]- INFO: [32mstart to test test_ceat_user.test_creat_user (2/9)
+[2019-06-12 12:44:32,236]- log.py]- INFO: [32mstart to test test_ceat_user.test_send_login_mess (3/9)
+[2019-06-12 12:44:32,236]- log.py]- INFO: [32mpost 请求错误 错误原因为invalid syntax (<string>, line 1)
+[2019-06-12 12:44:32,240]- log.py]- ERROR: [34mTestCase Error
+[2019-06-12 12:44:32,240]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test_ceat_user.py", line 51, in test_send_login_mess
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+TypeError: string indices must be integers
+
+[2019-06-12 12:44:32,374]- log.py]- INFO: [32mstart to test test_ceat_user.test_login_mess (4/9)
+[2019-06-12 12:44:32,493]- log.py]- INFO: [32mstart to test test_login.test_login_pwd (5/9)
+[2019-06-12 12:44:32,826]- log.py]- INFO: [32mstart to test test_login.test_login_pwd (6/9)
+[2019-06-12 12:44:33,023]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:44:33,024]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 密码错误！请重新输入
+
+[2019-06-12 12:44:33,149]- log.py]- INFO: [32mstart to test test_login.test_login_pwd (7/9)
+[2019-06-12 12:44:33,391]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:44:33,392]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 没有找到用户！请先注册
+
+[2019-06-12 12:44:33,507]- log.py]- INFO: [32mstart to test test_login.test_login_pwd (8/9)
+[2019-06-12 12:44:33,639]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:44:33,640]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 手机号 不能为空!
+
+[2019-06-12 12:44:33,763]- log.py]- INFO: [32mstart to test test_login.test_login_pwd (9/9)
+[2019-06-12 12:44:33,899]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:44:33,900]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 密码 不能为空!
+
+[2019-06-12 12:44:33,904]- log.py]- INFO: [32mTime Elapsed: 0:00:02.065118
+[2019-06-12 12:45:57,560]- log.py]- INFO: [32m开始进行测试
+[2019-06-12 12:45:57,666]- log.py]- INFO: [32mstart to test test_ceat_user.test_send_Creatphone_mess (1/9)
+[2019-06-12 12:45:57,666]- log.py]- INFO: [32mpost 请求错误 错误原因为invalid syntax (<string>, line 1)
+[2019-06-12 12:45:57,787]- log.py]- INFO: [32mstart to test test_ceat_user.test_creat_user (2/9)
+[2019-06-12 12:45:57,893]- log.py]- INFO: [32mstart to test test_ceat_user.test_send_login_mess (3/9)
+[2019-06-12 12:45:57,893]- log.py]- INFO: [32mpost 请求错误 错误原因为invalid syntax (<string>, line 1)
+[2019-06-12 12:45:57,894]- log.py]- ERROR: [34mTestCase Error
+[2019-06-12 12:45:57,895]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test_ceat_user.py", line 51, in test_send_login_mess
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+TypeError: string indices must be integers
+
+[2019-06-12 12:45:58,002]- log.py]- INFO: [32mstart to test test_ceat_user.test_login_mess (4/9)
+[2019-06-12 12:45:58,107]- log.py]- INFO: [32mstart to test test_login.test_login_pwd (5/9)
+[2019-06-12 12:45:58,362]- log.py]- INFO: [32mstart to test test_login.test_login_pwd (6/9)
+[2019-06-12 12:45:58,473]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:45:58,473]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 密码错误！请重新输入
+
+[2019-06-12 12:45:58,578]- log.py]- INFO: [32mstart to test test_login.test_login_pwd (7/9)
+[2019-06-12 12:45:58,694]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:45:58,694]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 没有找到用户！请先注册
+
+[2019-06-12 12:45:58,799]- log.py]- INFO: [32mstart to test test_login.test_login_pwd (8/9)
+[2019-06-12 12:45:58,912]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:45:58,913]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 手机号 不能为空!
+
+[2019-06-12 12:45:59,019]- log.py]- INFO: [32mstart to test test_login.test_login_pwd (9/9)
+[2019-06-12 12:45:59,150]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:45:59,151]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 密码 不能为空!
+
+[2019-06-12 12:45:59,152]- log.py]- INFO: [32mTime Elapsed: 0:00:01.591091
+[2019-06-12 12:48:12,769]- log.py]- INFO: [32m开始进行测试
+[2019-06-12 12:48:12,875]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (1/9)
+[2019-06-12 12:48:13,154]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (2/9)
+[2019-06-12 12:48:13,315]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:48:13,316]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 密码错误！请重新输入
+
+[2019-06-12 12:48:13,421]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (3/9)
+[2019-06-12 12:48:13,536]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:48:13,537]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 没有找到用户！请先注册
+
+[2019-06-12 12:48:13,642]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (4/9)
+[2019-06-12 12:48:13,747]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:48:13,748]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 手机号 不能为空!
+
+[2019-06-12 12:48:13,853]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (5/9)
+[2019-06-12 12:48:13,954]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:48:13,954]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 密码 不能为空!
+
+[2019-06-12 12:48:14,059]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_Creatphone_mess (6/9)
+[2019-06-12 12:48:14,059]- log.py]- INFO: [32mpost 请求错误 错误原因为invalid syntax (<string>, line 1)
+[2019-06-12 12:48:14,170]- log.py]- INFO: [32mstart to test test2_ceat_user.test_creat_user (7/9)
+[2019-06-12 12:48:14,276]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_login_mess (8/9)
+[2019-06-12 12:48:14,276]- log.py]- INFO: [32mpost 请求错误 错误原因为invalid syntax (<string>, line 1)
+[2019-06-12 12:48:14,277]- log.py]- ERROR: [34mTestCase Error
+[2019-06-12 12:48:14,277]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test2_ceat_user.py", line 51, in test_send_login_mess
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+TypeError: string indices must be integers
+
+[2019-06-12 12:48:14,382]- log.py]- INFO: [32mstart to test test2_ceat_user.test_login_mess (9/9)
+[2019-06-12 12:48:14,383]- log.py]- INFO: [32mTime Elapsed: 0:00:01.612092
+[2019-06-12 12:49:31,179]- log.py]- INFO: [32m开始进行测试
+[2019-06-12 12:49:31,286]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (1/5)
+[2019-06-12 12:49:31,567]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (2/5)
+[2019-06-12 12:49:31,714]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:49:31,714]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 密码错误！请重新输入
+
+[2019-06-12 12:49:31,820]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (3/5)
+[2019-06-12 12:49:31,944]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:49:31,944]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 没有找到用户！请先注册
+
+[2019-06-12 12:49:32,052]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (4/5)
+[2019-06-12 12:49:32,185]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:49:32,186]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 手机号 不能为空!
+
+[2019-06-12 12:49:32,291]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (5/5)
+[2019-06-12 12:49:32,447]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:49:32,447]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 密码 不能为空!
+
+[2019-06-12 12:49:32,448]- log.py]- INFO: [32mTime Elapsed: 0:00:01.268073
+[2019-06-12 12:51:42,889]- log.py]- INFO: [32m开始进行测试
+[2019-06-12 12:51:43,009]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (1/9)
+[2019-06-12 12:51:43,342]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (2/9)
+[2019-06-12 12:51:43,467]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:51:43,468]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 密码错误！请重新输入
+
+[2019-06-12 12:51:43,573]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (3/9)
+[2019-06-12 12:51:43,708]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:51:43,708]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 没有找到用户！请先注册
+
+[2019-06-12 12:51:43,813]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (4/9)
+[2019-06-12 12:51:43,952]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:51:43,952]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 手机号 不能为空!
+
+[2019-06-12 12:51:44,057]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (5/9)
+[2019-06-12 12:51:44,178]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:51:44,178]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 密码 不能为空!
+
+[2019-06-12 12:51:44,283]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_Creatphone_mess (6/9)
+[2019-06-12 12:51:44,283]- log.py]- INFO: [32mpost 请求错误 错误原因为invalid syntax (<string>, line 1)
+[2019-06-12 12:51:44,389]- log.py]- INFO: [32mstart to test test2_ceat_user.test_creat_user (7/9)
+[2019-06-12 12:51:44,494]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_login_mess (8/9)
+[2019-06-12 12:51:44,494]- log.py]- INFO: [32mpost 请求错误 错误原因为invalid syntax (<string>, line 1)
+[2019-06-12 12:51:44,495]- log.py]- ERROR: [34mTestCase Error
+[2019-06-12 12:51:44,495]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test2_ceat_user.py", line 51, in test_send_login_mess
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+TypeError: string indices must be integers
+
+[2019-06-12 12:51:44,601]- log.py]- INFO: [32mstart to test test2_ceat_user.test_login_mess (9/9)
+[2019-06-12 12:51:44,602]- log.py]- INFO: [32mTime Elapsed: 0:00:01.711098
+[2019-06-12 12:57:32,341]- log.py]- INFO: [32m开始进行测试
+[2019-06-12 12:57:32,472]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_Creatphone_mess (6/13)
+[2019-06-12 12:57:32,473]- log.py]- INFO: [32mpost 请求错误 错误原因为invalid syntax (<string>, line 1)
+[2019-06-12 12:57:32,582]- log.py]- INFO: [32mstart to test test2_ceat_user.test_creat_user (7/13)
+[2019-06-12 12:57:32,779]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_login_mess (8/13)
+[2019-06-12 12:57:32,780]- log.py]- INFO: [32mpost 请求错误 错误原因为invalid syntax (<string>, line 1)
+[2019-06-12 12:57:32,953]- log.py]- INFO: [32mstart to test test2_ceat_user.test_login_mess (9/13)
+[2019-06-12 12:57:32,962]- log.py]- ERROR: [34mTestCase Error
+[2019-06-12 12:57:32,962]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\Case\test3_sms.py", line 16, in setUp
+    self.app_host=config['https_app_host']
+KeyError: 'https_app_host'
+
+[2019-06-12 12:57:32,968]- log.py]- ERROR: [34mTestCase Error
+[2019-06-12 12:57:32,968]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\Case\test3_sms.py", line 16, in setUp
+    self.app_host=config['https_app_host']
+KeyError: 'https_app_host'
+
+[2019-06-12 12:57:32,973]- log.py]- ERROR: [34mTestCase Error
+[2019-06-12 12:57:32,974]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\Case\test3_sms.py", line 16, in setUp
+    self.app_host=config['https_app_host']
+KeyError: 'https_app_host'
+
+[2019-06-12 12:57:32,979]- log.py]- ERROR: [34mTestCase Error
+[2019-06-12 12:57:32,979]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\Case\test3_sms.py", line 16, in setUp
+    self.app_host=config['https_app_host']
+KeyError: 'https_app_host'
+
+[2019-06-12 12:57:32,980]- log.py]- INFO: [32mTime Elapsed: 0:00:00.639037
+[2019-06-12 12:58:50,384]- log.py]- INFO: [32m开始进行测试
+[2019-06-12 12:58:50,501]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_Creatphone_mess (6/13)
+[2019-06-12 12:58:50,501]- log.py]- INFO: [32mpost 请求错误 错误原因为invalid syntax (<string>, line 1)
+[2019-06-12 12:58:50,608]- log.py]- INFO: [32mstart to test test2_ceat_user.test_creat_user (7/13)
+[2019-06-12 12:58:50,760]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_login_mess (8/13)
+[2019-06-12 12:58:50,760]- log.py]- INFO: [32mpost 请求错误 错误原因为invalid syntax (<string>, line 1)
+[2019-06-12 12:58:50,936]- log.py]- INFO: [32mstart to test test2_ceat_user.test_login_mess (9/13)
+[2019-06-12 12:58:51,047]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (10/13)
+[2019-06-12 12:58:51,463]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (11/13)
+[2019-06-12 12:58:51,840]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (12/13)
+[2019-06-12 12:58:52,083]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (13/13)
+[2019-06-12 12:58:52,192]- log.py]- INFO: [32mTime Elapsed: 0:00:01.807103
+[2019-06-12 12:59:14,368]- log.py]- INFO: [32m开始进行测试
+[2019-06-12 12:59:14,474]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (1/13)
+[2019-06-12 12:59:14,757]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (2/13)
+[2019-06-12 12:59:14,888]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:59:14,888]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 密码错误！请重新输入
+
+[2019-06-12 12:59:14,993]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (3/13)
+[2019-06-12 12:59:15,119]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:59:15,119]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 没有找到用户！请先注册
+
+[2019-06-12 12:59:15,228]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (4/13)
+[2019-06-12 12:59:15,349]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:59:15,349]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 手机号 不能为空!
+
+[2019-06-12 12:59:15,458]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (5/13)
+[2019-06-12 12:59:15,593]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-12 12:59:15,594]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 40, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 密码 不能为空!
+
+[2019-06-12 12:59:15,701]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_Creatphone_mess (6/13)
+[2019-06-12 12:59:15,701]- log.py]- INFO: [32mpost 请求错误 错误原因为invalid syntax (<string>, line 1)
+[2019-06-12 12:59:15,807]- log.py]- INFO: [32mstart to test test2_ceat_user.test_creat_user (7/13)
+[2019-06-12 12:59:15,916]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_login_mess (8/13)
+[2019-06-12 12:59:15,916]- log.py]- INFO: [32mpost 请求错误 错误原因为invalid syntax (<string>, line 1)
+[2019-06-12 12:59:16,024]- log.py]- INFO: [32mstart to test test2_ceat_user.test_login_mess (9/13)
+[2019-06-12 12:59:16,025]- log.py]- INFO: [32mTime Elapsed: 0:00:01.656095
+[2019-06-12 13:01:45,577]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 13:01:45,578]- log.py]- INFO: [32mpost 请求错误 错误原因为invalid syntax (<string>, line 1)
+[2019-06-12 13:01:45,700]- log.py]- INFO: [32mstart to test test2_ceat_user.test_creat_user (2/4)
+[2019-06-12 13:01:45,875]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_login_mess (3/4)
+[2019-06-12 13:01:45,875]- log.py]- INFO: [32mpost 请求错误 错误原因为invalid syntax (<string>, line 1)
+[2019-06-12 13:01:46,010]- log.py]- INFO: [32mstart to test test2_ceat_user.test_login_mess (4/4)
+[2019-06-12 13:02:59,644]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 13:02:59,645]- log.py]- INFO: [32mpost 请求错误 错误原因为invalid syntax (<string>, line 1)
+[2019-06-12 13:02:59,757]- log.py]- INFO: [32mstart to test test2_ceat_user.test_creat_user (2/4)
+[2019-06-12 13:02:59,933]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_login_mess (3/4)
+[2019-06-12 13:02:59,934]- log.py]- INFO: [32mpost 请求错误 错误原因为invalid syntax (<string>, line 1)
+[2019-06-12 13:03:00,093]- log.py]- INFO: [32mstart to test test2_ceat_user.test_login_mess (4/4)
+[2019-06-12 13:03:52,979]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 13:03:53,409]- log.py]- INFO: [32mstart to test test2_ceat_user.test_creat_user (2/4)
+[2019-06-12 13:03:53,527]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_login_mess (3/4)
+[2019-06-12 13:03:53,782]- log.py]- INFO: [32mstart to test test2_ceat_user.test_login_mess (4/4)
+[2019-06-12 13:07:37,919]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 13:07:38,243]- log.py]- INFO: [32mstart to test test2_ceat_user.test_creat_user (2/4)
+[2019-06-12 13:07:38,487]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_login_mess (3/4)
+[2019-06-12 13:07:39,025]- log.py]- INFO: [32mstart to test test2_ceat_user.test_login_mess (4/4)
+[2019-06-12 13:08:05,473]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 13:08:05,993]- log.py]- INFO: [32mstart to test test2_ceat_user.test_creat_user (2/4)
+[2019-06-12 13:08:06,146]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_login_mess (3/4)
+[2019-06-12 13:08:06,371]- log.py]- INFO: [32mstart to test test2_ceat_user.test_login_mess (4/4)
+[2019-06-12 13:09:31,451]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 13:09:31,834]- log.py]- INFO: [32mstart to test test2_ceat_user.test_creat_user (2/4)
+[2019-06-12 13:09:31,943]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_login_mess (3/4)
+[2019-06-12 13:09:32,186]- log.py]- INFO: [32mstart to test test2_ceat_user.test_login_mess (4/4)
+[2019-06-12 13:13:51,037]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 13:13:51,624]- log.py]- INFO: [32mstart to test test2_ceat_user.test_creat_user (2/4)
+[2019-06-12 13:13:51,731]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_login_mess (3/4)
+[2019-06-12 13:13:51,919]- log.py]- INFO: [32mstart to test test2_ceat_user.test_login_mess (4/4)
+[2019-06-12 13:36:22,799]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 13:36:23,292]- log.py]- INFO: [32mstart to test test2_ceat_user.test_creat_user (2/4)
+[2019-06-12 13:36:23,414]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_login_mess (3/4)
+[2019-06-12 13:36:23,737]- log.py]- INFO: [32mstart to test test2_ceat_user.test_login_mess (4/4)
+[2019-06-12 13:41:09,439]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 13:41:10,026]- log.py]- INFO: [32mstart to test test2_ceat_user.test_creat_user (2/4)
+[2019-06-12 13:41:10,139]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_login_mess (3/4)
+[2019-06-12 13:41:10,365]- log.py]- INFO: [32mstart to test test2_ceat_user.test_login_mess (4/4)
+[2019-06-12 13:41:47,446]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 13:41:47,876]- log.py]- INFO: [32mstart to test test2_ceat_user.test_creat_user (2/4)
+[2019-06-12 13:41:47,992]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_login_mess (3/4)
+[2019-06-12 13:41:48,273]- log.py]- INFO: [32mstart to test test2_ceat_user.test_login_mess (4/4)
+[2019-06-12 14:08:08,868]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (1/5)
+[2019-06-12 14:08:09,345]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (2/5)
+[2019-06-12 14:08:09,576]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (3/5)
+[2019-06-12 14:08:09,775]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (4/5)
+[2019-06-12 14:08:09,918]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (5/5)
+[2019-06-12 14:08:29,676]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (1/5)
+[2019-06-12 14:08:29,887]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (2/5)
+[2019-06-12 14:08:30,093]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (3/5)
+[2019-06-12 14:08:30,274]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (4/5)
+[2019-06-12 14:08:30,437]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (5/5)
+[2019-06-12 14:08:54,981]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (1/5)
+[2019-06-12 14:08:55,275]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (2/5)
+[2019-06-12 14:08:55,509]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (3/5)
+[2019-06-12 14:08:55,686]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (4/5)
+[2019-06-12 14:08:55,856]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (5/5)
+[2019-06-12 14:20:16,634]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (1/5)
+[2019-06-12 14:20:16,998]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (2/5)
+[2019-06-12 14:20:17,152]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (3/5)
+[2019-06-12 14:20:17,356]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (4/5)
+[2019-06-12 14:20:17,498]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (5/5)
+[2019-06-12 15:05:38,834]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 15:05:39,483]- log.py]- INFO: [32mstart to test test2_ceat_user.test_creat_user (2/4)
+[2019-06-12 15:05:39,599]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_login_mess (3/4)
+[2019-06-12 15:05:39,789]- log.py]- INFO: [32mstart to test test2_ceat_user.test_login_mess (4/4)
+[2019-06-12 15:07:22,749]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 15:07:23,114]- log.py]- INFO: [32mstart to test test2_ceat_user.test_creat_user (2/4)
+[2019-06-12 15:07:23,231]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_login_mess (3/4)
+[2019-06-12 15:07:23,549]- log.py]- INFO: [32mstart to test test2_ceat_user.test_login_mess (4/4)
+[2019-06-12 15:07:47,259]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 15:07:47,655]- log.py]- INFO: [32mstart to test test2_ceat_user.test_creat_user (2/4)
+[2019-06-12 15:07:47,772]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_login_mess (3/4)
+[2019-06-12 15:07:47,940]- log.py]- INFO: [32mstart to test test2_ceat_user.test_login_mess (4/4)
+[2019-06-12 15:08:25,586]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 15:08:26,006]- log.py]- INFO: [32mstart to test test2_ceat_user.test_creat_user (2/4)
+[2019-06-12 15:08:26,124]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_login_mess (3/4)
+[2019-06-12 15:08:26,467]- log.py]- INFO: [32mstart to test test2_ceat_user.test_login_mess (4/4)
+[2019-06-12 15:09:21,142]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 15:09:21,570]- log.py]- INFO: [32mstart to test test2_ceat_user.test_creat_user (2/4)
+[2019-06-12 15:09:21,686]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_login_mess (3/4)
+[2019-06-12 15:09:21,864]- log.py]- INFO: [32mstart to test test2_ceat_user.test_login_mess (4/4)
+[2019-06-12 15:16:09,247]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 15:16:09,750]- log.py]- INFO: [32mstart to test test2_ceat_user.test_creat_user (2/4)
+[2019-06-12 15:16:09,871]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_login_mess (3/4)
+[2019-06-12 15:16:10,197]- log.py]- INFO: [32mstart to test test2_ceat_user.test_login_mess (4/4)
+[2019-06-12 15:17:02,773]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 15:17:03,261]- log.py]- INFO: [32mstart to test test2_ceat_user.test_creat_user (2/4)
+[2019-06-12 15:17:03,379]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_login_mess (3/4)
+[2019-06-12 15:17:03,655]- log.py]- INFO: [32mstart to test test2_ceat_user.test_login_mess (4/4)
+[2019-06-12 15:23:20,985]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 15:23:21,425]- log.py]- INFO: [32mstart to test test2_ceat_user.test_creat_user (2/4)
+[2019-06-12 15:23:21,546]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_login_mess (3/4)
+[2019-06-12 15:23:21,932]- log.py]- INFO: [32mstart to test test2_ceat_user.test_login_mess (4/4)
+[2019-06-12 15:24:34,174]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 15:24:34,746]- log.py]- INFO: [32mstart to test test2_ceat_user.test_creat_user (2/4)
+[2019-06-12 15:24:34,865]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_login_mess (3/4)
+[2019-06-12 15:24:35,047]- log.py]- INFO: [32mstart to test test2_ceat_user.test_login_mess (4/4)
+[2019-06-12 15:25:30,802]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 15:25:31,234]- log.py]- INFO: [32mstart to test test2_ceat_user.test_creat_user (2/4)
+[2019-06-12 15:25:31,348]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_login_mess (3/4)
+[2019-06-12 15:25:31,578]- log.py]- INFO: [32mstart to test test2_ceat_user.test_login_mess (4/4)
+[2019-06-12 15:26:11,036]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 15:26:21,610]- log.py]- INFO: [32mstart to test test2_ceat_user.test_creat_user (2/4)
+[2019-06-12 15:26:21,873]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_login_mess (3/4)
+[2019-06-12 15:26:22,043]- log.py]- INFO: [32mstart to test test2_ceat_user.test_login_mess (4/4)
+[2019-06-12 15:42:11,002]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 15:42:11,516]- log.py]- INFO: [32mstart to test test2_ceat_user.test_creat_user (2/4)
+[2019-06-12 15:42:11,809]- log.py]- INFO: [32mstart to test test2_ceat_user.test_set_user_pwd (3/4)
+[2019-06-12 15:42:12,118]- log.py]- INFO: [32mstart to test test2_ceat_user.test_login_pwd (4/4)
+[2019-06-12 15:48:48,736]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_CreatPhone_mess (1/3)
+[2019-06-12 15:48:49,199]- log.py]- INFO: [32mstart to test test2_ceat_user.test_creat_user (2/3)
+[2019-06-12 15:48:49,548]- log.py]- INFO: [32mstart to test test2_ceat_user.test_login_pwd (3/3)
+[2019-06-12 15:49:20,539]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_CreatPhone_mess (1/3)
+[2019-06-12 15:49:20,963]- log.py]- INFO: [32mstart to test test2_ceat_user.test_creat_user (2/3)
+[2019-06-12 15:49:21,332]- log.py]- INFO: [32mstart to test test2_ceat_user.test_login_pwd (3/3)
+[2019-06-12 15:56:59,483]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 15:56:59,899]- log.py]- INFO: [32mstart to test test2_ceat_user.test_creat_user (2/4)
+[2019-06-12 15:57:00,229]- log.py]- INFO: [32mstart to test test2_ceat_user.test_set_user_pwd (3/4)
+[2019-06-12 15:57:00,364]- log.py]- INFO: [32mstart to test test2_ceat_user.test_login_pwd (4/4)
+[2019-06-12 16:13:34,155]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 16:13:34,742]- log.py]- INFO: [32mstart to test test2_ceat_user.test_creat_user (2/4)
+[2019-06-12 16:13:34,862]- log.py]- INFO: [32mstart to test test2_ceat_user.test_set_user_pwd (3/4)
+[2019-06-12 16:13:34,964]- log.py]- INFO: [32mstart to test test2_ceat_user.test_login_pwd (4/4)
+[2019-06-12 16:14:34,368]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 16:14:34,901]- log.py]- INFO: [32mstart to test test2_ceat_user.test_creat_user (2/4)
+[2019-06-12 16:14:35,012]- log.py]- INFO: [32mstart to test test2_ceat_user.test_set_user_pwd (3/4)
+[2019-06-12 16:14:35,119]- log.py]- INFO: [32mstart to test test2_ceat_user.test_login_pwd (4/4)
+[2019-06-12 16:14:49,555]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 16:14:49,928]- log.py]- INFO: [32mstart to test test2_ceat_user.test_creat_user (2/4)
+[2019-06-12 16:14:50,042]- log.py]- INFO: [32mstart to test test2_ceat_user.test_set_user_pwd (3/4)
+[2019-06-12 16:14:50,148]- log.py]- INFO: [32mstart to test test2_ceat_user.test_login_pwd (4/4)
+[2019-06-12 16:16:10,180]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 16:16:10,548]- log.py]- INFO: [32mstart to test test2_ceat_user.test_creat_user (2/4)
+[2019-06-12 16:16:10,687]- log.py]- INFO: [32mstart to test test2_ceat_user.test_set_user_pwd (3/4)
+[2019-06-12 16:16:10,808]- log.py]- INFO: [32mstart to test test2_ceat_user.test_login_pwd (4/4)
+[2019-06-12 16:17:03,713]- log.py]- INFO: [32mstart to test test2_ceat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 16:17:04,383]- log.py]- INFO: [32mstart to test test2_ceat_user.test_creat_user (2/4)
+[2019-06-12 16:17:04,541]- log.py]- INFO: [32mstart to test test2_ceat_user.test_set_user_pwd (3/4)
+[2019-06-12 16:17:04,691]- log.py]- INFO: [32mstart to test test2_ceat_user.test_login_pwd (4/4)
+[2019-06-12 16:34:08,272]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 16:34:08,939]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (2/4)
+[2019-06-12 16:34:09,058]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (3/4)
+[2019-06-12 16:34:09,160]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (4/4)
+[2019-06-12 16:38:41,719]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 16:38:42,095]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (2/4)
+[2019-06-12 16:38:42,343]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (3/4)
+[2019-06-12 16:38:42,470]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (4/4)
+[2019-06-12 16:41:12,341]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 16:41:12,816]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (2/4)
+[2019-06-12 16:41:13,011]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (3/4)
+[2019-06-12 16:41:13,115]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (4/4)
+[2019-06-12 16:42:19,065]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 16:42:19,561]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (2/4)
+[2019-06-12 16:42:19,755]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (3/4)
+[2019-06-12 16:42:19,876]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (4/4)
+[2019-06-12 16:44:50,681]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 16:44:51,246]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (2/4)
+[2019-06-12 16:44:51,457]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (3/4)
+[2019-06-12 16:44:51,811]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (4/4)
+[2019-06-12 16:45:33,000]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 16:45:33,357]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (2/4)
+[2019-06-12 16:45:33,578]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (3/4)
+[2019-06-12 16:45:33,705]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (4/4)
+[2019-06-12 16:46:39,609]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (1/3)
+[2019-06-12 16:46:41,450]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (2/3)
+[2019-06-12 16:46:41,561]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (3/3)
+[2019-06-12 16:46:49,271]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (1/3)
+[2019-06-12 16:46:50,745]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (2/3)
+[2019-06-12 16:46:50,879]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (3/3)
+[2019-06-12 16:47:13,260]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 16:47:13,694]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (2/4)
+[2019-06-12 16:47:13,873]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (3/4)
+[2019-06-12 16:47:14,001]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (4/4)
+[2019-06-12 16:48:00,359]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 16:48:00,937]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (2/4)
+[2019-06-12 16:48:01,242]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (3/4)
+[2019-06-12 16:48:01,362]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (4/4)
+[2019-06-12 16:49:44,105]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 16:49:44,502]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (2/4)
+[2019-06-12 16:49:44,740]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (3/4)
+[2019-06-12 16:49:44,844]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (4/4)
+[2019-06-12 16:51:40,149]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 16:51:41,191]- log.py]- INFO: [32mstart to test test2_creat_user.test_b (2/4)
+[2019-06-12 16:51:41,410]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (3/4)
+[2019-06-12 16:51:41,556]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (4/4)
+[2019-06-12 17:00:37,048]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (1/3)
+[2019-06-12 17:00:37,614]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (2/3)
+[2019-06-12 17:00:37,881]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (3/3)
+[2019-06-12 17:01:28,607]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (1/3)
+[2019-06-12 17:01:29,174]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (2/3)
+[2019-06-12 17:01:29,434]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (3/3)
+[2019-06-12 17:02:36,065]- log.py]- WARNING: [33m__main__.test_b没有用例描述
+[2019-06-12 17:02:36,066]- log.py]- WARNING: [33m__main__.test_c没有用例描述
+[2019-06-12 17:02:36,172]- log.py]- INFO: [32mstart to test __main__.test_b (1/2)
+[2019-06-12 17:02:36,291]- log.py]- INFO: [32mstart to test __main__.test_c (2/2)
+[2019-06-12 17:03:36,621]- log.py]- WARNING: [33m__main__.test_b没有用例描述
+[2019-06-12 17:03:36,622]- log.py]- WARNING: [33m__main__.test_c没有用例描述
+[2019-06-12 17:03:36,804]- log.py]- INFO: [32mstart to test __main__.test_b (1/2)
+[2019-06-12 17:03:36,918]- log.py]- INFO: [32mstart to test __main__.test_c (2/2)
+[2019-06-12 17:04:37,589]- log.py]- WARNING: [33m__main__.test_b没有用例描述
+[2019-06-12 17:04:37,590]- log.py]- WARNING: [33m__main__.test_c没有用例描述
+[2019-06-12 17:04:37,711]- log.py]- INFO: [32mstart to test __main__.test_b (1/2)
+[2019-06-12 17:04:37,824]- log.py]- INFO: [32mstart to test __main__.test_c (2/2)
+[2019-06-12 17:04:56,869]- log.py]- WARNING: [33m__main__.test_b没有用例描述
+[2019-06-12 17:04:56,870]- log.py]- WARNING: [33m__main__.test_c没有用例描述
+[2019-06-12 17:04:56,996]- log.py]- INFO: [32mstart to test __main__.test_b (1/2)
+[2019-06-12 17:04:57,097]- log.py]- INFO: [32mstart to test __main__.test_c (2/2)
+[2019-06-12 17:07:15,400]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 17:07:15,773]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (2/4)
+[2019-06-12 17:07:16,011]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (3/4)
+[2019-06-12 17:07:16,204]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (4/4)
+[2019-06-12 17:18:34,535]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 17:18:45,124]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (2/4)
+[2019-06-12 17:18:45,344]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (3/4)
+[2019-06-12 17:18:45,497]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (4/4)
+[2019-06-12 17:22:23,460]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 17:22:23,997]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (2/4)
+[2019-06-12 17:22:24,208]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (3/4)
+[2019-06-12 17:22:24,659]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (4/4)
+[2019-06-12 17:34:26,025]- log.py]- INFO: [32mstart to test __main__.test_send_CreatPhone_mess (1/4)
+[2019-06-12 17:34:26,390]- log.py]- INFO: [32mstart to test __main__.test_creat_user (2/4)
+[2019-06-12 17:34:26,564]- log.py]- INFO: [32mstart to test __main__.test_set_user_pwd (3/4)
+[2019-06-12 17:34:26,664]- log.py]- INFO: [32mstart to test __main__.test_login_pwd (4/4)
+[2019-06-12 17:34:56,625]- log.py]- INFO: [32mstart to test __main__.test_send_CreatPhone_mess (1/4)
+[2019-06-12 17:34:57,111]- log.py]- INFO: [32mstart to test __main__.test_creat_user (2/4)
+[2019-06-12 17:34:57,309]- log.py]- INFO: [32mstart to test __main__.test_set_user_pwd (3/4)
+[2019-06-12 17:34:57,409]- log.py]- INFO: [32mstart to test __main__.test_login_pwd (4/4)
+[2019-06-12 17:35:26,200]- log.py]- INFO: [32mstart to test __main__.test_send_CreatPhone_mess (1/4)
+[2019-06-12 17:35:26,573]- log.py]- INFO: [32mstart to test __main__.test_creat_user (2/4)
+[2019-06-12 17:35:26,783]- log.py]- INFO: [32mstart to test __main__.test_set_user_pwd (3/4)
+[2019-06-12 17:35:26,883]- log.py]- INFO: [32mstart to test __main__.test_login_pwd (4/4)
+[2019-06-12 17:36:01,231]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 17:36:01,721]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (2/4)
+[2019-06-12 17:36:01,906]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (3/4)
+[2019-06-12 17:36:02,207]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (4/4)
+[2019-06-12 17:36:39,023]- log.py]- INFO: [32mstart to test __main__.test_send_CreatPhone_mess (1/4)
+[2019-06-12 17:36:39,390]- log.py]- INFO: [32mstart to test __main__.test_creat_user (2/4)
+[2019-06-12 17:36:39,569]- log.py]- INFO: [32mstart to test __main__.test_set_user_pwd (3/4)
+[2019-06-12 17:36:39,669]- log.py]- INFO: [32mstart to test __main__.test_login_pwd (4/4)
+[2019-06-12 17:37:20,590]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 17:37:21,044]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (2/4)
+[2019-06-12 17:37:21,209]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (3/4)
+[2019-06-12 17:37:21,310]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (4/4)
+[2019-06-12 17:39:09,529]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 17:39:09,856]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (2/4)
+[2019-06-12 17:39:10,042]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (3/4)
+[2019-06-12 17:39:10,143]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (4/4)
+[2019-06-12 17:39:32,894]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 17:39:33,407]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (2/4)
+[2019-06-12 17:39:33,580]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (3/4)
+[2019-06-12 17:39:33,582]- log.py]- INFO: [32mpost 请求错误 错误原因为Value for header {66-device-id: 8644260337126940} must be of type str or bytes, not <class 'int'>
+[2019-06-12 17:39:33,698]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (4/4)
+[2019-06-12 17:39:59,841]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 17:40:00,202]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (2/4)
+[2019-06-12 17:40:00,384]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (3/4)
+[2019-06-12 17:40:00,386]- log.py]- INFO: [32mpost 请求错误 错误原因为Value for header {66-device-id: 8644260364539021} must be of type str or bytes, not <class 'int'>
+[2019-06-12 17:40:00,487]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (4/4)
+[2019-06-12 17:40:48,980]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 17:40:49,623]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (2/4)
+[2019-06-12 17:40:59,893]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (3/4)
+[2019-06-12 17:41:00,347]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (4/4)
+[2019-06-12 17:44:23,653]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (1/4)
+[2019-06-12 17:44:24,053]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (2/4)
+[2019-06-12 17:44:24,218]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (3/4)
+[2019-06-12 17:44:24,530]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (4/4)
+[2019-06-12 17:44:32,378]- log.py]- INFO: [32m开始进行测试
+[2019-06-12 17:44:32,484]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (1/13)
+[2019-06-12 17:44:32,698]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (2/13)
+[2019-06-12 17:44:32,852]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (3/13)
+[2019-06-12 17:44:32,996]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (4/13)
+[2019-06-12 17:44:33,127]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (5/13)
+[2019-06-12 17:44:33,259]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (6/13)
+[2019-06-12 17:44:33,560]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (7/13)
+[2019-06-12 17:44:33,738]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (8/13)
+[2019-06-12 17:44:34,007]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (9/13)
+[2019-06-12 17:44:34,061]- log.py]- INFO: [32mTime Elapsed: 0:00:01.683096

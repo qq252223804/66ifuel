@@ -1,0 +1,94 @@
+[2019-06-11 18:29:45,084]- log.py]- INFO: [32m开始进行测试
+[2019-06-11 18:29:45,185]- log.py]- INFO: [32mstart to test test1_login.test_app_login (1/5)
+[2019-06-11 18:29:45,502]- log.py]- INFO: [32mstart to test test1_login.test_app_login (2/5)
+[2019-06-11 18:29:45,618]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-11 18:29:45,618]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 35, in test_app_login
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 密码错误！请重新输入
+
+[2019-06-11 18:29:45,718]- log.py]- INFO: [32mstart to test test1_login.test_app_login (3/5)
+[2019-06-11 18:29:45,841]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-11 18:29:45,841]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 35, in test_app_login
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 没有找到用户！请先注册
+
+[2019-06-11 18:29:45,941]- log.py]- INFO: [32mstart to test test1_login.test_app_login (4/5)
+[2019-06-11 18:29:46,062]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-11 18:29:46,062]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 35, in test_app_login
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 手机号 不能为空!
+
+[2019-06-11 18:29:46,162]- log.py]- INFO: [32mstart to test test1_login.test_app_login (5/5)
+[2019-06-11 18:29:46,277]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-11 18:29:46,277]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 35, in test_app_login
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 密码 不能为空!
+
+[2019-06-11 18:29:46,279]- log.py]- INFO: [32mTime Elapsed: 0:00:01.193068
+[2019-06-11 18:36:38,338]- log.py]- INFO: [32m开始进行测试
+[2019-06-11 18:36:38,452]- log.py]- INFO: [32mstart to test test1_login.test_app_login (1/5)
+[2019-06-11 18:36:38,967]- log.py]- INFO: [32mstart to test test1_login.test_app_login (2/5)
+[2019-06-11 18:36:39,131]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-11 18:36:39,131]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 35, in test_app_login
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 密码错误！请重新输入
+
+[2019-06-11 18:36:39,231]- log.py]- INFO: [32mstart to test test1_login.test_app_login (3/5)
+[2019-06-11 18:36:39,356]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-11 18:36:39,356]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 35, in test_app_login
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 没有找到用户！请先注册
+
+[2019-06-11 18:36:39,457]- log.py]- INFO: [32mstart to test test1_login.test_app_login (4/5)
+[2019-06-11 18:36:39,641]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-11 18:36:39,641]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 35, in test_app_login
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 手机号 不能为空!
+
+[2019-06-11 18:36:39,742]- log.py]- INFO: [32mstart to test test1_login.test_app_login (5/5)
+[2019-06-11 18:36:39,899]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-11 18:36:39,899]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 35, in test_app_login
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : 密码 不能为空!
+
+[2019-06-11 18:36:39,902]- log.py]- INFO: [32mTime Elapsed: 0:00:01.562089

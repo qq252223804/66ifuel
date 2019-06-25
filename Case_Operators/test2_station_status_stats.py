@@ -11,8 +11,9 @@ from Common.AES_CBC_PKCS5 import encrypt,decrypt
 from Common.hmacmd5 import hmac_md5
 from Common.Html_miaoshu import miaoshu
 from ddt import ddt,data,unpack
+import requests
 @ddt
-class Test_get_AccessToken(unittest.TestCase):
+class Test_statinon_info(unittest.TestCase):
     host = 'http://123.157.219.74:8090/evcs/v1/'
     headers = {
         "Content-Type": "application/json; charset=utf-8",
@@ -35,14 +36,16 @@ class Test_get_AccessToken(unittest.TestCase):
 
         headers = cls.headers
         res = RunMethod().run_main('post', host, lujing, data, headers)
-        token=eval(decrypt(cls.DataSecret,res['data']))['AccessToken']
-        cls.headers['Authorization']=token
+        token=eval(decrypt(cls.DataSecret,res['Data']))['AccessToken']
+        cls.headers['Authorization']='Bearer ' +token
         return cls.headers
+
+
     @data('{"LastQueryTiME":"","PageNo":,"PageSize":}',
-          '{"LastQueryTiME":"","PageNo":3,"PageSize":}',
+          '{"LastQueryTiME":"","PageNo":1,"PageSize":10}',
           '{"LastQueryTiME":"","PageNo":3,"PageSize":20}',
-          '{"LastQueryTiME":"","PageNo":}',
-          '{"LastQueryTiME":"","PageSize":}',
+          '{"PageNo":}',
+          '{"PageSize":}',
           '{"LastQueryTiME":""}',
           '')
     def test1_query_stations_info(self,text):
@@ -52,7 +55,6 @@ class Test_get_AccessToken(unittest.TestCase):
         '''
         host = self.host
         lujing = 'query_stations_info'
-        # text = '{"LastQueryTiME":"","PageNo":,"PageSize":}'
         encrypt_data = encrypt(self.DataSecret, text)
         data = {
             "OperatorID": "MA35PU38X",
@@ -62,8 +64,8 @@ class Test_get_AccessToken(unittest.TestCase):
             "Sig": "{}".format(hmac_md5(self.SigSecret, "MA35PU38X" + encrypt_data+ self.times + "0001"))}
         headers = self.headers
         res = RunMethod().run_main('post', host, lujing, data, headers)
-        miaoshu(url=host + lujing, method="post", data=data, check="{}", respons=res)
-
+        miaoshu(url=host + lujing, method="post", data=text, check="{Ret and Msg}", respons=res)
+    @unittest.skip("数据需求方实现此接口,基础设施运营商方调用")
     def test2_notification_stationStatus(self):
         '''
         设备状态变化推送
@@ -71,7 +73,7 @@ class Test_get_AccessToken(unittest.TestCase):
         '''
         host = self.host
         lujing = 'notification_stationStatus'
-        text = '{"OperatorID":"MA35PU38X","OperatorSecret":"08083ebe79bc48a9"}'
+        text = '{"ConnectorStatusInfo":[{"ConnectorID":"1600991","Status":1}]}'
         encrypt_data = encrypt(self.DataSecret, text)
         data = {
             "OperatorID": "MA35PU38X",
@@ -80,17 +82,20 @@ class Test_get_AccessToken(unittest.TestCase):
             "Seq": "0001",
             "Sig": "{}".format(hmac_md5(self.SigSecret, "MA35PU38X" + encrypt_data + self.times + "0001"))}
         headers = self.headers
-        res = RunMethod().run_main('post', host, lujing, data, headers)
-        miaoshu(url=host + lujing, method="post", data=data, check="{}", respons=res)
+        res = requests.post(url=host + lujing, json=data, headers=headers)
+        # res = RunMethod().run_main('post', host, lujing, data, headers)
+        miaoshu(url=host + lujing, method="post", data=text, check="{'Ret': 0, 'Msg': '请求成功',}", respons=res)
+        self.assertTrue(res.status_code == 200, msg="状态码不正确")
 
-    def test3_query_stations_status(self):
+
+    def test3_query_station_status(self):
         '''
-        查询充电站信息
+        设备接口状态查询
         :return:
         '''
         host = self.host
-        lujing = 'query_stations_info'
-        text = '{"OperatorID":"MA35PU38X","OperatorSecret":"08083ebe79bc48a9"}'
+        lujing = 'query_station_status'
+        text = '{"StationIDs":["34","46"]}'
         encrypt_data = encrypt(self.DataSecret, text)
         data = {
             "OperatorID": "MA35PU38X",
@@ -100,35 +105,22 @@ class Test_get_AccessToken(unittest.TestCase):
             "Sig": "{}".format(hmac_md5(self.SigSecret, "MA35PU38X" + encrypt_data + self.times + "0001"))}
         headers = self.headers
         res = RunMethod().run_main('post', host, lujing, data, headers)
-        miaoshu(url=host + lujing, method="post", data=data, check="{}", respons=res)
+        miaoshu(url=host + lujing, method="post", data=text, check="{'StationIDs', 'ConnectorStatusInfos'}", respons=res)
+        self.assertTrue(res['Ret'] == 0, msg="状态码不正确")
+        undata = eval(decrypt(self.DataSecret, res['Data']))
+        self.assertIn('StationStatusInfos', undata, msg='返回内容不正确')
 
     def test4_query_stations_stats(self):
         '''
-        查询充电站信息
+        查询统计信息
         :return:
         '''
-        host = self.host
-        lujing = 'query_stations_stats'
-        text = '{"OperatorID":"MA35PU38X","OperatorSecret":"08083ebe79bc48a9"}'
-        encrypt_data = encrypt(self.DataSecret, text)
-        data = {
-            "OperatorID": "MA35PU38X",
-            "Data": "{}".format(encrypt_data),
-            "TimeStamp": "{}".format(self.times),
-            "Seq": "0001",
-            "Sig": "{}".format(hmac_md5(self.SigSecret, "MA35PU38X" + encrypt_data + self.times + "0001"))}
-        headers = self.headers
-        res = RunMethod().run_main('post', host, lujing, data, headers)
-        miaoshu(url=host + lujing, method="post", data=data, check="{}", respons=res)
 
-    def test_query_stations_info(self):
-        '''
-        查询充电站信息
-        :return:
-        '''
+
         host = self.host
-        lujing = 'query_stations_info'
-        text = '{"OperatorID":"MA35PU38X","OperatorSecret":"08083ebe79bc48a9"}'
+        lujing = 'query_station_stats'
+        text = '{"StationID":"33","StartTime":"2019-02-20","EndTime":"2019-06-20"}'
+
         encrypt_data = encrypt(self.DataSecret, text)
         data = {
             "OperatorID": "MA35PU38X",
@@ -138,7 +130,12 @@ class Test_get_AccessToken(unittest.TestCase):
             "Sig": "{}".format(hmac_md5(self.SigSecret, "MA35PU38X" + encrypt_data + self.times + "0001"))}
         headers = self.headers
         res = RunMethod().run_main('post', host, lujing, data, headers)
-        miaoshu(url=host + lujing, method="post", data=data, check="{}", respons=res)
+        # res = requests.post(url=host + lujing, json=data, headers=headers)
+        miaoshu(url=host + lujing, method="post", data=text, check="{'Ret': 0, 'Msg': '请求成功',}", respons=res)
+        self.assertTrue(res['Ret'] == 0, msg="状态码不正确")
+        undata=eval(decrypt(self.DataSecret,res['Data']))
+        self.assertIn('StationStatsInfo',undata,msg='返回内容不正确')
+
 
 
 

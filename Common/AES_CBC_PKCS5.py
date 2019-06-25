@@ -8,6 +8,9 @@
 
 from Crypto.Cipher import AES
 import base64
+# DataSecretIV='117239bf13a40cd0'
+DataSecretIV='xgbzfgwz6ki2gm5j'
+
 
 def pkcs5padding(text):
     '''
@@ -31,7 +34,7 @@ def encrypt(DataSecret,content):
     :return:
     '''
     # 消息秘钥初始化向量(DataSecretIV):
-    DataSecretIV='117239bf13a40cd0'
+
     key_bytes = bytes(DataSecret, encoding='utf-8')
     iv = bytes(DataSecretIV, encoding='utf-8')
     cipher = AES.new(key_bytes, AES.MODE_CBC, iv)
@@ -61,7 +64,7 @@ def decrypt(key, content):
     '''
     # 消息秘钥初始化向量(DataSecretIV):
 
-    DataSecretIV='117239bf13a40cd0'
+
     key_bytes = bytes(key, encoding='utf-8')
     iv = bytes(DataSecretIV, encoding='utf-8')
     cipher = AES.new(key_bytes, AES.MODE_CBC, iv)
@@ -71,11 +74,11 @@ def decrypt(key, content):
     result = pkcs5unpadding(result)
     return result
 
-DataSecret = 'bed30540c54dda5d'
-#加密
-text ='{"OperatorID":"MA35PU38X","OperatorSecret":"08083ebe79bc48a9"}'
-data = encrypt(DataSecret,text)
-print(data)
+# DataSecret = 'bed30540c54dda5d'
+# # #加密
+# text ='{"OperatorID":"MA35PU38X","OperatorSecret":"1111"}'
+# data = encrypt(DataSecret,text)
+# print(data)
 #解密
 # untext='h0N5kfvVWFAi6mu31Ebna+Rf6pYNxXwsXQkaYx0y3R1U2rh9GAI/Po/jsVS+1OfglhTKiTwkthiDAUpaUgOvvQw18nt36laKO/mTgnth57oIad16CVHFgtTIyHa/1Y0K6j/hdCza3fdkfZhNmuYbLyOwAmkzDLB4gm5eIddj7uWfsyMCSaCcmgcImvDfzguq'
 # undata=decrypt(DataSecret,untext)

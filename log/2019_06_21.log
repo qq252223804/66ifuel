@@ -1,0 +1,1 @@
+[2019-06-21 09:34:49,044]- log.py]- INFO: [32mpost 请求错误 错误原因为HTTPConnectionPool(host='192.168.3.52', port=8090): Max retries exceeded with url: /evcs/v1/query_token (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0323E930>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))

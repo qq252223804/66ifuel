@@ -1,0 +1,1548 @@
+[2019-06-18 09:47:59,479]- log.py]- INFO: [32m开始进行测试
+[2019-06-18 09:47:59,580]- log.py]- INFO: [32mstart to test test1_login.test_dealer_login (1/8)
+[2019-06-18 09:48:20,578]- log.py]- INFO: [32mpost 请求错误 错误原因为HTTPConnectionPool(host='192.168.31.172', port=8080): Max retries exceeded with url: /dealer/login (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0336FA50>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+[2019-06-18 09:48:20,657]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 09:48:20,657]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\chemofang\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\chemofang\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\chemofang\Case\test1_login.py", line 39, in test_dealer_login
+    self.assertTrue(str(res['code']) == '200', msg='状态不对')
+TypeError: string indices must be integers
+
+[2019-06-18 09:48:20,758]- log.py]- INFO: [32mstart to test test1_login.test_dealer_login (2/8)
+[2019-06-18 09:48:41,761]- log.py]- INFO: [32mpost 请求错误 错误原因为HTTPConnectionPool(host='192.168.31.172', port=8080): Max retries exceeded with url: /dealer/login (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03397110>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+[2019-06-18 09:48:41,762]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 09:48:41,762]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\chemofang\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\chemofang\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\chemofang\Case\test1_login.py", line 39, in test_dealer_login
+    self.assertTrue(str(res['code']) == '200', msg='状态不对')
+TypeError: string indices must be integers
+
+[2019-06-18 09:48:41,862]- log.py]- INFO: [32mstart to test test1_login.test_cms_login (3/8)
+[2019-06-18 09:49:02,976]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 09:49:02,976]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
+    raise err
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\http\client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\http\client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\http\client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\http\client.py", line 1016, in _send_output
+    self.send(msg)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\http\client.py", line 956, in send
+    self.connect()
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connection.py", line 181, in connect
+    conn = self._new_conn()
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x03397590>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='192.168.31.172', port=8082): Max retries exceeded with url: /cms/login (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03397590>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\p\Desktop\chemofang\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\chemofang\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\chemofang\Case\test1_login.py", line 51, in test_cms_login
+    res=requests.post(url,datas)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\requests\api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='192.168.31.172', port=8082): Max retries exceeded with url: /cms/login (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03397590>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+
+[2019-06-18 09:49:03,077]- log.py]- INFO: [32mstart to test test1_login.test_cms_login (4/8)
+[2019-06-18 09:49:24,085]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 09:49:24,086]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
+    raise err
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\http\client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\http\client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\http\client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\http\client.py", line 1016, in _send_output
+    self.send(msg)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\http\client.py", line 956, in send
+    self.connect()
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connection.py", line 181, in connect
+    conn = self._new_conn()
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x03397F30>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='192.168.31.172', port=8082): Max retries exceeded with url: /cms/login (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03397F30>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\p\Desktop\chemofang\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\chemofang\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\chemofang\Case\test1_login.py", line 51, in test_cms_login
+    res=requests.post(url,datas)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\requests\api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='192.168.31.172', port=8082): Max retries exceeded with url: /cms/login (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03397F30>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+
+[2019-06-18 09:49:24,190]- log.py]- INFO: [32mstart to test test1_login.test_cms_login (5/8)
+[2019-06-18 09:49:45,195]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 09:49:45,196]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
+    raise err
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\http\client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\http\client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\http\client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\http\client.py", line 1016, in _send_output
+    self.send(msg)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\http\client.py", line 956, in send
+    self.connect()
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connection.py", line 181, in connect
+    conn = self._new_conn()
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x03397C50>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='192.168.31.172', port=8082): Max retries exceeded with url: /cms/login (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03397C50>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\p\Desktop\chemofang\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\chemofang\utx\core.py", line 196, in _wrap
+    return func(self, *args, **kwargs)
+  File "C:\Users\p\Desktop\chemofang\Case\test1_login.py", line 51, in test_cms_login
+    res=requests.post(url,datas)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\requests\api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='192.168.31.172', port=8082): Max retries exceeded with url: /cms/login (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03397C50>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+
+[2019-06-18 09:49:45,300]- log.py]- INFO: [32mstart to test test1_login.test_bless (6/8)
+[2019-06-18 09:49:45,400]- log.py]- INFO: [32mstart to test test1_login.test_bless (7/8)
+[2019-06-18 09:49:45,400]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 09:49:45,401]- log.py]- ERROR: [34mImportError: Failed to import test module: test2_dealer_SelfCar
+Traceback (most recent call last):
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\unittest\loader.py", line 434, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\unittest\loader.py", line 375, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\p\Desktop\chemofang\Case\test2_dealer_SelfCar.py", line 14, in <module>
+    class Dingjia(unittest.TestCase):
+  File "C:\Users\p\Desktop\chemofang\Case\test2_dealer_SelfCar.py", line 16, in Dingjia
+    with open('E:\\chemofang\\Config\\conf.yaml', "r", encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'E:\\chemofang\\Config\\conf.yaml'
+
+
+[2019-06-18 09:49:45,401]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 09:49:45,401]- log.py]- ERROR: [34mImportError: Failed to import test module: test3_Gps
+Traceback (most recent call last):
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\unittest\loader.py", line 434, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\unittest\loader.py", line 375, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\p\Desktop\chemofang\Case\test3_Gps.py", line 10, in <module>
+    class gps(unittest.TestCase):
+  File "C:\Users\p\Desktop\chemofang\Case\test3_Gps.py", line 11, in gps
+    with open('E:\\chemofang\\Config\\conf.yaml', "r", encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'E:\\chemofang\\Config\\conf.yaml'
+
+
+[2019-06-18 09:49:45,402]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 09:49:45,402]- log.py]- ERROR: [34mImportError: Failed to import test module: test4_check_order
+Traceback (most recent call last):
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\unittest\loader.py", line 434, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\unittest\loader.py", line 375, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\p\Desktop\chemofang\Case\test4_check_order.py", line 15, in <module>
+    class order(unittest.TestCase):
+  File "C:\Users\p\Desktop\chemofang\Case\test4_check_order.py", line 16, in order
+    with open('E:\\chemofang\\Config\\conf.yaml', "r", encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'E:\\chemofang\\Config\\conf.yaml'
+
+
+[2019-06-18 09:49:45,403]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 09:49:45,403]- log.py]- ERROR: [34mImportError: Failed to import test module: test5_SelfCar_manage
+Traceback (most recent call last):
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\unittest\loader.py", line 434, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\unittest\loader.py", line 375, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\p\Desktop\chemofang\Case\test5_SelfCar_manage.py", line 15, in <module>
+    class Selfcar(unittest.TestCase):
+  File "C:\Users\p\Desktop\chemofang\Case\test5_SelfCar_manage.py", line 16, in Selfcar
+    with open('E:\\chemofang\\Config\\conf.yaml', "r", encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'E:\\chemofang\\Config\\conf.yaml'
+
+
+[2019-06-18 09:49:45,403]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 09:49:45,404]- log.py]- ERROR: [34mImportError: Failed to import test module: test6_mock_api
+Traceback (most recent call last):
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\unittest\loader.py", line 434, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\unittest\loader.py", line 375, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\p\Desktop\chemofang\Case\test6_mock_api.py", line 8, in <module>
+    from Common.mock_demo import mock_test
+  File "C:\Users\p\Desktop\chemofang\Common\mock_demo.py", line 1, in <module>
+    from mock import mock
+ModuleNotFoundError: No module named 'mock'
+
+
+[2019-06-18 09:49:45,405]- log.py]- INFO: [32mTime Elapsed: 0:01:45.925058
+[2019-06-18 09:50:29,600]- log.py]- INFO: [32m开始进行测试
+[2019-06-18 09:50:29,601]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 09:50:29,601]- log.py]- ERROR: [34mImportError: Failed to import test module: test1_login
+Traceback (most recent call last):
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\unittest\loader.py", line 434, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\unittest\loader.py", line 375, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 14, in <module>
+    class login(unittest.TestCase):
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 15, in login
+    with open('{}'.format(os.path.join(os.path.dirname(os.getcwd()),'Config')+'\conf.yaml'), 'r', encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\p\\Desktop\\Config\\conf.yaml'
+
+
+[2019-06-18 09:50:29,602]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 09:50:29,602]- log.py]- ERROR: [34mImportError: Failed to import test module: test2_creat_user
+Traceback (most recent call last):
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\unittest\loader.py", line 434, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\unittest\loader.py", line 375, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\p\Desktop\66ifuel\Case\test2_creat_user.py", line 9, in <module>
+    class login(unittest.TestCase):
+  File "C:\Users\p\Desktop\66ifuel\Case\test2_creat_user.py", line 10, in login
+    with open('{}'.format(os.path.join(os.path.dirname(os.getcwd()),'Config')+'\conf.yaml'), 'r', encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\p\\Desktop\\Config\\conf.yaml'
+
+
+[2019-06-18 09:50:29,603]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 09:50:29,603]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\Case\test3_sms.py", line 14, in setUp
+    with open('{}'.format(os.path.join(os.path.dirname(os.getcwd()),'Config')+'\conf.yaml'), "r", encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\p\\Desktop\\Config\\conf.yaml'
+
+[2019-06-18 09:50:29,604]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 09:50:29,604]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\Case\test3_sms.py", line 14, in setUp
+    with open('{}'.format(os.path.join(os.path.dirname(os.getcwd()),'Config')+'\conf.yaml'), "r", encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\p\\Desktop\\Config\\conf.yaml'
+
+[2019-06-18 09:50:29,605]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 09:50:29,605]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\Case\test3_sms.py", line 14, in setUp
+    with open('{}'.format(os.path.join(os.path.dirname(os.getcwd()),'Config')+'\conf.yaml'), "r", encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\p\\Desktop\\Config\\conf.yaml'
+
+[2019-06-18 09:50:29,605]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 09:50:29,606]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\Case\test3_sms.py", line 14, in setUp
+    with open('{}'.format(os.path.join(os.path.dirname(os.getcwd()),'Config')+'\conf.yaml'), "r", encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\p\\Desktop\\Config\\conf.yaml'
+
+[2019-06-18 09:50:29,606]- log.py]- INFO: [32mTime Elapsed: 0:00:00.006001
+[2019-06-18 09:51:25,265]- log.py]- INFO: [32m开始进行测试
+[2019-06-18 09:51:25,266]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 09:51:25,266]- log.py]- ERROR: [34mImportError: Failed to import test module: test1_login
+Traceback (most recent call last):
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\unittest\loader.py", line 434, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\unittest\loader.py", line 375, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 14, in <module>
+    class login(unittest.TestCase):
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 15, in login
+    with open('{}'.format(os.path.join(os.path.dirname(os.getcwd()),'Config')+'\conf.yaml'), 'r', encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\p\\Desktop\\Config\\conf.yaml'
+
+
+[2019-06-18 09:51:25,267]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 09:51:25,267]- log.py]- ERROR: [34mImportError: Failed to import test module: test2_creat_user
+Traceback (most recent call last):
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\unittest\loader.py", line 434, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\unittest\loader.py", line 375, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\p\Desktop\66ifuel\Case\test2_creat_user.py", line 9, in <module>
+    class login(unittest.TestCase):
+  File "C:\Users\p\Desktop\66ifuel\Case\test2_creat_user.py", line 10, in login
+    with open('{}'.format(os.path.join(os.path.dirname(os.getcwd()),'Config')+'\conf.yaml'), 'r', encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\p\\Desktop\\Config\\conf.yaml'
+
+
+[2019-06-18 09:51:25,268]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 09:51:25,268]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\Case\test3_sms.py", line 14, in setUp
+    with open('{}'.format(os.path.join(os.path.dirname(os.getcwd()),'Config')+'\conf.yaml'), "r", encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\p\\Desktop\\Config\\conf.yaml'
+
+[2019-06-18 09:51:25,269]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 09:51:25,269]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\Case\test3_sms.py", line 14, in setUp
+    with open('{}'.format(os.path.join(os.path.dirname(os.getcwd()),'Config')+'\conf.yaml'), "r", encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\p\\Desktop\\Config\\conf.yaml'
+
+[2019-06-18 09:51:25,269]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 09:51:25,270]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\Case\test3_sms.py", line 14, in setUp
+    with open('{}'.format(os.path.join(os.path.dirname(os.getcwd()),'Config')+'\conf.yaml'), "r", encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\p\\Desktop\\Config\\conf.yaml'
+
+[2019-06-18 09:51:25,270]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 09:51:25,270]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\Case\test3_sms.py", line 14, in setUp
+    with open('{}'.format(os.path.join(os.path.dirname(os.getcwd()),'Config')+'\conf.yaml'), "r", encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\p\\Desktop\\Config\\conf.yaml'
+
+[2019-06-18 09:51:25,271]- log.py]- INFO: [32mTime Elapsed: 0:00:00.006000
+[2019-06-18 09:53:47,396]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (1/6)
+[2019-06-18 09:53:47,781]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (2/6)
+[2019-06-18 09:53:47,981]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (3/6)
+[2019-06-18 09:53:48,139]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (4/6)
+[2019-06-18 09:53:48,266]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (5/6)
+[2019-06-18 09:53:48,391]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (6/6)
+[2019-06-18 09:54:12,230]- log.py]- INFO: [32m开始进行测试
+[2019-06-18 09:54:12,231]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 09:54:12,231]- log.py]- ERROR: [34mImportError: Failed to import test module: test1_login
+Traceback (most recent call last):
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\unittest\loader.py", line 434, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\unittest\loader.py", line 375, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 14, in <module>
+    class login(unittest.TestCase):
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 15, in login
+    with open('{}'.format(os.path.join(os.path.dirname(os.getcwd()),'Config')+'\conf.yaml'), 'r', encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\p\\Desktop\\Config\\conf.yaml'
+
+
+[2019-06-18 09:54:12,232]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 09:54:12,232]- log.py]- ERROR: [34mImportError: Failed to import test module: test2_creat_user
+Traceback (most recent call last):
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\unittest\loader.py", line 434, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\unittest\loader.py", line 375, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\p\Desktop\66ifuel\Case\test2_creat_user.py", line 9, in <module>
+    class login(unittest.TestCase):
+  File "C:\Users\p\Desktop\66ifuel\Case\test2_creat_user.py", line 10, in login
+    with open('{}'.format(os.path.join(os.path.dirname(os.getcwd()),'Config')+'\conf.yaml'), 'r', encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\p\\Desktop\\Config\\conf.yaml'
+
+
+[2019-06-18 09:54:12,233]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 09:54:12,233]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\Case\test3_sms.py", line 14, in setUp
+    with open('{}'.format(os.path.join(os.path.dirname(os.getcwd()),'Config')+'\conf.yaml'), "r", encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\p\\Desktop\\Config\\conf.yaml'
+
+[2019-06-18 09:54:12,234]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 09:54:12,234]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\Case\test3_sms.py", line 14, in setUp
+    with open('{}'.format(os.path.join(os.path.dirname(os.getcwd()),'Config')+'\conf.yaml'), "r", encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\p\\Desktop\\Config\\conf.yaml'
+
+[2019-06-18 09:54:12,234]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 09:54:12,234]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\Case\test3_sms.py", line 14, in setUp
+    with open('{}'.format(os.path.join(os.path.dirname(os.getcwd()),'Config')+'\conf.yaml'), "r", encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\p\\Desktop\\Config\\conf.yaml'
+
+[2019-06-18 09:54:12,235]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 09:54:12,235]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\Case\test3_sms.py", line 14, in setUp
+    with open('{}'.format(os.path.join(os.path.dirname(os.getcwd()),'Config')+'\conf.yaml'), "r", encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\p\\Desktop\\Config\\conf.yaml'
+
+[2019-06-18 09:54:12,236]- log.py]- INFO: [32mTime Elapsed: 0:00:00.005000
+[2019-06-18 09:56:48,688]- log.py]- INFO: [32m开始进行测试
+[2019-06-18 09:56:48,789]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (1/16)
+[2019-06-18 09:56:48,967]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (2/16)
+[2019-06-18 09:56:49,276]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (3/16)
+[2019-06-18 09:56:49,415]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (4/16)
+[2019-06-18 09:56:59,594]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (5/16)
+[2019-06-18 09:56:59,732]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (6/16)
+[2019-06-18 09:56:59,865]- log.py]- INFO: [32mstart to test test2_creat_user.test_check_user (7/16)
+[2019-06-18 09:57:00,014]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (8/16)
+[2019-06-18 09:57:00,473]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (9/16)
+[2019-06-18 09:57:00,673]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (10/16)
+[2019-06-18 09:57:00,958]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (11/16)
+[2019-06-18 09:57:01,126]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (12/16)
+[2019-06-18 09:57:01,284]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (13/16)
+[2019-06-18 09:57:01,574]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (14/16)
+[2019-06-18 09:57:01,722]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (15/16)
+[2019-06-18 09:57:01,758]- log.py]- INFO: [32mTime Elapsed: 0:00:13.068747
+[2019-06-18 09:58:43,185]- log.py]- INFO: [32m开始进行测试
+[2019-06-18 09:58:43,367]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (1/16)
+[2019-06-18 09:58:43,676]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (2/16)
+[2019-06-18 09:58:43,824]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (3/16)
+[2019-06-18 09:58:44,004]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (4/16)
+[2019-06-18 09:58:44,138]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (5/16)
+[2019-06-18 09:58:44,269]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (6/16)
+[2019-06-18 09:58:44,397]- log.py]- INFO: [32mstart to test test2_creat_user.test_check_user (7/16)
+[2019-06-18 09:58:44,539]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (8/16)
+[2019-06-18 09:58:47,369]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (9/16)
+[2019-06-18 09:58:47,744]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (10/16)
+[2019-06-18 09:58:47,977]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (11/16)
+[2019-06-18 09:58:48,154]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (12/16)
+[2019-06-18 09:58:48,317]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (13/16)
+[2019-06-18 09:58:48,904]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (14/16)
+[2019-06-18 09:58:49,057]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (15/16)
+[2019-06-18 09:58:49,084]- log.py]- INFO: [32mTime Elapsed: 0:00:05.898337
+[2019-06-18 09:59:21,173]- log.py]- INFO: [32m开始进行测试
+[2019-06-18 09:59:21,274]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (1/16)
+[2019-06-18 09:59:21,473]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (2/16)
+[2019-06-18 09:59:21,630]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (3/16)
+[2019-06-18 09:59:21,771]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (4/16)
+[2019-06-18 09:59:21,898]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (5/16)
+[2019-06-18 09:59:22,021]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (6/16)
+[2019-06-18 09:59:32,204]- log.py]- INFO: [32mstart to test test2_creat_user.test_check_user (7/16)
+[2019-06-18 09:59:32,354]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (8/16)
+[2019-06-18 09:59:32,755]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (9/16)
+[2019-06-18 09:59:32,946]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (10/16)
+[2019-06-18 09:59:33,212]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (11/16)
+[2019-06-18 09:59:43,471]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (12/16)
+[2019-06-18 09:59:43,624]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (13/16)
+[2019-06-18 09:59:43,792]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (14/16)
+[2019-06-18 09:59:43,938]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (15/16)
+[2019-06-18 09:59:43,978]- log.py]- INFO: [32mTime Elapsed: 0:00:22.804305
+[2019-06-18 10:00:58,008]- log.py]- INFO: [32mstart to test test1_get_AccessToken.test_alldata_right (1/1)
+[2019-06-18 10:00:59,034]- log.py]- INFO: [32mpost 请求错误 错误原因为HTTPConnectionPool(host='192.168.3.142', port=8090): Max retries exceeded with url: /evcs/v1/query_token (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03069550>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+[2019-06-18 10:01:39,312]- log.py]- INFO: [32m开始进行测试
+[2019-06-18 10:01:39,313]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 10:01:39,314]- log.py]- ERROR: [34mImportError: Failed to import test module: test1_login
+Traceback (most recent call last):
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\unittest\loader.py", line 434, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\unittest\loader.py", line 375, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 14, in <module>
+    class login(unittest.TestCase):
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 15, in login
+    with open('{}'.format(os.path.join(os.path.dirname(os.getcwd()),'Config')+'\conf.yaml'), 'r', encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\p\\Desktop\\Config\\conf.yaml'
+
+
+[2019-06-18 10:01:39,314]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 10:01:39,314]- log.py]- ERROR: [34mImportError: Failed to import test module: test2_creat_user
+Traceback (most recent call last):
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\unittest\loader.py", line 434, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\unittest\loader.py", line 375, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\p\Desktop\66ifuel\Case\test2_creat_user.py", line 9, in <module>
+    class login(unittest.TestCase):
+  File "C:\Users\p\Desktop\66ifuel\Case\test2_creat_user.py", line 10, in login
+    with open('{}'.format(os.path.join(os.path.dirname(os.getcwd()),'Config')+'\conf.yaml'), 'r', encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\p\\Desktop\\Config\\conf.yaml'
+
+
+[2019-06-18 10:01:39,315]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 10:01:39,315]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\Case\test3_sms.py", line 14, in setUp
+    with open('{}'.format(os.path.join(os.path.dirname(os.getcwd()),'Config')+'\conf.yaml'), "r", encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\p\\Desktop\\Config\\conf.yaml'
+
+[2019-06-18 10:01:39,316]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 10:01:39,316]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\Case\test3_sms.py", line 14, in setUp
+    with open('{}'.format(os.path.join(os.path.dirname(os.getcwd()),'Config')+'\conf.yaml'), "r", encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\p\\Desktop\\Config\\conf.yaml'
+
+[2019-06-18 10:01:39,317]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 10:01:39,317]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\Case\test3_sms.py", line 14, in setUp
+    with open('{}'.format(os.path.join(os.path.dirname(os.getcwd()),'Config')+'\conf.yaml'), "r", encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\p\\Desktop\\Config\\conf.yaml'
+
+[2019-06-18 10:01:39,318]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 10:01:39,318]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\Case\test3_sms.py", line 14, in setUp
+    with open('{}'.format(os.path.join(os.path.dirname(os.getcwd()),'Config')+'\conf.yaml'), "r", encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\p\\Desktop\\Config\\conf.yaml'
+
+[2019-06-18 10:01:39,320]- log.py]- INFO: [32mTime Elapsed: 0:00:00.007000
+[2019-06-18 10:02:10,581]- log.py]- INFO: [32mstart to test test1_get_AccessToken.test_alldata_right (1/1)
+[2019-06-18 10:02:11,593]- log.py]- INFO: [32mpost 请求错误 错误原因为HTTPConnectionPool(host='192.168.3.142', port=8090): Max retries exceeded with url: /evcs/v1/query_token (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x030436F0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+[2019-06-18 10:02:27,777]- log.py]- INFO: [32m开始进行测试
+[2019-06-18 10:02:27,778]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 10:02:27,778]- log.py]- ERROR: [34mImportError: Failed to import test module: test1_login
+Traceback (most recent call last):
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\unittest\loader.py", line 434, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\unittest\loader.py", line 375, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 14, in <module>
+    class login(unittest.TestCase):
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 15, in login
+    with open('{}'.format(os.path.join(os.path.dirname(os.getcwd()),'Config')+'\conf.yaml'), 'r', encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\p\\Desktop\\Config\\conf.yaml'
+
+
+[2019-06-18 10:02:27,778]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 10:02:27,779]- log.py]- ERROR: [34mImportError: Failed to import test module: test2_creat_user
+Traceback (most recent call last):
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\unittest\loader.py", line 434, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\unittest\loader.py", line 375, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\p\Desktop\66ifuel\Case\test2_creat_user.py", line 9, in <module>
+    class login(unittest.TestCase):
+  File "C:\Users\p\Desktop\66ifuel\Case\test2_creat_user.py", line 10, in login
+    with open('{}'.format(os.path.join(os.path.dirname(os.getcwd()),'Config')+'\conf.yaml'), 'r', encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\p\\Desktop\\Config\\conf.yaml'
+
+
+[2019-06-18 10:02:27,779]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 10:02:27,779]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\Case\test3_sms.py", line 14, in setUp
+    with open('{}'.format(os.path.join(os.path.dirname(os.getcwd()),'Config')+'\conf.yaml'), "r", encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\p\\Desktop\\Config\\conf.yaml'
+
+[2019-06-18 10:02:27,780]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 10:02:27,780]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\Case\test3_sms.py", line 14, in setUp
+    with open('{}'.format(os.path.join(os.path.dirname(os.getcwd()),'Config')+'\conf.yaml'), "r", encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\p\\Desktop\\Config\\conf.yaml'
+
+[2019-06-18 10:02:27,781]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 10:02:27,781]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\Case\test3_sms.py", line 14, in setUp
+    with open('{}'.format(os.path.join(os.path.dirname(os.getcwd()),'Config')+'\conf.yaml'), "r", encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\p\\Desktop\\Config\\conf.yaml'
+
+[2019-06-18 10:02:27,781]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 10:02:27,782]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\Case\test3_sms.py", line 14, in setUp
+    with open('{}'.format(os.path.join(os.path.dirname(os.getcwd()),'Config')+'\conf.yaml'), "r", encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\p\\Desktop\\Config\\conf.yaml'
+
+[2019-06-18 10:02:27,782]- log.py]- INFO: [32mTime Elapsed: 0:00:00.005000
+[2019-06-18 10:02:54,568]- log.py]- INFO: [32m开始进行测试
+[2019-06-18 10:02:54,569]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 10:02:54,569]- log.py]- ERROR: [34mImportError: Failed to import test module: test1_login
+Traceback (most recent call last):
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\unittest\loader.py", line 434, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\unittest\loader.py", line 375, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 14, in <module>
+    class login(unittest.TestCase):
+  File "C:\Users\p\Desktop\66ifuel\Case\test1_login.py", line 15, in login
+    with open('{}'.format(os.path.join(os.path.dirname(os.getcwd()),'Config')+'\conf.yaml'), 'r', encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\p\\Desktop\\Config\\conf.yaml'
+
+
+[2019-06-18 10:02:54,569]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 10:02:54,570]- log.py]- ERROR: [34mImportError: Failed to import test module: test2_creat_user
+Traceback (most recent call last):
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\unittest\loader.py", line 434, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\unittest\loader.py", line 375, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\p\Desktop\66ifuel\Case\test2_creat_user.py", line 9, in <module>
+    class login(unittest.TestCase):
+  File "C:\Users\p\Desktop\66ifuel\Case\test2_creat_user.py", line 10, in login
+    with open('{}'.format(os.path.join(os.path.dirname(os.getcwd()),'Config')+'\conf.yaml'), 'r', encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\p\\Desktop\\Config\\conf.yaml'
+
+
+[2019-06-18 10:02:54,571]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 10:02:54,571]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\Case\test3_sms.py", line 14, in setUp
+    with open('{}'.format(os.path.join(os.path.dirname(os.getcwd()),'Config')+'\conf.yaml'), "r", encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\p\\Desktop\\Config\\conf.yaml'
+
+[2019-06-18 10:02:54,572]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 10:02:54,572]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\Case\test3_sms.py", line 14, in setUp
+    with open('{}'.format(os.path.join(os.path.dirname(os.getcwd()),'Config')+'\conf.yaml'), "r", encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\p\\Desktop\\Config\\conf.yaml'
+
+[2019-06-18 10:02:54,573]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 10:02:54,573]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\Case\test3_sms.py", line 14, in setUp
+    with open('{}'.format(os.path.join(os.path.dirname(os.getcwd()),'Config')+'\conf.yaml'), "r", encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\p\\Desktop\\Config\\conf.yaml'
+
+[2019-06-18 10:02:54,573]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 10:02:54,574]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\Case\test3_sms.py", line 14, in setUp
+    with open('{}'.format(os.path.join(os.path.dirname(os.getcwd()),'Config')+'\conf.yaml'), "r", encoding="utf-8") as r:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\p\\Desktop\\Config\\conf.yaml'
+
+[2019-06-18 10:02:54,575]- log.py]- INFO: [32mTime Elapsed: 0:00:00.007000
+[2019-06-18 10:04:17,681]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/16)
+[2019-06-18 10:04:17,857]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (2/16)
+[2019-06-18 10:04:18,005]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (3/16)
+[2019-06-18 10:04:18,316]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (4/16)
+[2019-06-18 10:04:18,441]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (5/16)
+[2019-06-18 10:04:18,572]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (6/16)
+[2019-06-18 10:04:18,703]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_check_user (7/16)
+[2019-06-18 10:04:18,851]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_send_CreatPhone_mess (8/16)
+[2019-06-18 10:04:19,264]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_creat_user (9/16)
+[2019-06-18 10:04:19,605]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_set_user_pwd (10/16)
+[2019-06-18 10:04:19,941]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_login_pwd (11/16)
+[2019-06-18 10:04:20,106]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (12/16)
+[2019-06-18 10:04:20,259]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (13/16)
+[2019-06-18 10:04:20,569]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (14/16)
+[2019-06-18 10:04:20,717]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (15/16)
+[2019-06-18 10:04:49,170]- log.py]- INFO: [32m开始进行测试
+[2019-06-18 10:04:49,271]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (1/16)
+[2019-06-18 10:04:59,467]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (2/16)
+[2019-06-18 10:04:59,658]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (3/16)
+[2019-06-18 10:04:59,793]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (4/16)
+[2019-06-18 10:04:59,928]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (5/16)
+[2019-06-18 10:05:00,067]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (6/16)
+[2019-06-18 10:05:00,191]- log.py]- INFO: [32mstart to test test2_creat_user.test_check_user (7/16)
+[2019-06-18 10:05:00,343]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (8/16)
+[2019-06-18 10:05:00,786]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (9/16)
+[2019-06-18 10:05:01,129]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (10/16)
+[2019-06-18 10:05:01,369]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (11/16)
+[2019-06-18 10:05:01,539]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (12/16)
+[2019-06-18 10:05:01,687]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (13/16)
+[2019-06-18 10:05:01,878]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (14/16)
+[2019-06-18 10:05:02,017]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (15/16)
+[2019-06-18 10:05:02,044]- log.py]- INFO: [32mTime Elapsed: 0:00:12.872736
+[2019-06-18 10:05:35,655]- log.py]- INFO: [32m开始进行测试
+[2019-06-18 10:05:35,756]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (1/16)
+[2019-06-18 10:05:36,039]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (2/16)
+[2019-06-18 10:05:36,174]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (3/16)
+[2019-06-18 10:05:36,347]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (4/16)
+[2019-06-18 10:05:36,475]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (5/16)
+[2019-06-18 10:05:36,599]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (6/16)
+[2019-06-18 10:05:36,722]- log.py]- INFO: [32mstart to test test2_creat_user.test_check_user (7/16)
+[2019-06-18 10:05:36,867]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (8/16)
+[2019-06-18 10:05:37,237]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (9/16)
+[2019-06-18 10:05:37,584]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (10/16)
+[2019-06-18 10:05:37,829]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (11/16)
+[2019-06-18 10:05:38,000]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (12/16)
+[2019-06-18 10:05:38,156]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (13/16)
+[2019-06-18 10:05:38,488]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (14/16)
+[2019-06-18 10:05:38,639]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (15/16)
+[2019-06-18 10:05:38,757]- log.py]- INFO: [32mTime Elapsed: 0:00:03.101177
+[2019-06-18 10:10:01,273]- log.py]- INFO: [32m开始进行测试
+[2019-06-18 10:10:01,374]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (1/16)
+[2019-06-18 10:10:01,720]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (2/16)
+[2019-06-18 10:10:01,897]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (3/16)
+[2019-06-18 10:10:02,046]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (4/16)
+[2019-06-18 10:10:02,170]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (5/16)
+[2019-06-18 10:10:02,294]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (6/16)
+[2019-06-18 10:10:02,427]- log.py]- INFO: [32mstart to test test2_creat_user.test_check_user (7/16)
+[2019-06-18 10:10:02,569]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (8/16)
+[2019-06-18 10:10:03,268]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (9/16)
+[2019-06-18 10:10:03,467]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (10/16)
+[2019-06-18 10:10:03,707]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (11/16)
+[2019-06-18 10:10:03,862]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (12/16)
+[2019-06-18 10:10:04,012]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (13/16)
+[2019-06-18 10:10:04,275]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (14/16)
+[2019-06-18 10:10:04,412]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (15/16)
+[2019-06-18 10:10:04,442]- log.py]- INFO: [32mTime Elapsed: 0:00:03.168181
+[2019-06-18 10:10:52,994]- log.py]- INFO: [32m开始进行测试
+[2019-06-18 10:10:53,095]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (1/16)
+[2019-06-18 10:10:53,264]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (2/16)
+[2019-06-18 10:10:53,411]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (3/16)
+[2019-06-18 10:10:53,606]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (4/16)
+[2019-06-18 10:10:53,734]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (5/16)
+[2019-06-18 10:10:53,862]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (6/16)
+[2019-06-18 10:10:53,987]- log.py]- INFO: [32mstart to test test2_creat_user.test_check_user (7/16)
+[2019-06-18 10:10:54,127]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (8/16)
+[2019-06-18 10:10:54,468]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (9/16)
+[2019-06-18 10:10:54,721]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (10/16)
+[2019-06-18 10:10:55,031]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (11/16)
+[2019-06-18 10:10:55,197]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (12/16)
+[2019-06-18 10:10:55,348]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (13/16)
+[2019-06-18 10:10:55,674]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (14/16)
+[2019-06-18 10:10:55,818]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (15/16)
+[2019-06-18 10:10:55,841]- log.py]- INFO: [32mTime Elapsed: 0:00:02.846163
+[2019-06-18 10:48:28,866]- log.py]- INFO: [32m开始进行测试
+[2019-06-18 10:48:28,967]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (1/16)
+[2019-06-18 10:48:29,263]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (2/16)
+[2019-06-18 10:48:29,407]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (3/16)
+[2019-06-18 10:48:29,578]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (4/16)
+[2019-06-18 10:48:29,710]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (5/16)
+[2019-06-18 10:48:29,837]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (6/16)
+[2019-06-18 10:48:29,961]- log.py]- INFO: [32mstart to test test2_creat_user.test_check_user (7/16)
+[2019-06-18 10:48:30,109]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (8/16)
+[2019-06-18 10:48:30,582]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (9/16)
+[2019-06-18 10:48:30,760]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (10/16)
+[2019-06-18 10:48:31,075]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (11/16)
+[2019-06-18 10:48:31,249]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (12/16)
+[2019-06-18 10:48:31,427]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (13/16)
+[2019-06-18 10:48:31,734]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (14/16)
+[2019-06-18 10:48:31,896]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (15/16)
+[2019-06-18 10:48:31,927]- log.py]- INFO: [32mTime Elapsed: 0:00:03.059175
+[2019-06-18 10:51:59,900]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/16)
+[2019-06-18 10:52:00,066]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (2/16)
+[2019-06-18 10:52:00,219]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (3/16)
+[2019-06-18 10:52:00,508]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (4/16)
+[2019-06-18 10:52:00,643]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (5/16)
+[2019-06-18 10:52:00,774]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (6/16)
+[2019-06-18 10:52:00,901]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_check_user (7/16)
+[2019-06-18 10:52:01,046]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_send_CreatPhone_mess (8/16)
+[2019-06-18 10:52:01,400]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_creat_user (9/16)
+[2019-06-18 10:52:01,750]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_set_user_pwd (10/16)
+[2019-06-18 10:52:02,039]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_login_pwd (11/16)
+[2019-06-18 10:52:02,214]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (12/16)
+[2019-06-18 10:52:02,371]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (13/16)
+[2019-06-18 10:52:02,654]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (14/16)
+[2019-06-18 10:52:02,807]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (15/16)
+[2019-06-18 11:07:18,400]- log.py]- INFO: [32m开始进行测试
+[2019-06-18 11:07:18,501]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (1/16)
+[2019-06-18 11:07:18,846]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (2/16)
+[2019-06-18 11:07:19,034]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (3/16)
+[2019-06-18 11:07:19,164]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (4/16)
+[2019-06-18 11:07:19,341]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (5/16)
+[2019-06-18 11:07:19,466]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (6/16)
+[2019-06-18 11:07:29,618]- log.py]- INFO: [32mstart to test test2_creat_user.test_check_user (7/16)
+[2019-06-18 11:07:29,793]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (8/16)
+[2019-06-18 11:07:30,110]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (9/16)
+[2019-06-18 11:07:30,425]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (10/16)
+[2019-06-18 11:07:30,665]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (11/16)
+[2019-06-18 11:07:30,835]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (12/16)
+[2019-06-18 11:07:31,132]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (13/16)
+[2019-06-18 11:07:31,445]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (14/16)
+[2019-06-18 11:07:31,619]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (15/16)
+[2019-06-18 11:07:31,659]- log.py]- INFO: [32mTime Elapsed: 0:00:13.257758
+[2019-06-18 11:16:51,153]- log.py]- INFO: [32m开始进行测试
+[2019-06-18 11:16:51,254]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (1/16)
+[2019-06-18 11:16:51,436]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (2/16)
+[2019-06-18 11:16:51,599]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (3/16)
+[2019-06-18 11:16:51,887]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (4/16)
+[2019-06-18 11:16:52,035]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (5/16)
+[2019-06-18 11:17:02,210]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (6/16)
+[2019-06-18 11:17:02,342]- log.py]- INFO: [32mstart to test test2_creat_user.test_check_user (7/16)
+[2019-06-18 11:17:12,538]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (8/16)
+[2019-06-18 11:17:12,896]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (9/16)
+[2019-06-18 11:17:23,108]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (10/16)
+[2019-06-18 11:17:23,423]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (11/16)
+[2019-06-18 11:17:23,604]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (12/16)
+[2019-06-18 11:17:23,906]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (13/16)
+[2019-06-18 11:17:24,201]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (14/16)
+[2019-06-18 11:17:24,392]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (15/16)
+[2019-06-18 11:17:24,425]- log.py]- INFO: [32mTime Elapsed: 0:00:33.270903
+[2019-06-18 11:25:00,043]- log.py]- INFO: [32m开始进行测试
+[2019-06-18 11:25:00,144]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (1/16)
+[2019-06-18 11:25:00,344]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (2/16)
+[2019-06-18 11:25:00,697]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (3/16)
+[2019-06-18 11:25:00,835]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (4/16)
+[2019-06-18 11:25:00,968]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (5/16)
+[2019-06-18 11:25:01,100]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (6/16)
+[2019-06-18 11:25:01,225]- log.py]- INFO: [32mstart to test test2_creat_user.test_check_user (7/16)
+[2019-06-18 11:25:11,416]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (8/16)
+[2019-06-18 11:25:11,882]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (9/16)
+[2019-06-18 11:25:12,043]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (10/16)
+[2019-06-18 11:25:12,287]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (11/16)
+[2019-06-18 11:25:12,478]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (12/16)
+[2019-06-18 11:25:12,676]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (13/16)
+[2019-06-18 11:25:14,005]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (14/16)
+[2019-06-18 11:25:14,156]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (15/16)
+[2019-06-18 11:25:14,184]- log.py]- INFO: [32mTime Elapsed: 0:00:14.140809
+[2019-06-18 11:55:55,668]- log.py]- INFO: [32m开始进行测试
+[2019-06-18 11:55:55,769]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (1/16)
+[2019-06-18 11:55:56,075]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (2/16)
+[2019-06-18 11:55:56,252]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (3/16)
+[2019-06-18 11:55:56,408]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (4/16)
+[2019-06-18 11:55:56,547]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (5/16)
+[2019-06-18 11:55:56,676]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (6/16)
+[2019-06-18 11:55:56,810]- log.py]- INFO: [32mstart to test test2_creat_user.test_check_user (7/16)
+[2019-06-18 11:55:56,960]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (8/16)
+[2019-06-18 11:55:57,450]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (9/16)
+[2019-06-18 11:55:57,669]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (10/16)
+[2019-06-18 11:55:57,972]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (11/16)
+[2019-06-18 11:55:58,132]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (12/16)
+[2019-06-18 11:55:58,295]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (13/16)
+[2019-06-18 11:55:58,566]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (14/16)
+[2019-06-18 11:55:58,713]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (15/16)
+[2019-06-18 11:55:58,749]- log.py]- INFO: [32mTime Elapsed: 0:00:03.079176
+[2019-06-18 11:56:50,712]- log.py]- INFO: [32m开始进行测试
+[2019-06-18 11:56:50,896]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (1/16)
+[2019-06-18 11:56:51,070]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (2/16)
+[2019-06-18 11:56:51,224]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (3/16)
+[2019-06-18 11:56:51,426]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (4/16)
+[2019-06-18 11:56:51,552]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (5/16)
+[2019-06-18 11:56:51,684]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (6/16)
+[2019-06-18 11:56:51,820]- log.py]- INFO: [32mstart to test test2_creat_user.test_check_user (7/16)
+[2019-06-18 11:56:51,960]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (8/16)
+[2019-06-18 11:56:52,311]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (9/16)
+[2019-06-18 11:56:52,523]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (10/16)
+[2019-06-18 11:56:52,746]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (11/16)
+[2019-06-18 11:56:52,916]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (12/16)
+[2019-06-18 11:56:53,067]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (13/16)
+[2019-06-18 11:56:53,360]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (14/16)
+[2019-06-18 11:56:53,503]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (15/16)
+[2019-06-18 11:56:53,527]- log.py]- INFO: [32mTime Elapsed: 0:00:02.814161
+[2019-06-18 11:59:43,759]- log.py]- INFO: [32m开始进行测试
+[2019-06-18 11:59:43,860]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (1/16)
+[2019-06-18 11:59:44,049]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (2/16)
+[2019-06-18 11:59:44,348]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (3/16)
+[2019-06-18 11:59:54,561]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (4/16)
+[2019-06-18 11:59:54,703]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (5/16)
+[2019-06-18 11:59:54,836]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (6/16)
+[2019-06-18 11:59:54,968]- log.py]- INFO: [32mstart to test test2_creat_user.test_check_user (7/16)
+[2019-06-18 11:59:55,115]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (8/16)
+[2019-06-18 11:59:55,554]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (9/16)
+[2019-06-18 11:59:55,777]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (10/16)
+[2019-06-18 11:59:56,062]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (11/16)
+[2019-06-18 11:59:56,241]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (12/16)
+[2019-06-18 11:59:56,402]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (13/16)
+[2019-06-18 11:59:56,684]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (14/16)
+[2019-06-18 11:59:56,942]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (15/16)
+[2019-06-18 11:59:56,983]- log.py]- INFO: [32mTime Elapsed: 0:00:13.222756
+[2019-06-18 12:06:53,332]- log.py]- INFO: [32m开始进行测试
+[2019-06-18 12:06:53,433]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (1/16)
+[2019-06-18 12:06:53,772]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (2/16)
+[2019-06-18 12:06:53,912]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (3/16)
+[2019-06-18 12:06:54,135]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (4/16)
+[2019-06-18 12:06:54,271]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (5/16)
+[2019-06-18 12:06:54,396]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (6/16)
+[2019-06-18 12:06:54,522]- log.py]- INFO: [32mstart to test test2_creat_user.test_check_user (7/16)
+[2019-06-18 12:06:54,672]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (8/16)
+[2019-06-18 12:06:55,010]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (9/16)
+[2019-06-18 12:06:55,354]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (10/16)
+[2019-06-18 12:06:55,582]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (11/16)
+[2019-06-18 12:06:55,840]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (12/16)
+[2019-06-18 12:06:56,005]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (13/16)
+[2019-06-18 12:06:56,340]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (14/16)
+[2019-06-18 12:06:56,486]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (15/16)
+[2019-06-18 12:06:56,517]- log.py]- INFO: [32mTime Elapsed: 0:00:03.183182
+[2019-06-18 12:07:38,196]- log.py]- INFO: [32m开始进行测试
+[2019-06-18 12:07:38,297]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (1/16)
+[2019-06-18 12:07:38,459]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (2/16)
+[2019-06-18 12:07:38,608]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (3/16)
+[2019-06-18 12:07:38,948]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (4/16)
+[2019-06-18 12:07:39,074]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (5/16)
+[2019-06-18 12:07:39,216]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (6/16)
+[2019-06-18 12:07:39,355]- log.py]- INFO: [32mstart to test test2_creat_user.test_check_user (7/16)
+[2019-06-18 12:07:39,492]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (8/16)
+[2019-06-18 12:07:39,823]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (9/16)
+[2019-06-18 12:07:39,984]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (10/16)
+[2019-06-18 12:07:40,239]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (11/16)
+[2019-06-18 12:07:40,407]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (12/16)
+[2019-06-18 12:07:40,566]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (13/16)
+[2019-06-18 12:07:40,865]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (14/16)
+[2019-06-18 12:07:41,016]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (15/16)
+[2019-06-18 12:07:41,047]- log.py]- INFO: [32mTime Elapsed: 0:00:02.850163
+[2019-06-18 12:13:39,501]- log.py]- INFO: [32m开始进行测试
+[2019-06-18 12:13:39,603]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (1/16)
+[2019-06-18 12:13:39,782]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (2/16)
+[2019-06-18 12:13:39,946]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (3/16)
+[2019-06-18 12:13:50,135]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (4/16)
+[2019-06-18 12:13:50,267]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (5/16)
+[2019-06-18 12:13:50,411]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (6/16)
+[2019-06-18 12:13:50,546]- log.py]- INFO: [32mstart to test test2_creat_user.test_check_user (7/16)
+[2019-06-18 12:13:50,694]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (8/16)
+[2019-06-18 12:13:51,060]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (9/16)
+[2019-06-18 12:13:51,266]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (10/16)
+[2019-06-18 12:13:51,495]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (11/16)
+[2019-06-18 12:13:51,673]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (12/16)
+[2019-06-18 12:13:51,842]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (13/16)
+[2019-06-18 12:13:52,145]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (14/16)
+[2019-06-18 12:13:52,295]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (15/16)
+[2019-06-18 12:13:52,326]- log.py]- INFO: [32mTime Elapsed: 0:00:12.825734
+[2019-06-18 12:23:03,142]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/16)
+[2019-06-18 12:23:03,389]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (2/16)
+[2019-06-18 12:23:03,697]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (3/16)
+[2019-06-18 12:23:03,834]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (4/16)
+[2019-06-18 12:23:03,973]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (5/16)
+[2019-06-18 12:23:04,108]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (6/16)
+[2019-06-18 12:23:04,234]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_check_user (7/16)
+[2019-06-18 12:23:04,385]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_send_CreatPhone_mess (8/16)
+[2019-06-18 12:23:04,758]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_creat_user (9/16)
+[2019-06-18 12:23:04,934]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_set_user_pwd (10/16)
+[2019-06-18 12:23:05,169]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_login_pwd (11/16)
+[2019-06-18 12:23:05,344]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (12/16)
+[2019-06-18 12:23:05,498]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (13/16)
+[2019-06-18 12:23:05,865]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (14/16)
+[2019-06-18 12:23:06,018]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (15/16)
+[2019-06-18 12:25:30,940]- log.py]- INFO: [32m开始进行测试
+[2019-06-18 12:25:31,041]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (1/16)
+[2019-06-18 12:25:31,213]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (2/16)
+[2019-06-18 12:25:31,447]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (3/16)
+[2019-06-18 12:25:31,597]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (4/16)
+[2019-06-18 12:25:31,726]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (5/16)
+[2019-06-18 12:25:31,868]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (6/16)
+[2019-06-18 12:25:32,001]- log.py]- INFO: [32mstart to test test2_creat_user.test_check_user (7/16)
+[2019-06-18 12:25:32,154]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (8/16)
+[2019-06-18 12:25:32,688]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (9/16)
+[2019-06-18 12:25:32,902]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (10/16)
+[2019-06-18 12:25:33,129]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (11/16)
+[2019-06-18 12:25:33,294]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (12/16)
+[2019-06-18 12:25:33,454]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (13/16)
+[2019-06-18 12:25:33,738]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (14/16)
+[2019-06-18 12:25:34,231]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (15/16)
+[2019-06-18 12:25:34,287]- log.py]- INFO: [32mTime Elapsed: 0:00:03.346192
+[2019-06-18 12:26:44,487]- log.py]- INFO: [32m开始进行测试
+[2019-06-18 12:26:44,588]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (1/16)
+[2019-06-18 12:26:44,935]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (2/16)
+[2019-06-18 12:26:45,104]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (3/16)
+[2019-06-18 12:26:45,301]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (4/16)
+[2019-06-18 12:26:45,472]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (5/16)
+[2019-06-18 12:26:55,643]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (6/16)
+[2019-06-18 12:26:55,794]- log.py]- INFO: [32mstart to test test2_creat_user.test_check_user (7/16)
+[2019-06-18 12:26:55,993]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (8/16)
+[2019-06-18 12:26:56,343]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (9/16)
+[2019-06-18 12:26:56,670]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (10/16)
+[2019-06-18 12:26:56,973]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (11/16)
+[2019-06-18 12:26:57,153]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (12/16)
+[2019-06-18 12:26:57,313]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (13/16)
+[2019-06-18 12:26:57,592]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (14/16)
+[2019-06-18 12:26:57,743]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (15/16)
+[2019-06-18 12:26:57,799]- log.py]- INFO: [32mTime Elapsed: 0:00:13.311761
+[2019-06-18 12:27:34,031]- log.py]- INFO: [32m开始进行测试
+[2019-06-18 12:27:34,133]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (1/16)
+[2019-06-18 12:27:34,345]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (2/16)
+[2019-06-18 12:27:34,524]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (3/16)
+[2019-06-18 12:27:34,677]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (4/16)
+[2019-06-18 12:27:34,803]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (5/16)
+[2019-06-18 12:27:34,933]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (6/16)
+[2019-06-18 12:27:35,075]- log.py]- INFO: [32mstart to test test2_creat_user.test_check_user (7/16)
+[2019-06-18 12:27:35,216]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (8/16)
+[2019-06-18 12:27:35,597]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (9/16)
+[2019-06-18 12:27:35,795]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (10/16)
+[2019-06-18 12:27:36,033]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (11/16)
+[2019-06-18 12:27:46,257]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (12/16)
+[2019-06-18 12:27:46,418]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (13/16)
+[2019-06-18 12:27:46,731]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (14/16)
+[2019-06-18 12:27:46,891]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (15/16)
+[2019-06-18 12:27:46,943]- log.py]- INFO: [32mTime Elapsed: 0:00:12.909738
+[2019-06-18 12:28:09,100]- log.py]- INFO: [32m开始进行测试
+[2019-06-18 12:28:09,202]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (1/16)
+[2019-06-18 12:28:09,384]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (2/16)
+[2019-06-18 12:28:09,532]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (3/16)
+[2019-06-18 12:28:09,849]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (4/16)
+[2019-06-18 12:28:09,975]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (5/16)
+[2019-06-18 12:28:10,114]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (6/16)
+[2019-06-18 12:28:10,614]- log.py]- INFO: [32mstart to test test2_creat_user.test_check_user (7/16)
+[2019-06-18 12:28:10,763]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (8/16)
+[2019-06-18 12:28:11,183]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (9/16)
+[2019-06-18 12:28:11,488]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (10/16)
+[2019-06-18 12:28:11,720]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (11/16)
+[2019-06-18 12:28:11,885]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (12/16)
+[2019-06-18 12:28:12,082]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (13/16)
+[2019-06-18 12:28:12,374]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (14/16)
+[2019-06-18 12:28:12,518]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (15/16)
+[2019-06-18 12:28:12,543]- log.py]- INFO: [32mTime Elapsed: 0:00:03.441197
+[2019-06-18 13:13:45,972]- log.py]- INFO: [32mstart to test test1_get_AccessToken.test_alldata_right (1/1)
+[2019-06-18 17:52:41,200]- log.py]- INFO: [32mstart to test test1_get_AccessToken.test_alldata_right (1/1)
+[2019-06-18 17:56:25,241]- log.py]- INFO: [32mstart to test test1_get_AccessToken.test_alldata_right (1/1)
+[2019-06-18 18:05:06,480]- log.py]- INFO: [32mstart to test test1_get_AccessToken.test_alldata_right (1/1)
+[2019-06-18 18:06:00,243]- log.py]- INFO: [32mstart to test test1_get_AccessToken.test_alldata_right (1/1)
+[2019-06-18 18:08:53,474]- log.py]- INFO: [32mstart to test test1_get_AccessToken.test_alldata_right (1/1)
+[2019-06-18 18:09:38,293]- log.py]- INFO: [32mstart to test test1_get_AccessToken.test_alldata_right (1/1)
+[2019-06-18 18:25:42,021]- log.py]- INFO: [32mstart to test test1_get_AccessToken.test_alldata_right (1/1)
+[2019-06-18 18:28:28,100]- log.py]- INFO: [32mstart to test test1_get_AccessToken.test_alldata_right (1/1)
+[2019-06-18 18:29:59,092]- log.py]- INFO: [32mstart to test test1_get_AccessToken.test_alldata_right (1/1)
+[2019-06-18 18:30:33,128]- log.py]- INFO: [32mstart to test test1_get_AccessToken.test_alldata_right (1/1)
+[2019-06-18 20:43:31,996]- log.py]- INFO: [32mstart to test test2_creat_user.test_check_user (1/5)
+[2019-06-18 20:43:32,338]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (2/5)
+[2019-06-18 20:43:32,720]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (3/5)
+[2019-06-18 20:43:32,882]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (4/5)
+[2019-06-18 20:43:33,069]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (5/5)
+[2019-06-18 20:43:59,549]- log.py]- INFO: [32mstart to test test2_creat_user.test_check_user (1/5)
+[2019-06-18 20:43:59,722]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (2/5)
+[2019-06-18 20:44:00,198]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (3/5)
+[2019-06-18 20:44:00,303]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (4/5)
+[2019-06-18 20:44:00,462]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (5/5)
+[2019-06-18 20:45:57,957]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/16)
+[2019-06-18 20:45:58,131]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (2/16)
+[2019-06-18 20:45:58,339]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (3/16)
+[2019-06-18 20:45:58,506]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (4/16)
+[2019-06-18 20:45:58,652]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (5/16)
+[2019-06-18 20:45:58,823]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (6/16)
+[2019-06-18 20:45:58,963]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_check_user (7/16)
+[2019-06-18 20:45:59,141]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_send_CreatPhone_mess (8/16)
+[2019-06-18 20:45:59,792]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_creat_user (9/16)
+[2019-06-18 20:45:59,896]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_set_user_pwd (10/16)
+[2019-06-18 20:46:00,063]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_login_pwd (11/16)
+[2019-06-18 20:46:00,235]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (12/16)
+[2019-06-18 20:46:00,649]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (13/16)
+[2019-06-18 20:46:01,008]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (14/16)
+[2019-06-18 20:46:01,178]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (15/16)
+[2019-06-18 20:49:06,795]- log.py]- INFO: [32mstart to test test2_creat_user.test_check_user (1/5)
+[2019-06-18 20:49:07,106]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (2/5)
+[2019-06-18 20:49:07,614]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (3/5)
+[2019-06-18 20:49:07,719]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (4/5)
+[2019-06-18 20:49:07,885]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (5/5)
+[2019-06-18 20:50:34,681]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (1/6)
+[2019-06-18 20:50:34,897]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (2/6)
+[2019-06-18 20:50:35,219]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (3/6)
+[2019-06-18 20:50:35,383]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (4/6)
+[2019-06-18 20:50:35,531]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (5/6)
+[2019-06-18 20:50:35,674]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (6/6)
+[2019-06-18 20:52:10,025]- log.py]- INFO: [32m开始进行测试
+[2019-06-18 20:52:10,127]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (1/16)
+[2019-06-18 20:52:10,457]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (2/16)
+[2019-06-18 20:52:10,653]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (3/16)
+[2019-06-18 20:52:10,828]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (4/16)
+[2019-06-18 20:52:10,974]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (5/16)
+[2019-06-18 20:52:11,122]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (6/16)
+[2019-06-18 20:52:11,274]- log.py]- INFO: [32mstart to test test2_creat_user.test_check_user (7/16)
+[2019-06-18 20:52:11,468]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (8/16)
+[2019-06-18 20:52:11,874]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (9/16)
+[2019-06-18 20:52:11,875]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 20:52:11,875]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test2_creat_user.py", line 56, in test_creat_user
+    code=mysql_getrows(sql, number='one')
+  File "C:\Users\p\Desktop\66ifuel\Common\SQL_execute.py", line 45, in mysql_getrows
+    with db.cursor() as cursor:
+NameError: name 'db' is not defined
+
+[2019-06-18 20:52:11,976]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (10/16)
+[2019-06-18 20:52:12,029]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-18 20:52:12,030]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test2_creat_user.py", line 86, in test_set_user_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : Yaff\Core\Exceptions\HttpException: 验证凭证过期，请刷新后再提交 in /web/service/customer/release-1.0/Application/library/Service/Resources/ResourceAbstract.php:65
+Stack trace:
+#0 /web/service/customer/release-1.0/Application/library/Service/Resources/Member/V1/Create.php(51): Service\Resources\ResourceAbstract->handleCodeSession('eHO4LL09E7B5eO7...', '15568514237')
+#1 /web/service/customer/release-1.0/vendor/ifuel66soft/yaf-core/src/Rest/ControllerAbstract.php(366): Service\Resources\Member\V1\Create->run()
+#2 [internal function]: Yaff\Core\Rest\ControllerAbstract->indexAction()
+#3 /web/service/customer/release-1.0/public/index.php(12): Yaf\Application->run()
+#4 {main}
+
+[2019-06-18 20:52:12,130]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (11/16)
+[2019-06-18 20:52:12,184]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-18 20:52:12,184]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test2_creat_user.py", line 99, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : Yaff\Core\Exceptions\HttpException: 没有找到用户！请先注册 in /web/service/customer/release-1.0/Application/library/Service/Resources/Member/V1/Login.php:83
+Stack trace:
+#0 /web/service/customer/release-1.0/vendor/ifuel66soft/yaf-core/src/Rest/ControllerAbstract.php(366): Service\Resources\Member\V1\Login->run()
+#1 [internal function]: Yaff\Core\Rest\ControllerAbstract->indexAction()
+#2 /web/service/customer/release-1.0/public/index.php(12): Yaf\Application->run()
+#3 {main}
+
+[2019-06-18 20:52:12,290]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (12/16)
+[2019-06-18 20:52:12,860]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (13/16)
+[2019-06-18 20:52:13,053]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (14/16)
+[2019-06-18 20:52:13,242]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (15/16)
+[2019-06-18 20:52:13,294]- log.py]- INFO: [32mTime Elapsed: 0:00:03.268187
+[2019-06-18 20:52:44,431]- log.py]- INFO: [32m开始进行测试
+[2019-06-18 20:52:44,532]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (1/16)
+[2019-06-18 20:52:44,721]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (2/16)
+[2019-06-18 20:52:44,952]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (3/16)
+[2019-06-18 20:52:45,124]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (4/16)
+[2019-06-18 20:52:45,266]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (5/16)
+[2019-06-18 20:52:45,417]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (6/16)
+[2019-06-18 20:52:45,566]- log.py]- INFO: [32mstart to test test2_creat_user.test_check_user (7/16)
+[2019-06-18 20:52:45,726]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (8/16)
+[2019-06-18 20:52:46,097]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (9/16)
+[2019-06-18 20:52:46,098]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 20:52:46,098]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test2_creat_user.py", line 56, in test_creat_user
+    code=mysql_getrows(sql, number='one')
+  File "C:\Users\p\Desktop\66ifuel\Common\SQL_execute.py", line 45, in mysql_getrows
+    with db.cursor() as cursor:
+NameError: name 'db' is not defined
+
+[2019-06-18 20:52:46,199]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (10/16)
+[2019-06-18 20:52:46,237]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-18 20:52:46,237]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test2_creat_user.py", line 86, in test_set_user_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : Yaff\Core\Exceptions\HttpException: 验证凭证过期，请刷新后再提交 in /web/service/customer/release-1.0/Application/library/Service/Resources/ResourceAbstract.php:65
+Stack trace:
+#0 /web/service/customer/release-1.0/Application/library/Service/Resources/Member/V1/Create.php(51): Service\Resources\ResourceAbstract->handleCodeSession('eHO4LL09E7B5eO7...', '15030527496')
+#1 /web/service/customer/release-1.0/vendor/ifuel66soft/yaf-core/src/Rest/ControllerAbstract.php(366): Service\Resources\Member\V1\Create->run()
+#2 [internal function]: Yaff\Core\Rest\ControllerAbstract->indexAction()
+#3 /web/service/customer/release-1.0/public/index.php(12): Yaf\Application->run()
+#4 {main}
+
+[2019-06-18 20:52:46,337]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (11/16)
+[2019-06-18 20:52:46,406]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-18 20:52:46,406]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 107, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test2_creat_user.py", line 99, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : Yaff\Core\Exceptions\HttpException: 没有找到用户！请先注册 in /web/service/customer/release-1.0/Application/library/Service/Resources/Member/V1/Login.php:83
+Stack trace:
+#0 /web/service/customer/release-1.0/vendor/ifuel66soft/yaf-core/src/Rest/ControllerAbstract.php(366): Service\Resources\Member\V1\Login->run()
+#1 [internal function]: Yaff\Core\Rest\ControllerAbstract->indexAction()
+#2 /web/service/customer/release-1.0/public/index.php(12): Yaf\Application->run()
+#3 {main}
+
+[2019-06-18 20:52:46,522]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (12/16)
+[2019-06-18 20:52:46,717]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (13/16)
+[2019-06-18 20:52:46,919]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (14/16)
+[2019-06-18 20:52:47,084]- log.py]- INFO: [32mstart to test test3_sms.test_send_sms (15/16)
+[2019-06-18 20:52:47,122]- log.py]- INFO: [32mTime Elapsed: 0:00:02.690154
+[2019-06-18 20:55:08,419]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/16)
+[2019-06-18 20:55:08,642]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (2/16)
+[2019-06-18 20:55:08,983]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (3/16)
+[2019-06-18 20:55:09,172]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (4/16)
+[2019-06-18 20:55:09,335]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (5/16)
+[2019-06-18 20:55:09,482]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (6/16)
+[2019-06-18 20:55:09,626]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_check_user (7/16)
+[2019-06-18 20:55:09,784]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_send_CreatPhone_mess (8/16)
+[2019-06-18 20:55:10,275]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_creat_user (9/16)
+[2019-06-18 20:55:10,377]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_set_user_pwd (10/16)
+[2019-06-18 20:55:10,531]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_login_pwd (11/16)
+[2019-06-18 20:55:10,702]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (12/16)
+[2019-06-18 20:55:11,079]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (13/16)
+[2019-06-18 20:55:11,342]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (14/16)
+[2019-06-18 20:55:11,515]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (15/16)
+[2019-06-18 22:35:29,795]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/16)
+[2019-06-18 22:35:30,118]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (2/16)
+[2019-06-18 22:35:30,347]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (3/16)
+[2019-06-18 22:35:30,536]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (4/16)
+[2019-06-18 22:35:30,703]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (5/16)
+[2019-06-18 22:35:30,851]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (6/16)
+[2019-06-18 22:35:31,033]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_check_user (7/16)
+[2019-06-18 22:35:31,339]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_send_CreatPhone_mess (8/16)
+[2019-06-18 22:35:31,788]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_creat_user (9/16)
+[2019-06-18 22:35:31,908]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_set_user_pwd (10/16)
+[2019-06-18 22:35:32,077]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_login_pwd (11/16)
+[2019-06-18 22:35:58,586]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/16)
+[2019-06-18 22:35:58,849]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (2/16)
+[2019-06-18 22:35:59,042]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (3/16)
+[2019-06-18 22:35:59,222]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (4/16)
+[2019-06-18 22:35:59,394]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (5/16)
+[2019-06-18 22:35:59,552]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (6/16)
+[2019-06-18 22:35:59,741]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_check_user (7/16)
+[2019-06-18 22:36:00,019]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_send_CreatPhone_mess (8/16)
+[2019-06-18 22:36:00,333]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_creat_user (9/16)
+[2019-06-18 22:36:00,458]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_set_user_pwd (10/16)
+[2019-06-18 22:36:00,678]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_login_pwd (11/16)
+[2019-06-18 22:37:20,169]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/16)
+[2019-06-18 22:37:20,410]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (2/16)
+[2019-06-18 22:37:20,796]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (3/16)
+[2019-06-18 22:37:21,014]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (4/16)
+[2019-06-18 22:37:21,231]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (5/16)
+[2019-06-18 22:37:21,373]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (6/16)
+[2019-06-18 22:37:21,517]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_check_user (7/16)
+[2019-06-18 22:37:21,768]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_send_CreatPhone_mess (8/16)
+[2019-06-18 22:37:32,448]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_creat_user (9/16)
+[2019-06-18 22:37:32,598]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_set_user_pwd (10/16)
+[2019-06-18 22:37:32,802]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_login_pwd (11/16)
+[2019-06-18 22:40:32,333]- log.py]- INFO: [32m开始进行测试
+[2019-06-18 22:40:32,434]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (1/16)
+[2019-06-18 22:40:32,767]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (2/16)
+[2019-06-18 22:40:33,123]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (3/16)
+[2019-06-18 22:40:33,390]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (4/16)
+[2019-06-18 22:40:33,567]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (5/16)
+[2019-06-18 22:40:33,735]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (6/16)
+[2019-06-18 22:40:33,956]- log.py]- INFO: [32mstart to test test2_creat_user.test_check_user (7/16)
+[2019-06-18 22:40:34,148]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (8/16)
+[2019-06-18 22:40:34,674]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (9/16)
+[2019-06-18 22:40:34,693]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 22:40:34,694]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 106, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test2_creat_user.py", line 60, in test_creat_user
+    data = {"phone": self.phone, "code":code[0]}
+TypeError: 'NoneType' object is not subscriptable
+
+[2019-06-18 22:40:34,794]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (10/16)
+[2019-06-18 22:40:34,921]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-18 22:40:34,921]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 106, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test2_creat_user.py", line 86, in test_set_user_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : Yaff\Core\Exceptions\HttpException: 验证凭证过期，请刷新后再提交 in /web/service/customer/release-1.0/Application/library/Service/Resources/ResourceAbstract.php:65
+Stack trace:
+#0 /web/service/customer/release-1.0/Application/library/Service/Resources/Member/V1/Create.php(51): Service\Resources\ResourceAbstract->handleCodeSession('eHO4LL09E7B5eO7...', '15523567910')
+#1 /web/service/customer/release-1.0/vendor/ifuel66soft/yaf-core/src/Rest/ControllerAbstract.php(366): Service\Resources\Member\V1\Create->run()
+#2 [internal function]: Yaff\Core\Rest\ControllerAbstract->indexAction()
+#3 /web/service/customer/release-1.0/public/index.php(12): Yaf\Application->run()
+#4 {main}
+
+[2019-06-18 22:40:35,022]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (11/16)
+[2019-06-18 22:40:35,076]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-18 22:40:35,076]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 106, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test2_creat_user.py", line 99, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : Yaff\Core\Exceptions\HttpException: 没有找到用户！请先注册 in /web/service/customer/release-1.0/Application/library/Service/Resources/Member/V1/Login.php:83
+Stack trace:
+#0 /web/service/customer/release-1.0/vendor/ifuel66soft/yaf-core/src/Rest/ControllerAbstract.php(366): Service\Resources\Member\V1\Login->run()
+#1 [internal function]: Yaff\Core\Rest\ControllerAbstract->indexAction()
+#2 /web/service/customer/release-1.0/public/index.php(12): Yaf\Application->run()
+#3 {main}
+
+[2019-06-18 22:40:56,089]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 22:40:56,089]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
+    raise err
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\http\client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\http\client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\http\client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\http\client.py", line 1016, in _send_output
+    self.send(msg)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\http\client.py", line 956, in send
+    self.connect()
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connection.py", line 181, in connect
+    conn = self._new_conn()
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0345C810>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='192.168.3.213', port=80): Max retries exceeded with url: /api/user/auth/token?grant_type=password&response_type=code&client_id=testclient&username=admin&password=8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0345C810>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\Case\test4_add_station.py", line 19, in setUpClass
+    cls.session = cms_cookies()
+  File "C:\Users\p\Desktop\66ifuel\Common\variables_func.py", line 56, in cms_cookies
+    res=s.request('get',url,params=data,headers=headers)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='192.168.3.213', port=80): Max retries exceeded with url: /api/user/auth/token?grant_type=password&response_type=code&client_id=testclient&username=admin&password=8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0345C810>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+
+[2019-06-18 22:40:56,093]- log.py]- INFO: [32mTime Elapsed: 0:00:23.759359
+[2019-06-18 22:40:59,243]- log.py]- INFO: [32m开始进行测试
+[2019-06-18 22:40:59,609]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (1/16)
+[2019-06-18 22:40:59,905]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (2/16)
+[2019-06-18 22:41:00,147]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (3/16)
+[2019-06-18 22:41:00,353]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (4/16)
+[2019-06-18 22:41:00,530]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (5/16)
+[2019-06-18 22:41:00,683]- log.py]- INFO: [32mstart to test test1_login.test_login_pwd (6/16)
+[2019-06-18 22:41:10,915]- log.py]- INFO: [32mstart to test test2_creat_user.test_check_user (7/16)
+[2019-06-18 22:41:11,121]- log.py]- INFO: [32mstart to test test2_creat_user.test_send_CreatPhone_mess (8/16)
+[2019-06-18 22:41:11,658]- log.py]- INFO: [32mstart to test test2_creat_user.test_creat_user (9/16)
+[2019-06-18 22:41:11,732]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 22:41:11,732]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 106, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test2_creat_user.py", line 60, in test_creat_user
+    data = {"phone": self.phone, "code":code[0]}
+TypeError: 'NoneType' object is not subscriptable
+
+[2019-06-18 22:41:11,833]- log.py]- INFO: [32mstart to test test2_creat_user.test_set_user_pwd (10/16)
+[2019-06-18 22:41:21,947]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-18 22:41:21,948]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 106, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test2_creat_user.py", line 86, in test_set_user_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : Yaff\Core\Exceptions\HttpException: 验证凭证过期，请刷新后再提交 in /web/service/customer/release-1.0/Application/library/Service/Resources/ResourceAbstract.php:65
+Stack trace:
+#0 /web/service/customer/release-1.0/Application/library/Service/Resources/Member/V1/Create.php(51): Service\Resources\ResourceAbstract->handleCodeSession('eHO4LL09E7B5eO7...', '15579530861')
+#1 /web/service/customer/release-1.0/vendor/ifuel66soft/yaf-core/src/Rest/ControllerAbstract.php(366): Service\Resources\Member\V1\Create->run()
+#2 [internal function]: Yaff\Core\Rest\ControllerAbstract->indexAction()
+#3 /web/service/customer/release-1.0/public/index.php(12): Yaf\Application->run()
+#4 {main}
+
+[2019-06-18 22:41:22,048]- log.py]- INFO: [32mstart to test test2_creat_user.test_login_pwd (11/16)
+[2019-06-18 22:41:22,134]- log.py]- ERROR: [34mTestCase Failed
+[2019-06-18 22:41:22,134]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\utx\core.py", line 106, in wrap
+    result = func(*args, **kwargs)
+  File "C:\Users\p\Desktop\66ifuel\Case\test2_creat_user.py", line 99, in test_login_pwd
+    self.assertTrue(res['code'] == 0, msg=res['msg'])
+AssertionError: False is not true : Yaff\Core\Exceptions\HttpException: 没有找到用户！请先注册 in /web/service/customer/release-1.0/Application/library/Service/Resources/Member/V1/Login.php:83
+Stack trace:
+#0 /web/service/customer/release-1.0/vendor/ifuel66soft/yaf-core/src/Rest/ControllerAbstract.php(366): Service\Resources\Member\V1\Login->run()
+#1 [internal function]: Yaff\Core\Rest\ControllerAbstract->indexAction()
+#2 /web/service/customer/release-1.0/public/index.php(12): Yaf\Application->run()
+#3 {main}
+
+[2019-06-18 22:41:43,166]- log.py]- ERROR: [34mTestCase Error
+[2019-06-18 22:41:43,166]- log.py]- ERROR: [34mTraceback (most recent call last):
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
+    raise err
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\http\client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\http\client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\http\client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\http\client.py", line 1016, in _send_output
+    self.send(msg)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\http\client.py", line 956, in send
+    self.connect()
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connection.py", line 181, in connect
+    conn = self._new_conn()
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0354D2B0>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='192.168.3.213', port=80): Max retries exceeded with url: /api/user/auth/token?grant_type=password&response_type=code&client_id=testclient&username=admin&password=8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0354D2B0>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\p\Desktop\66ifuel\Case\test4_add_station.py", line 19, in setUpClass
+    cls.session = cms_cookies()
+  File "C:\Users\p\Desktop\66ifuel\Common\variables_func.py", line 56, in cms_cookies
+    res=s.request('get',url,params=data,headers=headers)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\p\AppData\Local\Programs\Python\Python37-32\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='192.168.3.213', port=80): Max retries exceeded with url: /api/user/auth/token?grant_type=password&response_type=code&client_id=testclient&username=admin&password=8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0354D2B0>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+
+[2019-06-18 22:41:43,402]- log.py]- INFO: [32mTime Elapsed: 0:00:44.158525
+[2019-06-18 22:55:33,024]- log.py]- INFO: [32m一个info信息
+[2019-06-18 22:55:33,024]- log.py]- WARNING: [33m一个waring信息
+[2019-06-18 22:58:48,483]- log.py]- INFO: [32mpost 请求错误 错误原因为eval() arg 1 must be a string, bytes or code object
+[2019-06-18 22:59:08,350]- log.py]- INFO: [32mpost 请求错误 错误原因为eval() arg 1 must be a string, bytes or code object
+[2019-06-18 23:03:20,349]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/8)
+[2019-06-18 23:03:20,349]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/8)
+[2019-06-18 23:03:20,626]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/8)
+[2019-06-18 23:03:20,626]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/8)
+[2019-06-18 23:03:20,926]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/8)
+[2019-06-18 23:03:20,926]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/8)
+[2019-06-18 23:03:21,224]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/8)
+[2019-06-18 23:03:21,224]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/8)
+[2019-06-18 23:03:21,408]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/8)
+[2019-06-18 23:03:21,408]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/8)
+[2019-06-18 23:03:31,663]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/8)
+[2019-06-18 23:03:31,663]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/8)
+[2019-06-18 23:03:31,853]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_check_user (2/8)
+[2019-06-18 23:03:31,853]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_check_user (2/8)
+[2019-06-18 23:03:32,060]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_send_CreatPhone_mess (3/8)
+[2019-06-18 23:03:32,060]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_send_CreatPhone_mess (3/8)
+[2019-06-18 23:03:32,475]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_creat_user (4/8)
+[2019-06-18 23:03:32,475]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_creat_user (4/8)
+[2019-06-18 23:03:32,951]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_set_user_pwd (5/8)
+[2019-06-18 23:03:32,951]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_set_user_pwd (5/8)
+[2019-06-18 23:03:33,339]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_login_pwd (6/8)
+[2019-06-18 23:03:33,339]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_login_pwd (6/8)
+[2019-06-18 23:03:33,576]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (7/8)
+[2019-06-18 23:03:33,576]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (7/8)
+[2019-06-18 23:03:33,925]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (7/8)
+[2019-06-18 23:03:33,925]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (7/8)
+[2019-06-18 23:03:34,162]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (7/8)
+[2019-06-18 23:03:34,162]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (7/8)
+[2019-06-18 23:03:34,371]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (7/8)
+[2019-06-18 23:03:34,371]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (7/8)
+[2019-06-18 23:09:42,129]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/8)
+[2019-06-18 23:09:42,129]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/8)
+[2019-06-18 23:09:42,678]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/8)
+[2019-06-18 23:09:42,678]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/8)
+[2019-06-18 23:09:42,844]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/8)
+[2019-06-18 23:09:42,844]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/8)
+[2019-06-18 23:09:43,045]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/8)
+[2019-06-18 23:09:43,045]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/8)
+[2019-06-18 23:09:43,207]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/8)
+[2019-06-18 23:09:43,207]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/8)
+[2019-06-18 23:09:43,349]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/8)
+[2019-06-18 23:09:43,349]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/8)
+[2019-06-18 23:09:43,520]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_check_user (2/8)
+[2019-06-18 23:09:43,520]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_check_user (2/8)
+[2019-06-18 23:09:43,702]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_send_CreatPhone_mess (3/8)
+[2019-06-18 23:09:43,702]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_send_CreatPhone_mess (3/8)
+[2019-06-18 23:09:44,409]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_creat_user (4/8)
+[2019-06-18 23:09:44,409]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_creat_user (4/8)
+[2019-06-18 23:09:44,632]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_set_user_pwd (5/8)
+[2019-06-18 23:09:44,632]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_set_user_pwd (5/8)
+[2019-06-18 23:09:45,051]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_login_pwd (6/8)
+[2019-06-18 23:09:45,051]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_login_pwd (6/8)
+[2019-06-18 23:09:45,326]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (7/8)
+[2019-06-18 23:09:45,326]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (7/8)
+[2019-06-18 23:09:45,702]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (7/8)
+[2019-06-18 23:09:45,702]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (7/8)
+[2019-06-18 23:09:45,922]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (7/8)
+[2019-06-18 23:09:45,922]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (7/8)
+[2019-06-18 23:09:56,205]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (7/8)
+[2019-06-18 23:09:56,205]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (7/8)
+[2019-06-18 23:10:55,970]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/8)
+[2019-06-18 23:10:55,970]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/8)
+[2019-06-18 23:10:56,429]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/8)
+[2019-06-18 23:10:56,429]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/8)
+[2019-06-18 23:10:56,658]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/8)
+[2019-06-18 23:10:56,658]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/8)
+[2019-06-18 23:10:56,896]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/8)
+[2019-06-18 23:10:56,896]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/8)
+[2019-06-18 23:10:57,066]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/8)
+[2019-06-18 23:10:57,066]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/8)
+[2019-06-18 23:10:57,225]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/8)
+[2019-06-18 23:10:57,225]- log.py]- INFO: [32mstart to test Case.test1_login.test_login_pwd (1/8)
+[2019-06-18 23:10:57,381]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_check_user (2/8)
+[2019-06-18 23:10:57,381]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_check_user (2/8)
+[2019-06-18 23:10:57,667]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_send_CreatPhone_mess (3/8)
+[2019-06-18 23:10:57,667]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_send_CreatPhone_mess (3/8)
+[2019-06-18 23:10:58,094]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_creat_user (4/8)
+[2019-06-18 23:10:58,094]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_creat_user (4/8)
+[2019-06-18 23:10:58,466]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_set_user_pwd (5/8)
+[2019-06-18 23:10:58,466]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_set_user_pwd (5/8)
+[2019-06-18 23:10:58,883]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_login_pwd (6/8)
+[2019-06-18 23:10:58,883]- log.py]- INFO: [32mstart to test Case.test2_creat_user.test_login_pwd (6/8)
+[2019-06-18 23:10:59,123]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (7/8)
+[2019-06-18 23:10:59,123]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (7/8)
+[2019-06-18 23:10:59,421]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (7/8)
+[2019-06-18 23:10:59,421]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (7/8)
+[2019-06-18 23:10:59,846]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (7/8)
+[2019-06-18 23:10:59,846]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (7/8)
+[2019-06-18 23:11:00,058]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (7/8)
+[2019-06-18 23:11:00,058]- log.py]- INFO: [32mstart to test Case.test3_sms.test_send_sms (7/8)
+[2019-06-18 23:46:54,618]- log.py]- INFO: [32mpost 请求错误 错误原因为HTTPConnectionPool(host='123.157.219.74', port=8082): Max retries exceeded with url: /customer/v1/member/check_phone (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x02F31C10>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))
+[2019-06-18 23:46:54,627]- log.py]- INFO: [32mpost 请求错误 错误原因为HTTPConnectionPool(host='123.157.219.74', port=8082): Max retries exceeded with url: /customer/v1/member/login (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x02F862D0>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))
+[2019-06-18 23:46:54,633]- log.py]- INFO: [32mpost 请求错误 错误原因为HTTPConnectionPool(host='123.157.219.74', port=8082): Max retries exceeded with url: /system/v1/message_code/send (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x02F86770>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))
+[2019-06-18 23:46:54,640]- log.py]- INFO: [32mpost 请求错误 错误原因为HTTPConnectionPool(host='123.157.219.74', port=8082): Max retries exceeded with url: /customer/v1/member/create (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x02F86BD0>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))
+[2019-06-18 23:55:01,528]- log.py]- ERROR: [34m测试用例文件不存在！

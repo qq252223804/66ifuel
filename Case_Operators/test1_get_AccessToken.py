@@ -83,7 +83,7 @@ class Test_get_AccessToken(unittest.TestCase):
         miaoshu(url=host + lujing, method="post", data=data, check="{'Ret': 4003 'Msg': 'POST参数不合法,缺少必须的示例'}",
                 respons=res)
         self.assertTrue(res['Ret'] == 4003, msg="状态码不正确")
-        self.assertTrue(res['Msg'] == "POST参数不合法,缺少必须的示例", msg="返回msg不正确")
+        self.assertTrue(res['Msg'] == "POST参数不合法,缺少必须的示例：OperatorID,sig,TimeStamp,Data，Seq五个参数", msg="返回msg不正确")
     def test4_dataMiSS_Data(self):
         '''
         检验post参数不合法,缺少必须参数Data
@@ -100,7 +100,7 @@ class Test_get_AccessToken(unittest.TestCase):
         res = RunMethod().run_main('post', host, lujing, data, headers)
         miaoshu(url=host + lujing, method="post", data=data, check="{'Ret': 4003 'Msg': 'POST参数不合法,缺少必须的示例'}", respons=res)
         self.assertTrue(res['Ret'] == 4003, msg="状态码不正确")
-        self.assertTrue(res['Msg'] == "POST参数不合法,缺少必须的示例")
+        self.assertTrue(res['Msg'] == "POST参数不合法,缺少必须的示例：OperatorID,sig,TimeStamp,Data，Seq五个参数", msg="返回msg不正确")
 
     def test5_dataMiSS_TimeStamp(self):
         '''
@@ -120,7 +120,7 @@ class Test_get_AccessToken(unittest.TestCase):
         miaoshu(url=host + lujing, method="post", data=data, check="{'Ret': 4003 'Msg': 'POST参数不合法,缺少必须的示例'}",
                 respons=res)
         self.assertTrue(res['Ret'] == 4003, msg="状态码不正确")
-        self.assertTrue(res['Msg'] == "POST参数不合法,缺少必须的示例")
+        self.assertTrue(res['Msg'] == "POST参数不合法,缺少必须的示例：OperatorID,sig,TimeStamp,Data，Seq五个参数", msg="返回msg不正确")
 
     def test6_dataMiSS_Seq(self):
         '''
@@ -138,7 +138,7 @@ class Test_get_AccessToken(unittest.TestCase):
         miaoshu(url=host + lujing, method="post", data=data, check="{'Ret': 4003 'Msg': 'POST参数不合法,缺少必须的示例'}",
                 respons=res)
         self.assertTrue(res['Ret'] == 4003, msg="状态码不正确")
-        self.assertTrue(res['Msg'] == "POST参数不合法,缺少必须的示例")
+        self.assertTrue(res['Msg'] == "POST参数不合法,缺少必须的示例：OperatorID,sig,TimeStamp,Data，Seq五个参数", msg="返回msg不正确")
 
     def test7_dataMiSS_Sig(self):
         '''
@@ -157,7 +157,7 @@ class Test_get_AccessToken(unittest.TestCase):
         miaoshu(url=host + lujing, method="post", data=data, check="{'Ret': 4003 'Msg': 'POST参数不合法,缺少必须的示例'}",
                 respons=res)
         self.assertTrue(res['Ret'] == 4003, msg="状态码不正确")
-        self.assertTrue(res['Msg'] == "POST参数不合法,缺少必须的示例")
+        self.assertTrue(res['Msg'] == "POST参数不合法,缺少必须的示例：OperatorID,sig,TimeStamp,Data，Seq五个参数", msg="返回msg不正确")
 
     def test8_datafield_error(self):
         '''
@@ -167,17 +167,22 @@ class Test_get_AccessToken(unittest.TestCase):
 
         host = self.host
         lujing = 'query_token'
-        data = {"ID": "MA35PU38X",
-                "data": "{}".format(self.encrypt_data),
-                "TimeS": "{}".format(self.times),
+        text='{"OperatorID":"MA35PU38X","OperatorSecret11":"11"}'
+        encrypt_data = encrypt(self.DataSecret, text)
+        print(encrypt_data)
+        data = {"OperatorID": "MA35PU38X",
+                "Data": "{}".format(encrypt_data),
+                "TimeStamp": "{}".format(self.times),
                 "Seq": "0001",
-                "Sig":"{}".format(self.sig)}
+                "Sig":"{}".format(hmac_md5(self.SigSecret, "MA35PU38X" + encrypt_data + self.times + "0001"))}
         headers = self.headers
         res = RunMethod().run_main('post', host, lujing, data, headers)
+        print("请求的业务参数:{}".format(text))
         miaoshu(url=host + lujing, method="post", data=data, check="{'Ret': 4004 'Msg': '请求的业务参数不合法，各接口定义自己的必须参数'}",
                 respons=res)
         self.assertTrue(res['Ret'] == 4004, msg="状态码不正确")
         self.assertTrue(res['Msg'] == "请求的业务参数不合法，各接口定义自己的必须参数")
+
 
 
 

@@ -30,13 +30,15 @@ class RunMethod():
 			else:
 				res=requests.post(url=url,json=data,verify=False)
 			if 	res.status_code != 200:      #判断响应状态码是否不为200
-				Log().info(res.json())
-			response =res.json()   #  将返回的数据转换为json格式的 字典
-			return   response
-		except Exception as e:
+				print('响应状态码不等于200,实际为:{}'.format(res))
+				Log().info(res)
 
+		except Exception as e:
 			Log().info('post 请求错误 错误原因为%s'%e)
-			return('post 请求错误 错误原因为%s'%e)
+		else:  # 响应状态码正确转为json
+			response = res.json()  # 将返回的数据转换为json格式的 字典
+			return response
+
 
 			
 		
@@ -55,13 +57,15 @@ class RunMethod():
 			else:
 				res=requests.get(url=url,data=data,verify=False)
 			if res.status_code != 200:  # 判断响应状态码是否不为200
-				Log().info(res.json())
+				print('响应状态码不等于200,实际为:{}'.format(res))
+				Log().info(res)
+
+		except Exception as e:
+			Log().info('post 请求错误 错误原因为%s' % e)
+		else:  # 响应状态码正确转为json
 			response = res.json()  # 将返回的数据转换为json格式的 字典
 			return response
-		except Exception as e:
 
-			Log().info('post 请求错误 错误原因为%s' % e)
-			return ('post 请求错误 错误原因为%s' % e)
 	def run_main(self,method,host,lujing,data=None,headers=None):
 		if method=='post':
 			res=self.post_main(host,lujing,data,headers)
@@ -80,4 +84,5 @@ if __name__ == '__main__':
 	headers={"Content-Type":"application/json; charset=utf-8"}
 	res=run.run_main('post',host,lujing,datas,headers)
 	print(res)
+	print(type(res))
 
