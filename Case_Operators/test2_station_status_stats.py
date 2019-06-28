@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 # @Time    : 2019/6/19 17:32
 # @Author  : taojian

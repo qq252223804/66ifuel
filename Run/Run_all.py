@@ -1,4 +1,6 @@
+#!/usr/bin/python
 #coding:utf-8
+
 import os
 
 from Common.Email import send_email
