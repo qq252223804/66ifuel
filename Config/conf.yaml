@@ -29,7 +29,9 @@ app_headers: '{
 
 cms_headers: '{
    "Content-Type": "application/x-www-form-urlencoded",
-   "Connection":"keep-alive"}'
+   "Connection": "keep-alive",
+   "Authorization": ""
+  }'
 
 
 

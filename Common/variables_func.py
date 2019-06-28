@@ -54,7 +54,10 @@ def cms_cookies():
 		headers=eval(config['cms_headers'])
 		url= host+'/api/user/auth/token'
 		res=s.request('get',url,params=data,headers=headers)
+		response=json.loads(res.text)
 		# print(json.loads(res.text))
+
+		write_yaml_variable(key="Authorization", value='Bearer '+response['data']['access_token'])
 
 		# print(res.cookies.values())
 		# return(res.cookies)            # 也可以返回cookies  后面请求加入 cookies=self.cookies
@@ -64,6 +67,7 @@ def cms_cookies():
 		
 if __name__ == "__main__":
 	cms_cookies()
+
 
 	# write_yaml_variable("X-SessionToken-With",34434)
 	# print(get_yaml_variable("X-SessionToken-With"))

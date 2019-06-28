@@ -26,9 +26,11 @@ class Test_Charge_order(unittest.TestCase):
     DataSecret = 'b8f0549a8efbacfc'
     SigSecret = '8h9sf4zd5cbtlu8x'
 
-    uid = uuid.uuid1()
-    order = ''.join(str(uid).split('-'))[0:27]
-    connID=1800688
+    # uid = uuid.uuid1()
+    order='745467123024005023X0L80J7FG'
+    connID='1601068'
+    # order = ''.join(str(uid).split('-'))[0:27]
+    # connID=1800688
     @classmethod
     def setUpClass(cls):
         host = cls.host
@@ -47,7 +49,7 @@ class Test_Charge_order(unittest.TestCase):
         cls.headers['Authorization']='Bearer ' +token
         return cls.headers
 
-
+    @unittest.skip('跳过')
     def test1_query_start_charge(self):
         '''
         请求开始充电
@@ -55,7 +57,7 @@ class Test_Charge_order(unittest.TestCase):
         '''
         host = self.host
         lujing = 'query_start_charge'
-        text={"StartChargeSeq":"{}".format(self.order),"ConnectoID":"{}".format(self.connID),"QRCode":"http://www.66ifuel.com/scans/result.html?data=1800688"}
+        text={"StartChargeSeq":"{}".format(self.order),"ConnectorID":"{}".format(self.connID)}
         str1=str(text)
         encrypt_data = encrypt(self.DataSecret,str1)
         data = {
@@ -66,31 +68,34 @@ class Test_Charge_order(unittest.TestCase):
             "Sig": "{}".format(hmac_md5(self.SigSecret, "745467123" + encrypt_data + self.times + "0001"))}
         headers = self.headers
         res = RunMethod().run_main('post', host, lujing, data, headers)
-
-        miaoshu(url=host + lujing, method="post", data=text, check="{Ret and Msg}", respons=res)
-        self.assertTrue(res['Ret'] == 0, msg="状态码不正确")
-        self.assertTrue(res['Msg'] == "请求成功", msg="返回msg不正确")
-    def test2_query_equip_charge_status(self):
-        '''
-        查询充电状态
-        :return:
-        '''
-        host = self.host
-        lujing = 'query_equip_charge_status'
-        text = {"StartChargeSeq": "201711271121090001"}
-        str1 = str(text)
-        encrypt_data = encrypt(self.DataSecret, str1)
-        data = {
-            "OperatorID": "745467123",
-            "Data": "{}".format(encrypt_data),
-            "TimeStamp": "{}".format(self.times),
-            "Seq": "0001",
-            "Sig": "{}".format(hmac_md5(self.SigSecret, "745467123" + encrypt_data + self.times + "0001"))}
-        headers = self.headers
-        res = RunMethod().run_main('post', host, lujing, data, headers)
-        miaoshu(url=host + lujing, method="post", data=text, check="{Ret and Msg}", respons=res)
-        self.assertTrue(res['Ret'] == 0, msg="状态码不正确")
-        self.assertTrue(res['Msg'] == "请求成功", msg="返回msg不正确")
+    #
+    #     miaoshu(url=host + lujing, method="post", data=text, check="{Ret and Msg}", respons=res)
+    #     self.assertTrue(res['Ret'] == 0, msg="状态码不正确")
+    #     self.assertTrue(res['Msg'] == "请求成功", msg="返回msg不正确")
+    # @unittest.skip('跳过')
+    # def test2_query_equip_charge_status(self):
+    #     '''
+    #     查询充电状态
+    #     :return:
+    #     '''
+    #     host = self.host
+    #     lujing = 'query_equip_charge_status'
+    #     text = {"StartChargeSeq": "201711271121090001"}
+    #     str1 = str(text)
+    #     encrypt_data = encrypt(self.DataSecret, str1)
+    #     data = {
+    #         "OperatorID": "745467123",
+    #         "Data": "{}".format(encrypt_data),
+    #         "TimeStamp": "{}".format(self.times),
+    #         "Seq": "0001",
+    #         "Sig": "{}".format(hmac_md5(self.SigSecret, "745467123" + encrypt_data + self.times + "0001"))}
+    #     headers = self.headers
+    #     res = RunMethod().run_main('post', host, lujing, data, headers)
+    #     miaoshu(url=host + lujing, method="post", data=text, check="{Ret and Msg}", respons=res)
+    #     self.assertTrue(res['Ret'] == 0, msg="状态码不正确")
+    #     self.assertTrue(res['Msg'] == "请求成功", msg="返回msg不正确")
+    #
+    # @unittest.skip('跳过')
     def test3_query_stop_charge(self):
         '''
         请求停止充电
@@ -98,7 +103,7 @@ class Test_Charge_order(unittest.TestCase):
         '''
         host = self.host
         lujing = 'query_stop_charge'
-        text = {"StartChargeSeq": "{}".format(self.order),"ConnectoID":"{}".format(self.connID)}
+        text = {"StartChargeSeq": "{}".format(self.order),"ConnectorID":"{}".format(self.connID)}
         str1 = str(text)
         encrypt_data = encrypt(self.DataSecret, str1)
         data = {

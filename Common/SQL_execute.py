@@ -83,6 +83,7 @@ def mysql_getstring(sql):
         # 	print(i)
 
 # sql="select validCode FROM cp_messagecode WHERE phone='13279612508';"
+# sql="select id from cp_station where name='野风时代935'"
 # code=mysql_getrows(sql, number='one')[0]
 # print(code)
 
