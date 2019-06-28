@@ -7164,16 +7164,16 @@ body.skin-3 {
 
 
     var resultData = {
-    "testPass": 6,
+    "testPass": 7,
     "testResult": [
         {
             "className": "Test_get_AccessToken",
             "methodName": "test1_alldata_right",
             "description": "\n        检验所有参数正确\n        :return:\n        ",
-            "spendTime": "0.132 s",
+            "spendTime": "0.101 s",
             "status": "失败",
             "log": [
-                "url:http://123.157.219.74:8090/evcs/v1/query_token\n请求方法:post\n请求参数:{'OperatorID': 'MA35PU38X', 'Data': '0NOap6A8+Wa9uDDH9Hx9swEtp+4RAOsxCZtqZMvDc8ZJRr3N03t27//YGpUie9+4z0QO1feBm5q2CrceqdLeBQ==', 'TimeStamp': '20190621093447', 'Seq': '0001', 'Sig': 'E98F1C982AF5C1DDED491B9799F3FC3B'}\n检查点:{'Ret': 0, 'Msg': '请求成功'}\n返回数据:{'Ret': 500, 'Msg': '系统错误', 'Data': ''}\n",
+                "url:http://123.157.219.74:8090/evcs/v1/query_token\n请求方法:post\n请求参数:{'OperatorID': 'MA35PU38X', 'Data': '0NOap6A8+Wa9uDDH9Hx9swEtp+4RAOsxCZtqZMvDc8ZJRr3N03t27//YGpUie9+4z0QO1feBm5q2CrceqdLeBQ==', 'TimeStamp': '20190628205823', 'Seq': '0001', 'Sig': '01E97C9A9D14B88570B278004D6A3046'}\n检查点:{'Ret': 0, 'Msg': '请求成功'}\n返回数据:{'Ret': 500, 'Msg': '系统错误', 'Data': ''}\n",
                 "Traceback (most recent call last):\n",
                 "  File \"C:\\Users\\p\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
                 "  File \"C:\\Users\\p\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\unittest\\case.py\", line 615, in run\n    testMethod()\n",
@@ -7186,12 +7186,12 @@ body.skin-3 {
             "className": "Test_get_AccessToken",
             "methodName": "test2_sig_error",
             "description": "\n        检验签名错误\n        :return:\n        ",
-            "spendTime": "0.016 s",
+            "spendTime": "0.03 s",
             "status": "成功",
             "log": [
                 "url:http://123.157.219.74:8090/evcs/v1/query_token",
                 "请求方法:post",
-                "请求参数:{'OperatorID': 'MA35PU38X', 'Data': '0NOap6A8+Wa9uDDH9Hx9swEtp+4RAOsxCZtqZMvDc8ZJRr3N03t27//YGpUie9+4z0QO1feBm5q2CrceqdLeBQ==', 'TimeStamp': '20190619133716', 'Seq': '0001', 'Sig': 'E98F1C982AF5C1DDED491B9799F3FC3B'}",
+                "请求参数:{'OperatorID': 'MA35PU38X', 'Data': '0NOap6A8+Wa9uDDH9Hx9swEtp+4RAOsxCZtqZMvDc8ZJRr3N03t27//YGpUie9+4z0QO1feBm5q2CrceqdLeBQ==', 'TimeStamp': '20190619133716', 'Seq': '0001', 'Sig': '01E97C9A9D14B88570B278004D6A3046'}",
                 "检查点:{'Ret': 4001, 'Msg': '签名错误'}",
                 "返回数据:{'Ret': 4001, 'Msg': '签名错误'}",
                 ""
@@ -7201,12 +7201,12 @@ body.skin-3 {
             "className": "Test_get_AccessToken",
             "methodName": "test3_dataMiSS_OperatorID",
             "description": "\n        检验post参数不合法,缺少必须参数OperatorID\n        :return:\n        ",
-            "spendTime": "0.034 s",
+            "spendTime": "0.027 s",
             "status": "成功",
             "log": [
                 "url:http://123.157.219.74:8090/evcs/v1/query_token",
                 "请求方法:post",
-                "请求参数:{'Data': '0NOap6A8+Wa9uDDH9Hx9swEtp+4RAOsxCZtqZMvDc8ZJRr3N03t27//YGpUie9+4z0QO1feBm5q2CrceqdLeBQ==', 'TimeStamp': '20190621093447', 'Seq': '0001', 'Sig': 'E98F1C982AF5C1DDED491B9799F3FC3B'}",
+                "请求参数:{'Data': '0NOap6A8+Wa9uDDH9Hx9swEtp+4RAOsxCZtqZMvDc8ZJRr3N03t27//YGpUie9+4z0QO1feBm5q2CrceqdLeBQ==', 'TimeStamp': '20190628205823', 'Seq': '0001', 'Sig': '01E97C9A9D14B88570B278004D6A3046'}",
                 "检查点:{'Ret': 4003 'Msg': 'POST参数不合法,缺少必须的示例'}",
                 "返回数据:{'Ret': 4003, 'Msg': 'POST参数不合法,缺少必须的示例：OperatorID,sig,TimeStamp,Data，Seq五个参数'}",
                 ""
@@ -7216,12 +7216,12 @@ body.skin-3 {
             "className": "Test_get_AccessToken",
             "methodName": "test4_dataMiSS_Data",
             "description": "\n        检验post参数不合法,缺少必须参数Data\n        :return:\n        ",
-            "spendTime": "0.033 s",
+            "spendTime": "0.029 s",
             "status": "成功",
             "log": [
                 "url:http://123.157.219.74:8090/evcs/v1/query_token",
                 "请求方法:post",
-                "请求参数:{'OperatorID': 'MA35PU38X', 'TimeStamp': '20190621093447', 'Seg': '0001', 'Sig': 'E98F1C982AF5C1DDED491B9799F3FC3B'}",
+                "请求参数:{'OperatorID': 'MA35PU38X', 'TimeStamp': '20190628205823', 'Seg': '0001', 'Sig': '01E97C9A9D14B88570B278004D6A3046'}",
                 "检查点:{'Ret': 4003 'Msg': 'POST参数不合法,缺少必须的示例'}",
                 "返回数据:{'Ret': 4003, 'Msg': 'POST参数不合法,缺少必须的示例：OperatorID,sig,TimeStamp,Data，Seq五个参数'}",
                 ""
@@ -7231,12 +7231,12 @@ body.skin-3 {
             "className": "Test_get_AccessToken",
             "methodName": "test5_dataMiSS_TimeStamp",
             "description": "\n        检验post参数不合法,缺少必须参数TimeStamp\n        :return:\n        ",
-            "spendTime": "0.01 s",
+            "spendTime": "0.018 s",
             "status": "成功",
             "log": [
                 "url:http://123.157.219.74:8090/evcs/v1/query_token",
                 "请求方法:post",
-                "请求参数:{'OperatorID': 'MA35PU38X', 'Data': '0NOap6A8+Wa9uDDH9Hx9swEtp+4RAOsxCZtqZMvDc8ZJRr3N03t27//YGpUie9+4z0QO1feBm5q2CrceqdLeBQ==', 'Seq': '0001', 'Sig': 'E98F1C982AF5C1DDED491B9799F3FC3B'}",
+                "请求参数:{'OperatorID': 'MA35PU38X', 'Data': '0NOap6A8+Wa9uDDH9Hx9swEtp+4RAOsxCZtqZMvDc8ZJRr3N03t27//YGpUie9+4z0QO1feBm5q2CrceqdLeBQ==', 'Seq': '0001', 'Sig': '01E97C9A9D14B88570B278004D6A3046'}",
                 "检查点:{'Ret': 4003 'Msg': 'POST参数不合法,缺少必须的示例'}",
                 "返回数据:{'Ret': 4003, 'Msg': 'POST参数不合法,缺少必须的示例：OperatorID,sig,TimeStamp,Data，Seq五个参数'}",
                 ""
@@ -7246,12 +7246,12 @@ body.skin-3 {
             "className": "Test_get_AccessToken",
             "methodName": "test6_dataMiSS_Seq",
             "description": "\n        检验post参数不合法,缺少必须参数Seq\n        :return:\n        ",
-            "spendTime": "0.009 s",
+            "spendTime": "0.051 s",
             "status": "成功",
             "log": [
                 "url:http://123.157.219.74:8090/evcs/v1/query_token",
                 "请求方法:post",
-                "请求参数:{'OperatorID': 'MA35PU38X', 'Data': '0NOap6A8+Wa9uDDH9Hx9swEtp+4RAOsxCZtqZMvDc8ZJRr3N03t27//YGpUie9+4z0QO1feBm5q2CrceqdLeBQ==', 'TimeStamp': '20190621093447', 'Sig': 'E98F1C982AF5C1DDED491B9799F3FC3B'}",
+                "请求参数:{'OperatorID': 'MA35PU38X', 'Data': '0NOap6A8+Wa9uDDH9Hx9swEtp+4RAOsxCZtqZMvDc8ZJRr3N03t27//YGpUie9+4z0QO1feBm5q2CrceqdLeBQ==', 'TimeStamp': '20190628205823', 'Sig': '01E97C9A9D14B88570B278004D6A3046'}",
                 "检查点:{'Ret': 4003 'Msg': 'POST参数不合法,缺少必须的示例'}",
                 "返回数据:{'Ret': 4003, 'Msg': 'POST参数不合法,缺少必须的示例：OperatorID,sig,TimeStamp,Data，Seq五个参数'}",
                 ""
@@ -7261,12 +7261,12 @@ body.skin-3 {
             "className": "Test_get_AccessToken",
             "methodName": "test7_dataMiSS_Sig",
             "description": "\n        检验post参数不合法,缺少必须参数Sig\n        :return:\n        ",
-            "spendTime": "0.009 s",
+            "spendTime": "0.05 s",
             "status": "成功",
             "log": [
                 "url:http://123.157.219.74:8090/evcs/v1/query_token",
                 "请求方法:post",
-                "请求参数:{'OperatorID': 'MA35PU38X', 'Data': '0NOap6A8+Wa9uDDH9Hx9swEtp+4RAOsxCZtqZMvDc8ZJRr3N03t27//YGpUie9+4z0QO1feBm5q2CrceqdLeBQ==', 'TimeStamp': '20190621093447', 'Seq': '0001'}",
+                "请求参数:{'OperatorID': 'MA35PU38X', 'Data': '0NOap6A8+Wa9uDDH9Hx9swEtp+4RAOsxCZtqZMvDc8ZJRr3N03t27//YGpUie9+4z0QO1feBm5q2CrceqdLeBQ==', 'TimeStamp': '20190628205823', 'Seq': '0001'}",
                 "检查点:{'Ret': 4003 'Msg': 'POST参数不合法,缺少必须的示例'}",
                 "返回数据:{'Ret': 4003, 'Msg': 'POST参数不合法,缺少必须的示例：OperatorID,sig,TimeStamp,Data，Seq五个参数'}",
                 ""
@@ -7276,10 +7276,10 @@ body.skin-3 {
             "className": "Test_get_AccessToken",
             "methodName": "test8_datafield_error",
             "description": "\n        检验请求的业务参数不合法(字段命名不正确)\n        :return:\n        ",
-            "spendTime": "0.011 s",
+            "spendTime": "0.054 s",
             "status": "失败",
             "log": [
-                "0NOap6A8+Wa9uDDH9Hx9swEtp+4RAOsxCZtqZMvDc8ZGPBUh/9jo/jb3jxq9j2/XTfowE8VY7iZOG9a1Mod1fg==\n请求的业务参数:{\"OperatorID\":\"MA35PU38X\",\"OperatorSecret11\":\"11\"}\nurl:http://123.157.219.74:8090/evcs/v1/query_token\n请求方法:post\n请求参数:{'OperatorID': 'MA35PU38X', 'Data': '0NOap6A8+Wa9uDDH9Hx9swEtp+4RAOsxCZtqZMvDc8ZGPBUh/9jo/jb3jxq9j2/XTfowE8VY7iZOG9a1Mod1fg==', 'TimeStamp': '20190621093447', 'Seq': '0001', 'Sig': '173EA7C947D1AA9623115B13EDCB31F0'}\n检查点:{'Ret': 4004 'Msg': '请求的业务参数不合法，各接口定义自己的必须参数'}\n返回数据:{'Ret': 500, 'Msg': '系统错误', 'Data': ''}\n",
+                "0NOap6A8+Wa9uDDH9Hx9swEtp+4RAOsxCZtqZMvDc8ZGPBUh/9jo/jb3jxq9j2/XTfowE8VY7iZOG9a1Mod1fg==\n请求的业务参数:{\"OperatorID\":\"MA35PU38X\",\"OperatorSecret11\":\"11\"}\nurl:http://123.157.219.74:8090/evcs/v1/query_token\n请求方法:post\n请求参数:{'OperatorID': 'MA35PU38X', 'Data': '0NOap6A8+Wa9uDDH9Hx9swEtp+4RAOsxCZtqZMvDc8ZGPBUh/9jo/jb3jxq9j2/XTfowE8VY7iZOG9a1Mod1fg==', 'TimeStamp': '20190628205823', 'Seq': '0001', 'Sig': '90A09FC7C5FA4BDD7E6ACAF66D69152E'}\n检查点:{'Ret': 4004 'Msg': '请求的业务参数不合法，各接口定义自己的必须参数'}\n返回数据:{'Ret': 500, 'Msg': '系统错误', 'Data': ''}\n",
                 "Traceback (most recent call last):\n",
                 "  File \"C:\\Users\\p\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
                 "  File \"C:\\Users\\p\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\unittest\\case.py\", line 615, in run\n    testMethod()\n",
@@ -7287,14 +7287,39 @@ body.skin-3 {
                 "  File \"C:\\Users\\p\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\unittest\\case.py\", line 692, in assertTrue\n    raise self.failureException(msg)\n",
                 "AssertionError: False is not true : 状态码不正确\n"
             ]
+        },
+        {
+            "className": "Test_Charge_order",
+            "methodName": "test1_query_start_charge",
+            "description": "\n        请求开始充电\n        :return:\n        ",
+            "spendTime": "0.0 s",
+            "status": "跳过",
+            "log": [
+                "跳过"
+            ]
+        },
+        {
+            "className": "Test_Charge_order",
+            "methodName": "test3_query_stop_charge",
+            "description": "\n        请求停止充电\n        :return:\n        ",
+            "spendTime": "0.309 s",
+            "status": "成功",
+            "log": [
+                "url:http://123.157.219.74:8090/evcs/v1/query_stop_charge",
+                "请求方法:post",
+                "请求参数:{'StartChargeSeq': '745467123024005023X0L80J7FG', 'ConnectorID': '1601068'}",
+                "检查点:{Ret and Msg}",
+                "返回数据:{'Ret': 0, 'Msg': '请求成功', 'Data': 'xAnGJqfnhKsfkxzAmKC/XvLHeWF/XXWqYjK9Bl+lzxM='}",
+                ""
+            ]
         }
     ],
     "testName": "66快充流程接口报告",
-    "testAll": 8,
-    "testFail": 4,
-    "beginTime": "2019-06-21 09:34:47",
-    "totalTime": "2s",
-    "testSkip": 0,
+    "testAll": 10,
+    "testFail": 3,
+    "beginTime": "2019-06-28 20:58:23",
+    "totalTime": "1s",
+    "testSkip": 1,
     "testError": 0
 };
     function details(obj) {
