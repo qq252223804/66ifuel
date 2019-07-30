@@ -6,14 +6,15 @@
 # @File    : test3__Charge_order.py
 # @Software: PyCharm
 
-import unittest,time,json
-from Base.runmethod import RunMethod
-from Common.AES_CBC_PKCS5 import encrypt,decrypt
-from Common.hmacmd5 import hmac_md5
-from Common.Html_miaoshu import miaoshu
-from ddt import ddt,data,unpack
 import time
-import uuid
+import unittest
+import requests
+
+from Base.runmethod import RunMethod
+from Common.AES_CBC_PKCS5 import encrypt, decrypt
+from Common.Html_miaoshu import miaoshu
+from Common.hmacmd5 import hmac_md5
+
 
 class Test_Charge_order(unittest.TestCase):
     host = 'http://123.157.219.74:8090/evcs/v1/'
@@ -44,7 +45,11 @@ class Test_Charge_order(unittest.TestCase):
                 "Sig": "{}".format(hmac_md5(cls.SigSecret, "745467123" + encrypt_data+ cls.times + "0001"))}
 
         headers = cls.headers
+
         res = RunMethod().run_main('post', host, lujing, data, headers)
+        # res = requests.post(url=host + lujing, data=data, headers=header
+        # print(res)
+
         token=eval(decrypt(cls.DataSecret,res['Data']))['AccessToken']
         cls.headers['Authorization']='Bearer ' +token
         return cls.headers
@@ -95,7 +100,7 @@ class Test_Charge_order(unittest.TestCase):
     #     self.assertTrue(res['Ret'] == 0, msg="状态码不正确")
     #     self.assertTrue(res['Msg'] == "请求成功", msg="返回msg不正确")
     #
-    # @unittest.skip('跳过')
+    @unittest.skip('跳过')
     def test3_query_stop_charge(self):
         '''
         请求停止充电

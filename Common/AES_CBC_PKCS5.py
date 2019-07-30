@@ -5,7 +5,6 @@
 # @Site    : 
 # @File    : AES_CBC_PKCS5.py
 # @Software: PyCharm
-
 from Crypto.Cipher import AES
 import base64
 # DataSecretIV='117239bf13a40cd0'
