@@ -18,7 +18,7 @@ from Common.log import Log
 
 #连接数据库 port必须为int %d类型
 config={
-    "host":"123.157.219.74",
+    "host":"124.160.35.34",
     "user":"root",
     "password":"66ifuel",
     "port":33066,
@@ -48,8 +48,8 @@ def mysql_execute(sql, number=None):
             Log().debug("执行 SQL 语句出现异常：%s" % a)
         # print("执行 SQL 语句出现异常：%s"%a)
         else:
+            db.commit()  # sql 无异常时提交
             cursor.close()
-            cursor.commit()  # sql 无异常时提交
             db.close()
 def mysql_getrows(sql, number=None):
     ''' 返回查询结果'''
@@ -82,6 +82,8 @@ def mysql_getstring(sql):
         # for i in row:
         # 	print(i)
 
+if __name__ == '__main__':
+
 # sql="select validCode FROM cp_messagecode WHERE phone='13279612508';"
 # sql="select id from cp_station where name='野风时代935'"
 # code=mysql_getrows(sql, number='one')[0]
@@ -89,29 +91,11 @@ def mysql_getstring(sql):
 
 
 
-# sql1 = "select * from order_info where order_no='20201812191425320005'"
-# sqls = "UPDATE order_pledge SET status = 'CLOSED_DEALER' where user_id= '5b42f9b7cec76d75f185d4ec'"
-# sql2 = "select * from dealer_car where car_info_id= '5a5ec113943d0b515a43b33a' ORDER BY id DESC "
-# mysql.mysql_execute(sql1, number='one')
-# mysql.mysql_execute(sqls, number='one')
-# mysql.mysql_execute(sql2, number='one')
-# print(mysql.mysql_getrows(
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-
-# sql1,'one'))
-# print(mysql.mysql_getrows(sqls,'one'))
-
 # print(mysql.mysql_getstring(sql))
+
+# sql="SELECT order_id from shop.t_order WHERE trade_no=2019082512551650955833"
+# mysql_execute(sql,number='one')
+    sql="SELECT order_id from shop.t_order WHERE trade_no={}".format(201908251305958672197)
+    print(sql)
+    print(mysql_getrows(sql,number='one')[0])
 

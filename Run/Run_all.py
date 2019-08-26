@@ -2,25 +2,30 @@
 #coding:utf-8
 
 import os
+import unittest
 
-from Common.Email import send_email
-import unittest,time
 from BeautifulReport import BeautifulReport
 
+from Common.Email import send_email
+
 #报告生成目录路径
-report_path = os.path.join(os.path.dirname(os.getcwd()), "Report_html")
+report_path = os.path.join(os.path.join(os.getcwd(),'Report_html'))
+# print(report_path)
 if not os.path.exists(report_path): os.mkdir(report_path)
 
 
 # 发送文件路径
-file_path =report_path+r"\测试报告.html"
+file_path =('{}').format(os.path.join(os.getcwd(),'Report_html')+'\测试报告.html')
 # print(file_path)
 
+# ,report_dir=report_path
 if __name__=='__main__':
-	suit=unittest.defaultTestLoader.discover('Case_Operators',pattern='test*_*.py')
+
+	suit=unittest.defaultTestLoader.discover('Case_goods',pattern='test*_*.py')
+	# suit=unittest.defaultTestLoader.discover('Case',pattern='addmage')
 	report=BeautifulReport(suit)
-	report.report(filename='测试报告',description='66快充流程接口报告',report_dir=report_path,log_path=file_path)
+	report.report(filename='测试报告',description='66快充流程接口报告',log_path='Report_html')
 	send_email(file_path)
-	os.system("start {}".format(os.path.join(os.path.dirname(os.getcwd()), 'Report_html')))
+	os.system("start {}".format(os.path.join(os.getcwd(),'Report_html')))
 
 

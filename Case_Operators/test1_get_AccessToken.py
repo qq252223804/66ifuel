@@ -17,7 +17,7 @@ class Test_get_AccessToken(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
 
-        cls.host='http://123.157.219.74:8090/evcs/v1/'
+        cls.host='http://124.160.35.34:8090/evcs/v1/'
         cls.headers={
             "Content-Type": "application/json; charset=utf-8"}
         cls.times = time.strftime("%Y%m%d%H%M%S", time.localtime())

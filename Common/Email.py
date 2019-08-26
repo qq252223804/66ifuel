@@ -9,8 +9,11 @@ from email.mime.multipart import MIMEMultipart  # 发送附件模块
 from Common.log import Log
 
 
-file_path = ('{}').format(os.path.join(os.path.dirname(os.getcwd()),'Report_html')+'\测试报告.html')
+# file_path = ('{}').format(os.path.join(os.getcwd(),'Report_html')+'\测试报告.html')
 # print(file_path)
+# print (os.getcwd())#获取当前文件所处的总目录
+# print(os.path.abspath(os.path.dirname(__file__))) # 获取当前文件所在目录
+
 def send_email(file_path):
     # ----------1.跟发件相关的参数------
     # smtpserver  # 发件服务器
