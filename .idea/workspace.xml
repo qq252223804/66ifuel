@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b3e795a-3aaa-4556-b03c-309e2a7f875f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/AES_CBC_PKCS5.py" beforeDir="false" afterPath="$PROJECT_DIR$/Common/AES_CBC_PKCS5.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,20 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Case_goods/test1_processApi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="127" column="25" selection-start-line="127" selection-start-column="15" selection-end-line="127" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Case_goods/test4_incrementSavedAmount.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+            <state relative-caret-position="157">
+              <caret line="121" column="24" lean-forward="true" selection-start-line="121" selection-start-column="24" selection-end-line="121" selection-end-column="24" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -40,7 +28,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Case_goods/test3_getMemberInfo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="880">
+            <state relative-caret-position="758">
               <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
@@ -52,8 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Case/test3_sms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="38" column="31" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="31" />
+            <state relative-caret-position="5">
+              <caret line="37" column="38" lean-forward="true" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
               <folding>
                 <element signature="e#23#41#0" expanded="true" />
               </folding>
@@ -62,55 +50,86 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Case/test2_creat_user.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1662">
+              <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Case/test4_station_pile.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3366">
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Case_Operators/test2_station_status_stats.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2002">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
+              <folding>
+                <element signature="e#170#195#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Case/test1_login.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="35" column="39" lean-forward="true" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+              <folding>
+                <element signature="e#63#87#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Common/AES_CBC_PKCS5.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="85" column="14" lean-forward="true" selection-start-line="85" selection-start-column="14" selection-end-line="85" selection-end-column="14" />
+              <folding>
+                <element signature="e#161#190#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Case/addmage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Case_goods/test2_GoodsCreate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2596">
-              <caret line="124" column="23" selection-start-line="124" selection-start-column="23" selection-end-line="124" selection-end-column="23" />
+            <state relative-caret-position="-58">
+              <caret line="122" column="8" selection-start-line="122" selection-start-column="8" selection-end-line="122" selection-end-column="8" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://F:/Program Files/python37/Lib/unittest/test/test_setups.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Run/Run_all.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-              <folding>
-                <element signature="e#33#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/hmacmd5.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/HTMLTestRunner_api.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Report_html/测试报告.html">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -137,7 +156,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/Common/AES_CBC_PKCS5.py" />
         <option value="$PROJECT_DIR$/Case_Operators/test3__Charge_order.py" />
         <option value="F:/Program Files/python37/Lib/site-packages/dubbo_telnet-1.0.1b3-py3.7.egg/dubbo_telnet/__init__.py" />
         <option value="$PROJECT_DIR$/Common/dubbo_telnet.py" />
@@ -158,18 +176,17 @@
         <option value="$PROJECT_DIR$/Common/hmacmd5.py" />
         <option value="$PROJECT_DIR$/Case_goods/test4_getMemberInfo.py" />
         <option value="$PROJECT_DIR$/Case_goods/test3Pay.py" />
-        <option value="$PROJECT_DIR$/Case_goods/test1_processApi.py" />
         <option value="$PROJECT_DIR$/Case/addmage.py" />
         <option value="$PROJECT_DIR$/Run/Run_all.py" />
         <option value="$PROJECT_DIR$/Case_goods/test2_GoodsCreate.py" />
         <option value="$PROJECT_DIR$/Case_goods/test3_getMemberInfo.py" />
         <option value="$PROJECT_DIR$/Case_goods/test4_incrementSavedAmount.py" />
+        <option value="$PROJECT_DIR$/Case_goods/test1_processApi.py" />
+        <option value="$PROJECT_DIR$/Common/AES_CBC_PKCS5.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-420" />
-    <option name="y" value="313" />
+  <component name="ProjectFrameBounds">
     <option name="width" value="1364" />
     <option name="height" value="728" />
   </component>
@@ -189,12 +206,22 @@
             <path>
               <item name="66ifuel" type="b2602c69:ProjectViewProjectNode" />
               <item name="66ifuel" type="462c0819:PsiDirectoryNode" />
+              <item name="Case" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="66ifuel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="66ifuel" type="462c0819:PsiDirectoryNode" />
               <item name="Case_goods" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="66ifuel" type="b2602c69:ProjectViewProjectNode" />
               <item name="66ifuel" type="462c0819:PsiDirectoryNode" />
               <item name="Case_Operators" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="66ifuel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="66ifuel" type="462c0819:PsiDirectoryNode" />
+              <item name="Common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="66ifuel" type="b2602c69:ProjectViewProjectNode" />
@@ -235,7 +262,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Run_all">
+  <component name="RunManager" selected="Python tests.Unittests in test1_processApi.py">
     <configuration name="Run_all" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="66ifuel" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -280,21 +307,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in addmage.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="66ifuel" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Case" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/Case/addmage.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Unittests in test1_processApi.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="66ifuel" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -307,6 +319,21 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/Case_goods/test1_processApi.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in test2_GoodsCreate.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="66ifuel" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Case_goods" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Case_goods/test2_GoodsCreate.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -342,11 +369,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in test1_processApi.py" />
+        <item itemvalue="Python tests.Unittests in test2_GoodsCreate.py" />
         <item itemvalue="Python.Run_all" />
         <item itemvalue="Python tests.Unittests in test4_incrementSavedAmount.py" />
         <item itemvalue="Python tests.Unittests in test3_getMemberInfo.py" />
-        <item itemvalue="Python tests.Unittests in test1_processApi.py" />
-        <item itemvalue="Python tests.Unittests in addmage.py" />
       </list>
     </recent_temporary>
   </component>
@@ -382,6 +409,7 @@
       <workItem from="1567063325149" duration="138000" />
       <workItem from="1567650429049" duration="1677000" />
       <workItem from="1567674808967" duration="1047000" />
+      <workItem from="1567734720077" duration="4782000" />
     </task>
     <task id="LOCAL-00001" summary="更新了bug">
       <created>1564460221283</created>
@@ -418,19 +446,17 @@
       <option name="project" value="LOCAL" />
       <updated>1566786641538</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="1.新增会员接口&#10;2.修改mysql封装层&#10;3.更换beautiful报告&#10;4.新增selenium错误用例生成报告">
+      <created>1567734774334</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1567734774334</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test4_incrementSavedAmount_py - 2019.08.25 at 18h 06m 17s.xml">
-      <configuration name="Unittests in test4_incrementSavedAmount.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test4_incrementSavedAmount_py - 2019.08.25 at 18h 09m 10s.xml">
-      <configuration name="Unittests in test4_incrementSavedAmount.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test4_incrementSavedAmount_py - 2019.08.25 at 18h 25m 20s.xml">
-      <configuration name="Unittests in test4_incrementSavedAmount.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_test4_incrementSavedAmount_py - 2019.08.25 at 18h 25m 39s.xml">
       <configuration name="Unittests in test4_incrementSavedAmount.py" configurationId="tests" />
     </history-entry>
@@ -452,19 +478,28 @@
     <history-entry file="Unittests_in_test4_incrementSavedAmount_py - 2019.08.25 at 18h 40m 56s.xml">
       <configuration name="Unittests in test4_incrementSavedAmount.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_test2_GoodsCreate_py - 2019.09.06 at 10h 05m 00s.xml">
+      <configuration name="Unittests in test2_GoodsCreate.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test1_processApi_py - 2019.09.06 at 10h 11m 34s.xml">
+      <configuration name="Unittests in test1_processApi.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test1_processApi_py - 2019.09.06 at 10h 15m 01s.xml">
+      <configuration name="Unittests in test1_processApi.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65024000" />
+    <option name="totallyTimeSpent" value="69806000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="0" y="0" width="1364" height="728" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1376702" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13957055" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5695581" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5824508" weight="0.122689076" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -472,7 +507,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" visible="true" weight="0.049099836" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.41754916" side_tool="true" weight="0.5531915" />
       <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="bottom" id="SVN Repositories" order="12" weight="0.3289689" />
       <window_info anchor="bottom" id="Terminal" order="13" weight="0.44189852" />
@@ -499,13 +534,13 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/66ifuel$pyhession.coverage" NAME="pyhession Coverage Results" MODIFIED="1564637931802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/66ifuel$Unittests_in_test4_getMemberInfo_py.coverage" NAME="Unittests in test4_getMemberInfo.py Coverage Results" MODIFIED="1566721865017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Case_goods" />
-    <SUITE FILE_PATH="coverage/66ifuel$Unittests_in_test2_GoodsCreate_py.coverage" NAME="Unittests in test2_GoodsCreate.py Coverage Results" MODIFIED="1566717788702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Case_goods" />
     <SUITE FILE_PATH="coverage/66ifuel$Unittests_in_test3_BeecloundPay_py.coverage" NAME="Unittests in test3Pay.py Coverage Results" MODIFIED="1566722536562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Case_goods" />
+    <SUITE FILE_PATH="coverage/66ifuel$Unittests_in_test2_GoodsCreate_py.coverage" NAME="Unittests in test2_GoodsCreate.py Coverage Results" MODIFIED="1567735494444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Case_goods" />
     <SUITE FILE_PATH="coverage/66ifuel$Unittests_in_test2_creat_user_py.coverage" NAME="Unittests in test2_creat_user.py Coverage Results" MODIFIED="1565057795484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Case" />
     <SUITE FILE_PATH="coverage/66ifuel$Unittests_in_test1_get_AccessToken_py.coverage" NAME="Unittests in test1_get_AccessToken.py Coverage Results" MODIFIED="1566557633404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Case_Operators" />
     <SUITE FILE_PATH="coverage/66ifuel$hmacmd5.coverage" NAME="hmacmd5 Coverage Results" MODIFIED="1566722238320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/66ifuel$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1565267761823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/66ifuel$Unittests_in_test1_processApi_py.coverage" NAME="Unittests in test1_processApi.py Coverage Results" MODIFIED="1566727471695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Case_goods" />
+    <SUITE FILE_PATH="coverage/66ifuel$Unittests_in_test1_processApi_py.coverage" NAME="Unittests in test1_processApi.py Coverage Results" MODIFIED="1567736097556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Case_goods" />
     <SUITE FILE_PATH="coverage/66ifuel$Unittests_in_test1_buy_py.coverage" NAME="Unittests in test1_processApi.py Coverage Results" MODIFIED="1566717803666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Case_goods" />
     <SUITE FILE_PATH="coverage/66ifuel$Unittests_in_test4_incrementSavedAmount_py.coverage" NAME="Unittests in test4_incrementSavedAmount.py Coverage Results" MODIFIED="1566729693076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Case_goods" />
     <SUITE FILE_PATH="coverage/66ifuel$Unittests_in_test3_beecloundPay_py.coverage" NAME="Unittests in test3_beecloundPay.py Coverage Results" MODIFIED="1566717776361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Case_goods" />
@@ -578,31 +613,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Case_Operators/test2_station_status_stats.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="e#170#195#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Case_Operators/test3__Charge_order.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1364">
           <caret line="69" column="44" selection-start-line="69" selection-start-column="32" selection-end-line="69" selection-end-column="44" />
           <folding>
             <element signature="e#164#175#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Case/test4_station_pile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -660,16 +676,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Config/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/AES_CBC_PKCS5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="24" />
-          <folding>
-            <element signature="e#161#190#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Common/dubbo_telnet.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -733,16 +739,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Case/test2_creat_user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1615">
-          <caret line="104" selection-start-line="104" selection-end-line="106" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Case_Operators/test1_get_AccessToken.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -753,26 +749,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Case/test1_login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-104">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/selenium/webdriver/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-198" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Case/addmage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Base/api_method.py">
@@ -786,56 +765,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/img/test2_zhoujielun.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Case_goods/test1_processApi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="127" column="25" selection-start-line="127" selection-start-column="15" selection-end-line="127" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Case_goods/test4_incrementSavedAmount.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Case_goods/test3_getMemberInfo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Case/test3_sms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="38" column="31" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="31" />
-          <folding>
-            <element signature="e#23#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Case_goods/test2_GoodsCreate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2596">
-          <caret line="124" column="23" selection-start-line="124" selection-start-column="23" selection-end-line="124" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://F:/Program Files/python37/Lib/unittest/test/test_setups.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -866,6 +795,115 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Report_html/测试报告.html">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Case_goods/test4_incrementSavedAmount.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1733">
+          <caret line="137" column="28" selection-start-line="137" selection-start-column="28" selection-end-line="137" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Case_goods/test2_GoodsCreate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-58">
+          <caret line="122" column="8" selection-start-line="122" selection-start-column="8" selection-end-line="122" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Case/addmage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Case/test3_sms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5">
+          <caret line="37" column="38" lean-forward="true" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
+          <folding>
+            <element signature="e#23#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/AES_CBC_PKCS5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="85" column="14" lean-forward="true" selection-start-line="85" selection-start-column="14" selection-end-line="85" selection-end-column="14" />
+          <folding>
+            <element signature="e#161#190#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Case/test1_login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="35" column="39" lean-forward="true" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+          <folding>
+            <element signature="e#63#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Case/test2_creat_user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1662">
+          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Case_Operators/test2_station_status_stats.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2002">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#170#195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Case/test4_station_pile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3366">
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Case_goods/test3_getMemberInfo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="758">
+          <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Case_goods/test1_processApi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="121" column="24" lean-forward="true" selection-start-line="121" selection-start-column="24" selection-end-line="121" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

@@ -79,9 +79,9 @@ def decrypt(key, content):
 # data = encrypt(DataSecret,text)
 # print(data)
 #解密
-# untext='h0N5kfvVWFAi6mu31Ebna+Rf6pYNxXwsXQkaYx0y3R1U2rh9GAI/Po/jsVS+1OfglhTKiTwkthiDAUpaUgOvvQw18nt36laKO/mTgnth57oIad16CVHFgtTIyHa/1Y0K6j/hdCza3fdkfZhNmuYbLyOwAmkzDLB4gm5eIddj7uWfsyMCSaCcmgcImvDfzguq'
-# undata=decrypt(DataSecret,untext)
+untext='http://124.160.35.34:8082/station/v1/station/near'
+undata=decrypt(DataSecret,untext)
 # a=eval(undata)['AccessToken']
 # b={"token":""}
 # b['token']=a
-# print(b)
+print(undata)
