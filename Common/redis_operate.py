@@ -4,6 +4,10 @@
 # @File : redis_operate.py
 
 import redis
+from rediscluster import RedisCluster
+#此处只能安装pip install redis-py-cluster 1.3.6版本不然无StrictRedisCluster
+
+import sys
 # pool=redis.ConnectionPool(host='192.168.31.174',password='qiwoauto_test', port=6379,db=2)
 # coon=redis.Redis(connection_pool=pool)
 #
@@ -39,9 +43,86 @@ import redis
 
 
 #实战  删除cms 后台在线登陆用户数
-pool1=redis.ConnectionPool(host='192.168.31.174',password='qiwoauto_test', port=6379,db=1)
-r=redis.Redis(connection_pool=pool1)
-r.delete('CMS_USER_ON_LINE')
-print(r.exists('CMS_USER_ON_LINE'))
+# pool1=redis.ConnectionPool(host='192.168.3.143',password='66ifuel-test', port=7001,db=0)
+# r=redis.Redis(connection_pool=pool1)
+# r.delete('CMS_USER_ON_LINE')
+# print(r.exists('CMS_USER_ON_LINE'))
 
-print(r.get('CMS_USER_OFF_LINE'))
+# str=str(r.get('register_18627318049').decode())
+# print(str)
+class simple_Redis():
+    '''
+    单机redis
+    '''
+
+    def __init__(self, **kwargs):
+        try:
+            self.pool = redis.ConnectionPool(**kwargs)
+            self.link= redis.Redis(connection_pool=self.pool)
+
+        except Exception as e:
+            print("Connect Error!", e)
+            sys.exit(1)
+    def set(self,key,value):
+        self.link.set(key,value)
+    def get_value(self,key):
+        """
+        :param key:
+        :param kwargs: 传字典 redis的配置
+        :return:
+        """
+        value = str(self.link.get('{}'.format(key)).decode())
+        return value
+
+class many_Redis():
+    '''
+    集群redis
+    '''
+    def __init__(self,nodes):
+        try:
+            # 访问集群设置密码
+            self.conn = RedisCluster(startup_nodes=nodes,password='66ifuel-test')
+
+        except Exception as e:
+            print("Connect Error!",e)
+            sys.exit(1)
+    def set(self,key,value):
+        self.conn.set(key,value)
+
+    def get_cluster_value(self,key):
+        value=str(self.conn.get('{}'.format(key)).decode())
+        return value
+
+if __name__ == '__main__':
+
+    # cont={"host":'192.168.3.143',"password":'66ifuel-test', "port":7003,"db":0}
+    # a = simple_Redis(**cont)
+    # print(a.get_value("register_18000000001"))
+
+    nodes = [
+        {"host": "192.168.3.143", "port": "7001"},
+        {"host": "192.168.3.143", "port": "7002"},
+        {"host": "192.168.3.143", "port": "7003"},
+    ]
+    b=many_Redis(nodes)
+
+    # list = [
+    #     '02200000001',
+    #     '02200000002',
+    #     '02200000003',
+    #     '02200000004',
+    #     '02200000005',
+    #     '02200000006',
+    #     '02200000007',
+    #     '02200000008',
+    #     '02200000009',
+    #     '02200000010',
+    #     '02200000010'
+    # ]
+    # for i in range(0, len(list)):
+    #     b.set('test_phone_' + list[i], '111111')
+    #     print(b.get_cluster_value('test_phone_' + list[i]))
+    #取2个key值相同的 value不同
+    b.set('test_phone_02200000010', '111111')
+    b.set('test_phone_02200000010', '222222')
+    print(b.get_cluster_value('test_phone_02200000010'))

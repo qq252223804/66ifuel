@@ -2,6 +2,7 @@
 """接口模块/流程性封装的请求方法"""
 import requests
 
+from Common.hmacmd5 import new_hmac_md5
 from Common.log import Log
 
 
@@ -9,15 +10,18 @@ class RunMethod():
 
 	def post_main(self,host,lujing,data,headers=None):      #host 为基础url ，lujing为路径
 		try:
+			if lujing !=None:
+				url = host + lujing
+			else:
+				url=host
+			# print(url)
 			# print(type(data))
 			if type(data)==dict:          #判断是否为dict 类型
+
 				data=data
 			else:
 				# print("nooo")
 				data=eval(data)        #如果data 不是dict 类型 就必须先是str 然后转成dict
-				
-			url=host+lujing
-			# print(url)
 			if headers != None:
 				if type(headers)==dict:
 
@@ -42,9 +46,12 @@ class RunMethod():
 
 			
 		
-	def get_main(self,host,lujing,data=None,headers=None):
+	def get_main(self,host,lujing=None,data=None,headers=None):
 		try:
-			url = host + lujing
+			if lujing !=None:
+				url = host + lujing
+			else:
+				url=host
 
 			if headers != None:
 				# print("ok")
@@ -66,7 +73,7 @@ class RunMethod():
 			response = res.json()  # 将返回的数据转换为json格式的 字典
 			return response
 
-	def run_main(self,method,host,lujing,data=None,headers=None):
+	def run_main(self,method,host,lujing=None,data=None,headers=None):
 		if method=='post':
 			res=self.post_main(host,lujing,data,headers)
 			return res
@@ -77,12 +84,34 @@ class RunMethod():
 
 if __name__ == '__main__':
 	run = RunMethod()  # 实例化
-	host='https://service.66ifuel.com'
-	lujing='/customer/v1/member/login'
-	datas={"phone":"18657738815","password":"dc483e80a7a0bd9ef71d8cf973673924"}
+	# host='https://service.66ifuel.com'
+	# lujing='/customer/v1/member/login'
+	# datas={"phone":"18657738815","password":"dc483e80a7a0bd9ef71d8cf973673924"}
+	#
+	# headers={"Content-Type":"application/json; charset=utf-8"}
 
-	headers={"Content-Type":"application/json; charset=utf-8"}
-	res=run.run_main('post',host,lujing,datas,headers)
+	host='http://124.160.35.34:8091/service.do/'
+
+	data={"app_id": 'b1044830052f359d',
+      "timestamp": '2019-9-25 2:35:56',
+      "version": '1.0',
+      "client": 'android',
+      "client_version": '4.0.1',
+      "device_id": '123123',
+      "method": 'user.sendVerificationCode',
+      "biz_content": '{"phone":"13185097298","type":1}',
+      }
+	headers={
+   "Content-Type": "application/x-www-form-urlencoded",
+   "Connection": "keep-alive"
+   }
+	SigSecret = '204414295c2f3fbc5818f604793f1ba2'
+	datas=dict(sorted(data.items(),key=lambda x:x[0],reverse=False))
+	sign = new_hmac_md5(SigSecret, datas)
+	datas.update({"sign":sign})
+	print(datas)
+	res=requests.post(url=host,data=datas,headers=headers).json()
+	# res=run.run_main('post',host,datas,headers)
 	print(res)
-	print(type(res))
+	# print(type(res))
 
