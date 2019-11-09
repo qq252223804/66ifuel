@@ -50,61 +50,63 @@ import sys
 
 # str=str(r.get('register_18627318049').decode())
 # print(str)
-class simple_Redis():
+
+
+def simple_redis_coon(**kwargs):
     '''
-    单机redis
-    '''
+        单机redis
+        '''
+    try:
+        pool = redis.ConnectionPool(**kwargs)
+        link= redis.Redis(connection_pool=pool)
+        return link
+    except Exception as e:
+        print("Connect Error!", e)
+def set_simple_value(key,value,**kwargs):
+    a = simple_redis_coon(**kwargs)
+    a.set(key,value)
+def get_simple_value(key,**kwargs):
+    """
+    :param key:
+    :param kwargs: 传字典 redis的配置
+    :return:
+    """
+    a=simple_redis_coon(**kwargs)
+    value = str(a.get('{}'.format(key)).decode())
+    return value
 
-    def __init__(self, **kwargs):
-        try:
-            self.pool = redis.ConnectionPool(**kwargs)
-            self.link= redis.Redis(connection_pool=self.pool)
+def many_Redis_coon(nodes):
+    # '''
+    # 集群redis
+    # '''
+    try:
+        conn = RedisCluster(startup_nodes=nodes, password='66ifuel-test')
+        return conn
+    except Exception as e:
+        print("Connect Error!",e)
 
-        except Exception as e:
-            print("Connect Error!", e)
-            sys.exit(1)
-    def set(self,key,value):
-        self.link.set(key,value)
-    def get_value(self,key):
-        """
-        :param key:
-        :param kwargs: 传字典 redis的配置
-        :return:
-        """
-        value = str(self.link.get('{}'.format(key)).decode())
-        return value
+def set_cluster_value(key,value,nodes=None,):
+    a=many_Redis_coon(nodes)
+    a.set(key,value)
 
-class many_Redis():
-    '''
-    集群redis
-    '''
-    def __init__(self,nodes):
-        try:
-            # 访问集群设置密码
-            self.conn = RedisCluster(startup_nodes=nodes,password='66ifuel-test')
-
-        except Exception as e:
-            print("Connect Error!",e)
-            sys.exit(1)
-    def set(self,key,value):
-        self.conn.set(key,value)
-
-    def get_cluster_value(self,key):
-        value=str(self.conn.get('{}'.format(key)).decode())
-        return value
+def get_cluster_value(key,nodes=None,):
+    a=many_Redis_coon(nodes)
+    value=str(a.get('{}'.format(key)).decode())
+    return value
 
 if __name__ == '__main__':
 
-    # cont={"host":'192.168.3.143',"password":'66ifuel-test', "port":7003,"db":0}
-    # a = simple_Redis(**cont)
-    # print(a.get_value("register_18000000001"))
+    cont={"host":'192.168.3.143',"password":'66ifuel-test', "port":7001,"db":0}
+    a = get_simple_value("forget_password_13185097298",**cont)
+    print(a)
 
-    nodes = [
-        {"host": "192.168.3.143", "port": "7001"},
-        {"host": "192.168.3.143", "port": "7002"},
-        {"host": "192.168.3.143", "port": "7003"},
-    ]
-    b=many_Redis(nodes)
+    # nodes = [
+    #     {"host": "192.168.3.143", "port": "7001"},
+    #     {"host": "192.168.3.143", "port": "7002"},
+    #     {"host": "192.168.3.143", "port": "7003"},
+    # ]
+    # print(get_cluster_value("register_18000000000",nodes=nodes))
+    # print(b("register_18687342651"))
 
     # list = [
     #     '02200000001',
@@ -123,6 +125,7 @@ if __name__ == '__main__':
     #     b.set('test_phone_' + list[i], '111111')
     #     print(b.get_cluster_value('test_phone_' + list[i]))
     #取2个key值相同的 value不同
-    b.set('test_phone_02200000010', '111111')
-    b.set('test_phone_02200000010', '222222')
-    print(b.get_cluster_value('test_phone_02200000010'))
+    # b.set('test_phone_02200000010', '111111')
+    # b.set('test_phone_02200000010', '222222')
+    # print(b.get_cluster_value('register_02200000010'))
+    #

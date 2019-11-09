@@ -41,3 +41,8 @@ new_app_headers: '{
    "Content-Type": "application/x-www-form-urlencoded",
    "Connection": "keep-alive"
    }'
+
+#redis 的nodes集群
+nodes: '[{"host": "192.168.3.143", "port": "7001"},
+        {"host": "192.168.3.143", "port": "7002"},
+        {"host": "192.168.3.143", "port": "7003"}]'

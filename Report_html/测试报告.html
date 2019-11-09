@@ -7128,316 +7128,683 @@
 </script>
 <script type="text/javascript">
     var resultData = {
-    "testPass": 20,
+    "testPass": 17,
     "testResult": [
         {
-            "className": "Test_buygoods",
-            "methodName": "test1_getMemberType",
-            "description": "\n        获取分公司会员类型\n        :return:\n        ",
-            "spendTime": "0.027 s",
+            "className": "Register",
+            "methodName": "test1_SendMsg_Noregister",
+            "description": "\n        注册:发送验证码_用户未注册\n        :return:\n        ",
+            "spendTime": "0.108 s",
             "status": "成功",
             "log": [
-                "url:http://124.160.35.34:8091/open/api/getMemberType",
+                "url:http://124.160.35.34:8091/service.do/",
                 "请求方法:post",
-                "请求参数:{'appKey': 'b1044830052f359d', 'version': '1.0.0', 'clientName': 'android', 'clientVersion': '4.0.0', 'deviceId': '', 'timeStamp': '20190825184158', 'data': '{\"company_id\":1}', 'requestId': '', 'sign': '8179abbd107f6d32c26dc37ef412feb6'}",
-                "检查点:{'code': 0, 'message': '请求成功'}",
-                "返回数据:{'code': 0, 'data': {'duration': 30, 'savingAmount': 996, 'companyId': 1, 'electricityPrice': 136, 'price': 6600, 'memberName': '66-月卡会员'}, 'requestId': 'A6B8A82B187B46D88843F398AC9E5F3E', 'message': None}",
+                "请求参数:{'app_id': 'b1044830052f359d', 'biz_content': \"{'phone': '13084256307', 'type': 2}\", 'client': 'android', 'client_version': '4.0.1', 'device_id': '123123', 'method': 'user.send_verification_code', 'timestamp': '2019-9-25 2:35:56', 'version': '1.0', 'sign': '2b9ca84ca8537dc035c0c9af53b32fd5'}",
+                "检查点:{'code and message'}",
+                "返回数据:{'code': 0, 'request_id': 'B5022FE13CC34355B120182D230E72DA'}",
                 ""
             ]
         },
         {
-            "className": "Test_buygoods",
-            "methodName": "test2_getMemberInfo",
-            "description": "\n        获取会员信息\n        :return:\n        ",
+            "className": "Register",
+            "methodName": "test2_register_errorMsgCode",
+            "description": "\n        注册:注册用户_错误验证码\n        :return:\n        ",
+            "spendTime": "0.026 s",
+            "status": "失败",
+            "log": [
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 615, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\p\\Desktop\\66ifuel\\AllCase\\test1_register_user.py\", line 84, in test2_register_errorMsgCode\n    self.assertTrue(res['code'] == 110001, msg=\"校验code错误\")\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 692, in assertTrue\n    raise self.failureException(msg)\n",
+                "AssertionError: False is not true : 校验code错误\n"
+            ]
+        },
+        {
+            "className": "Register",
+            "methodName": "test3_register_right",
+            "description": "\n        注册:注册用户_正确验证码\n        :return:\n        ",
+            "spendTime": "0.176 s",
+            "status": "失败",
+            "log": [
+                "782669\n",
+                "Traceback (most recent call last):\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 615, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\p\\Desktop\\66ifuel\\AllCase\\test1_register_user.py\", line 110, in test3_register_right\n    self.assertTrue(res['code'] == 0, msg=\"校验code错误\")\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 692, in assertTrue\n    raise self.failureException(msg)\n",
+                "AssertionError: False is not true : 校验code错误\n"
+            ]
+        },
+        {
+            "className": "Register",
+            "methodName": "test4_register_setPwd",
+            "description": "\n        注册:设置密码注册\n        :return:\n        ",
+            "spendTime": "0.001 s",
+            "status": "失败",
+            "log": [
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 615, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\p\\Desktop\\66ifuel\\AllCase\\test1_register_user.py\", line 124, in test4_register_setPwd\n    contents = {\"user_id\":\"{}\".format(user_id),\"password\": \"123456\"}\n",
+                "NameError: name 'user_id' is not defined\n"
+            ]
+        },
+        {
+            "className": "Register",
+            "methodName": "test5_SendMsg_right",
+            "description": "\n        注册:发送验证码_用户已注册\n        :return:\n        ",
             "spendTime": "0.026 s",
             "status": "成功",
             "log": [
-                "url:http://124.160.35.34:8091/open/api/getMemberInfo",
+                "url:http://124.160.35.34:8091/service.do/",
                 "请求方法:post",
-                "请求参数:{'appKey': 'b1044830052f359d', 'version': '1.0.0', 'clientName': 'android', 'clientVersion': '4.0.0', 'deviceId': '', 'timeStamp': '20190825184158', 'data': '{\"user_id\":23999,\"company_id\":1}', 'requestId': '', 'sign': '9df2364cc2f1044e59806692ea96b88e'}",
-                "检查点:{'code': 0, 'message': None}",
-                "返回数据:{'code': 0, 'data': {'companyId': None, 'electricityPrice': 0, 'savingAmout': None, 'hasMemberShip': 0, 'endAt': None, 'startAt': None, 'savedAmount': None, 'remainDays': None}, 'requestId': '5215D5B0615643C39271DEF813A8D3B3', 'message': None}",
+                "请求参数:{'app_id': 'b1044830052f359d', 'biz_content': \"{'phone': '15715814052', 'type': 2}\", 'client': 'android', 'client_version': '4.0.1', 'device_id': '123123', 'method': 'user.send_verification_code', 'timestamp': '2019-9-25 2:35:56', 'version': '1.0', 'sign': 'c752e2a06365ec483dbca38db44b4811'}",
+                "检查点:{'code and message'}",
+                "返回数据:{'code': 110002, 'request_id': '2E4D0223D2DB436687EA14BE328C0187', 'message': '手机号已注册'}",
                 ""
             ]
         },
         {
-            "className": "Test_buygoods",
-            "methodName": "test3_shop_goods_new",
-            "description": "\n        获取最新商品信息\n        :return:\n        ",
+            "className": "Register",
+            "methodName": "test6_forgetPwd_SendMsg",
+            "description": "\n        忘记密码:发送验证码\n        :return:\n        ",
+            "spendTime": "0.03 s",
+            "status": "失败",
+            "log": [
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 615, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\p\\Desktop\\66ifuel\\AllCase\\test1_register_user.py\", line 185, in test6_forgetPwd_SendMsg\n    self.assertTrue(res['code'] == 0, msg=\"校验code错误\")\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 692, in assertTrue\n    raise self.failureException(msg)\n",
+                "AssertionError: False is not true : 校验code错误\n"
+            ]
+        },
+        {
+            "className": "Register",
+            "methodName": "test7_ForgetCheckMsgCode_error",
+            "description": "\n        忘记密码:校验验证码（验证码错误）\n        :return:\n        ",
             "spendTime": "0.028 s",
+            "status": "失败",
+            "log": [
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 615, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\p\\Desktop\\66ifuel\\AllCase\\test1_register_user.py\", line 207, in test7_ForgetCheckMsgCode_error\n    self.assertTrue(res['code'] == 110001, msg=\"校验code错误\")\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 692, in assertTrue\n    raise self.failureException(msg)\n",
+                "AssertionError: False is not true : 校验code错误\n"
+            ]
+        },
+        {
+            "className": "Register",
+            "methodName": "test8_ForgetCheckMsgCode_right",
+            "description": "\n        忘记密码:校验验证码（验证码正确）\n        :return:\n        ",
+            "spendTime": "0.2 s",
+            "status": "失败",
+            "log": [
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 615, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\p\\Desktop\\66ifuel\\AllCase\\test1_register_user.py\", line 215, in test8_ForgetCheckMsgCode_right\n    MsgCode = get_cluster_value(\"forget_password_{}\".format(self.phone), nodes=self.nodes)\n",
+                "  File \"C:\\Users\\p\\Desktop\\66ifuel\\Common\\redis_operate.py\", line 94, in get_cluster_value\n    value=str(a.get('{}'.format(key)).decode())\n",
+                "AttributeError: 'NoneType' object has no attribute 'decode'\n"
+            ]
+        },
+        {
+            "className": "Register",
+            "methodName": "test9_Forget_setPwd",
+            "description": "\n        忘记密码:更改密码\n        :return:\n        ",
+            "spendTime": "0.133 s",
+            "status": "失败",
+            "log": [
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 615, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\p\\Desktop\\66ifuel\\AllCase\\test1_register_user.py\", line 239, in test9_Forget_setPwd\n    MsgCode = get_cluster_value(\"forget_password_{}\".format(self.phone), nodes=self.nodes)\n",
+                "  File \"C:\\Users\\p\\Desktop\\66ifuel\\Common\\redis_operate.py\", line 94, in get_cluster_value\n    value=str(a.get('{}'.format(key)).decode())\n",
+                "AttributeError: 'NoneType' object has no attribute 'decode'\n"
+            ]
+        },
+        {
+            "className": "Register",
+            "methodName": "test_10_modifyPwd_sendMsg",
+            "description": "\n        修改密码:发送验证码\n        :return:\n        ",
+            "spendTime": "0.001 s",
+            "status": "失败",
+            "log": [
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 615, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\p\\Desktop\\66ifuel\\AllCase\\test1_register_user.py\", line 273, in test_10_modifyPwd_sendMsg\n    \"access_token\": '{}'.format(token),\n",
+                "NameError: name 'token' is not defined\n"
+            ]
+        },
+        {
+            "className": "Register",
+            "methodName": "test_11_modifyPwdCheckCode_error",
+            "description": "\n        修改密码:校验验证码（验证码错误）\n        :return:\n        ",
+            "spendTime": "0.0 s",
+            "status": "失败",
+            "log": [
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 615, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\p\\Desktop\\66ifuel\\AllCase\\test1_register_user.py\", line 295, in test_11_modifyPwdCheckCode_error\n    \"access_token\": '{}'.format(token),\n",
+                "NameError: name 'token' is not defined\n"
+            ]
+        },
+        {
+            "className": "Register",
+            "methodName": "test_12_modifyPwdCheckCode_right",
+            "description": "\n        修改密码:校验验证码（验证码正确）\n        :return:\n        ",
+            "spendTime": "0.13 s",
+            "status": "失败",
+            "log": [
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 615, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\p\\Desktop\\66ifuel\\AllCase\\test1_register_user.py\", line 309, in test_12_modifyPwdCheckCode_right\n    MsgCode = get_cluster_value(\"forget_password_{}\".format(self.phone), nodes=self.nodes)\n",
+                "  File \"C:\\Users\\p\\Desktop\\66ifuel\\Common\\redis_operate.py\", line 94, in get_cluster_value\n    value=str(a.get('{}'.format(key)).decode())\n",
+                "AttributeError: 'NoneType' object has no attribute 'decode'\n"
+            ]
+        },
+        {
+            "className": "Register",
+            "methodName": "test_13_modifyPwdByPhone",
+            "description": "\n        修改密码:通过验证码来重置密码\n        :return:\n        ",
+            "spendTime": "0.128 s",
+            "status": "失败",
+            "log": [
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 615, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\p\\Desktop\\66ifuel\\AllCase\\test1_register_user.py\", line 333, in test_13_modifyPwdByPhone\n    MsgCode = get_cluster_value(\"forget_password_{}\".format(self.phone), nodes=self.nodes)\n",
+                "  File \"C:\\Users\\p\\Desktop\\66ifuel\\Common\\redis_operate.py\", line 94, in get_cluster_value\n    value=str(a.get('{}'.format(key)).decode())\n",
+                "AttributeError: 'NoneType' object has no attribute 'decode'\n"
+            ]
+        },
+        {
+            "className": "Register",
+            "methodName": "test_14_modifyPwdByOld_olderror",
+            "description": "\n        修改密码:通过密码来重置密码_原密码错误\n        :return:\n        ",
+            "spendTime": "0.001 s",
+            "status": "失败",
+            "log": [
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 615, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\p\\Desktop\\66ifuel\\AllCase\\test1_register_user.py\", line 359, in test_14_modifyPwdByOld_olderror\n    contents={\"user_id\":\"{}\".format(user_id),\"old_password\":\"e10adc3949ba59abbe56e057f20f883f\",\"new_password\":\"666666\"}\n",
+                "NameError: name 'user_id' is not defined\n"
+            ]
+        },
+        {
+            "className": "Register",
+            "methodName": "test_15_modifyPwdByOld_right",
+            "description": "\n        修改密码:通过密码来重置密码_原密码错误\n        :return:\n        ",
+            "spendTime": "0.0 s",
+            "status": "失败",
+            "log": [
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 615, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\p\\Desktop\\66ifuel\\AllCase\\test1_register_user.py\", line 382, in test_15_modifyPwdByOld_right\n    contents={\"user_id\":\"{}\".format(user_id),\"old_password\":\"e10adc3949ba59abbe56e057f20f883e\",\"new_password\":\"666666\"}\n",
+                "NameError: name 'user_id' is not defined\n"
+            ]
+        },
+        {
+            "className": "Register",
+            "methodName": "test_16_modifyPhone_sendMsg_isRegister",
+            "description": "\n        修改手机号:发送验证码_修改后手机号已注册\n        :return:\n        ",
+            "spendTime": "0.0 s",
+            "status": "失败",
+            "log": [
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 615, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\p\\Desktop\\66ifuel\\AllCase\\test1_register_user.py\", line 413, in test_16_modifyPhone_sendMsg_isRegister\n    \"access_token\": '{}'.format(token),\n",
+                "NameError: name 'token' is not defined\n"
+            ]
+        },
+        {
+            "className": "Register",
+            "methodName": "test_17_modifyPhone_sendMsg_NoRegister",
+            "description": "\n        修改手机号:发送验证码_修改后手机号未注册\n        :return:\n        ",
+            "spendTime": "0.001 s",
+            "status": "失败",
+            "log": [
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 615, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\p\\Desktop\\66ifuel\\AllCase\\test1_register_user.py\", line 436, in test_17_modifyPhone_sendMsg_NoRegister\n    \"access_token\": '{}'.format(token),\n",
+                "NameError: name 'token' is not defined\n"
+            ]
+        },
+        {
+            "className": "Register",
+            "methodName": "test_18_modifyPhone_newphone",
+            "description": "\n        修改手机号:修改用户登录手机号\n        :return:\n        ",
+            "spendTime": "0.123 s",
+            "status": "失败",
+            "log": [
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 615, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\p\\Desktop\\66ifuel\\AllCase\\test1_register_user.py\", line 451, in test_18_modifyPhone_newphone\n    MsgCode = get_cluster_value(\"modify_phone_{}\".format(self.new_phone), nodes=self.nodes)\n",
+                "  File \"C:\\Users\\p\\Desktop\\66ifuel\\Common\\redis_operate.py\", line 94, in get_cluster_value\n    value=str(a.get('{}'.format(key)).decode())\n",
+                "AttributeError: 'NoneType' object has no attribute 'decode'\n"
+            ]
+        },
+        {
+            "className": "Register",
+            "methodName": "test_19",
+            "description": "\n        发送验证码_发送次数\n        :return:\n        ",
+            "spendTime": "0.0 s",
+            "status": "跳过",
+            "log": [
+                "未完成用例，跳过"
+            ]
+        },
+        {
+            "className": "Register",
+            "methodName": "test_20",
+            "description": "\n        验证码时效性_有效期之外\n        :return:\n        ",
+            "spendTime": "0.0 s",
+            "status": "跳过",
+            "log": [
+                "未完成用例，跳过"
+            ]
+        },
+        {
+            "className": "Register",
+            "methodName": "test_21",
+            "description": "，\n        验证码已使用需作废不可重复使用\n        :return:\n        ",
+            "spendTime": "0.0 s",
+            "status": "跳过",
+            "log": [
+                "未完成用例，跳过"
+            ]
+        },
+        {
+            "className": "Register",
+            "methodName": "test_22",
+            "description": "\n        语音验证码\n        :return:\n        ",
+            "spendTime": "0.0 s",
+            "status": "跳过",
+            "log": [
+                "未完成用例，跳过"
+            ]
+        },
+        {
+            "className": "Lgoin",
+            "methodName": "test1_login_NoRegister",
+            "description": "\n        登录-用户未注册\n        :return:\n        ",
+            "spendTime": "0.024 s",
             "status": "成功",
             "log": [
-                "url:http://124.160.35.34:8091/open/api/shop.goods.new",
+                "url:http://124.160.35.34:8091/service.do/",
                 "请求方法:post",
-                "请求参数:{'appKey': 'b1044830052f359d', 'version': '1.0', 'clientName': 'android', 'clientVersion': '4.0.0', 'deviceId': '', 'timeStamp': '20190825184158', 'data': '{\"city_id\":330100}', 'requestId': '', 'sign': '895cb9160141460099b9b6bad8b974cc'}",
-                "检查点:{'code': 0,  'message': None}",
-                "返回数据:{'code': 0, 'data': {'marketPrice': '0.01', 'goodsId': 1, 'virtualGoodsTypeId': 1, 'description': '', 'cityId': 330100, 'people': 3, 'price': '0.01', 'startTime': 0, 'style': 1, 'endTime': 0, 'goodsName': '会员拼团', 'memberContentDO': {'cityName': '杭州', 'cityId': 330100, 'chargingPrice': '1.36', 'deadline': 30, 'savingMoney': '9.90'}, 'status': 1}, 'requestId': '31CBD16005804C208EA8E3199C8170FD', 'message': None}",
+                "请求参数:{'app_id': 'b1044830052f359d', 'biz_content': \"{'phone': '19000000000'}\", 'client': 'android', 'client_version': '4.0.1', 'device_id': '123123', 'method': 'user.judge_phone_is_registered', 'timestamp': '2019-9-25 2:35:56', 'version': '1.0', 'sign': '431ced6d5f60de6cc281e9147d81b4ba'}",
+                "检查点:{'code and message'}",
+                "返回数据:{'code': 110003, 'request_id': 'BC9F695F99214046B5F80C67D6C97ED5', 'message': '手机号未注册'}",
                 ""
             ]
         },
         {
-            "className": "Test_buygoods",
-            "methodName": "test4_GoodsCreate",
-            "description": "\n        购买商品-创建订单(已注册的手机号)\n        :return:\n        ",
-            "spendTime": "0.071 s",
+            "className": "Lgoin",
+            "methodName": "test2_login_byPwd_EorPwd",
+            "description": "\n        登录-用户存在，密码错误\n        :return:\n        ",
+            "spendTime": "0.024 s",
             "status": "成功",
             "log": [
-                "url:http://124.160.35.34:8091/open/api/shop.goods.create",
+                "url:http://124.160.35.34:8091/service.do/",
                 "请求方法:post",
-                "请求参数:{'appKey': 'b1044830052f359d', 'version': '1.0', 'clientName': 'android', 'clientVersion': '4.0.0', 'deviceId': '', 'timeStamp': '20190825184158', 'data': '{\"goods_id\":1,\"user_id\":15654,\"company_id\":1,\"phone\":\"18657738815\"}', 'requestId': '', 'sign': 'fed8a873fafd6626a7f54e7d2eec60b1'}",
-                "检查点:{'code': 0, 'message': None}",
-                "返回数据:{'code': 0, 'data': {'paymentNum': '201908251841726927859', 'orderId': 316, 'orderStatus': 2}, 'requestId': 'AA0B1639C33E46EBA386AA30C1E55A48', 'message': None}",
+                "请求参数:{'app_id': 'b1044830052f359d', 'biz_content': \"{'phone': '18657738815', 'password': '123456'}\", 'client': 'android', 'client_version': '4.0.1', 'device_id': '123123', 'method': 'user.login_by_password', 'timestamp': '2019-9-25 2:35:56', 'version': '1.0', 'sign': 'dc73ca4729798432b5d6571a56a8d1c9'}",
+                "检查点:{'code and message'}",
+                "返回数据:{'code': 110005, 'request_id': '2908695CBB084773889CA7C7346B1B32', 'message': '手机号或密码错误'}",
                 ""
             ]
         },
         {
-            "className": "Test_buygoods",
-            "methodName": "test5_beecloundPay",
-            "description": "\n        支付类型:微信\n        :return:\n        ",
-            "spendTime": "0.279 s",
+            "className": "Lgoin",
+            "methodName": "test3_login_byPwd_rightPwd",
+            "description": "\n        登录-用户存在，密码正确\n        :return:\n        ",
+            "spendTime": "0.292 s",
             "status": "成功",
             "log": [
-                "url:http://124.160.35.34:8091/open/api/pay.beecloud.app",
+                "url:http://124.160.35.34:8091/service.do/",
                 "请求方法:post",
-                "请求参数:{'appKey': 'b1044830052f359d', 'version': '1.0', 'clientName': 'android', 'clientVersion': '4.0.0', 'deviceId': '', 'timeStamp': '20190825184158', 'data': \"{'channel_type': 1, 'out_trade_no': '201908251841726927859'}\", 'requestId': '', 'sign': '30da071c8704d80fb1b5694027702a9b'}",
-                "检查点:{'code': 0, 'message': None}",
-                "返回数据:{'code': 0, 'data': '{\"result_msg\":\"OK\",\"err_detail\":\"\",\"resultCode\":0,\"errMsg\":\"OK:\",\"result_code\":0,\"order_string\":\"_input_charset=\\\\\"utf-8\\\\\"&it_b_pay=\\\\\"2019-08-25 18:47:59\\\\\"&notify_url=\\\\\"https://api.beecloud.cn/2/rest/callback/Ali/ab6865d2-4b4a-436d-a318-db64f49049e3/a84f54e5-d520-4de1-b27b-e22c6f4ab691\\\\\"&out_trade_no=\\\\\"201908251841726927859\\\\\"&partner=\\\\\"2088031124340440\\\\\"&payment_type=\\\\\"1\\\\\"&seller_id=\\\\\"2088031124340440\\\\\"&service=\\\\\"mobile.securitypay.pay\\\\\"&subject=\\\\\"66会员购买\\\\\"&total_fee=\\\\\"0.01\\\\\"&sign=\\\\\"UoHUynsysWL%2BBkDtPWFduxNnqN4BmmTwOyVWg9WXYTUCxwlzcCnJVCsF8xkq9njQ%2FJ8GJ7lOEsoXz01GCAzEOoFibDNL9FHdKoS461KaI4r2oFdNNNgbBIvKHvPq5pbKiZYRFNopq3e8DFyKJFKueupXSykRqnCGOL6e1CvhRpg%3D\\\\\"&sign_type=\\\\\"RSA\\\\\"\",\"id\":\"a84f54e5-d520-4de1-b27b-e22c6f4ab691\"}', 'requestId': '794D1BCF345D4BDBBF4239043A9430BD', 'message': None}",
+                "请求参数:{'app_id': 'b1044830052f359d', 'biz_content': \"{'phone': '18657738815', 'password': 'e10adc3949ba59abbe56e057f20f883e'}\", 'client': 'android', 'client_version': '4.0.1', 'device_id': '123123', 'method': 'user.login_by_password', 'timestamp': '2019-9-25 2:35:56', 'version': '1.0', 'sign': 'bdf90bcac8e6d1169fa1cb59de822f97'}",
+                "检查点:{'code and message'}",
+                "返回数据:{'code': 0, 'data': {'wallet_id': 'walletIdTest', 'max_recharge_account': 1, 'register_time': 1569720953162, 'is_company': 0, 'user_id': '15d6aa852800318', 'token': 'aLkWb1IH0XNbcacX-15d6aa852800318', 'phone': '18657738815', 'vehicle_list': [{'vehicle_number': '浙AJ1800', 'vehicle_model': '法拉利', 'vehicle_id': '16c0337c38000fa', 'user_id': '15d6aa852800318'}]}, 'request_id': '3F7CE399FF62461C8F364F9002EB8265'}",
                 ""
             ]
         },
         {
-            "className": "Test_buygoods",
-            "methodName": "test6_zhifubaoPay",
-            "description": "\n        支付类型:支付宝\n        :return:\n        ",
-            "spendTime": "0.182 s",
+            "className": "Lgoin",
+            "methodName": "test4_login_sendMsg",
+            "description": "\n        登录: 发送验证码\n        :return:\n        ",
+            "spendTime": "0.035 s",
             "status": "成功",
             "log": [
-                "url:http://124.160.35.34:8091/open/api/pay.beecloud.app",
+                "url:http://124.160.35.34:8091/service.do/",
                 "请求方法:post",
-                "请求参数:{'appKey': 'b1044830052f359d', 'version': '1.0', 'clientName': 'android', 'clientVersion': '4.0.0', 'deviceId': '', 'timeStamp': '20190825184158', 'data': \"{'channel_type': 1, 'out_trade_no': '201908251841726927859'}\", 'requestId': '', 'sign': '30da071c8704d80fb1b5694027702a9b'}",
-                "检查点:{'code': 0, 'message': None}",
-                "返回数据:{'code': 0, 'data': '{\"result_msg\":\"OK\",\"err_detail\":\"\",\"resultCode\":0,\"errMsg\":\"OK:\",\"result_code\":0,\"order_string\":\"_input_charset=\\\\\"utf-8\\\\\"&it_b_pay=\\\\\"2019-08-25 18:47:59\\\\\"&notify_url=\\\\\"https://api.beecloud.cn/2/rest/callback/Ali/ab6865d2-4b4a-436d-a318-db64f49049e3/ae4108e9-b69c-4fd5-b926-00499e4a89a0\\\\\"&out_trade_no=\\\\\"201908251841726927859\\\\\"&partner=\\\\\"2088031124340440\\\\\"&payment_type=\\\\\"1\\\\\"&seller_id=\\\\\"2088031124340440\\\\\"&service=\\\\\"mobile.securitypay.pay\\\\\"&subject=\\\\\"66会员购买\\\\\"&total_fee=\\\\\"0.01\\\\\"&sign=\\\\\"fNt5pnGW1W6PuCbHEFuv9%2FpzMaxymp%2BaRPORuT1e4Trgeyzt3u%2FX2yabWtmP2ttGq0k6oObXenUrB1E4WUTliDuWv83zi9HMhKWjAsdCn7%2BHDwrp3NojQLZS8IF50vvgQPpdtuIN3yhb2YAdU4HC3KsXFzZW%2BjuqM%2F7JGmdvavU%3D\\\\\"&sign_type=\\\\\"RSA\\\\\"\",\"id\":\"ae4108e9-b69c-4fd5-b926-00499e4a89a0\"}', 'requestId': '8BD45DB7BF454E0E8BA4DEDB882C077A', 'message': None}",
+                "请求参数:{'app_id': 'b1044830052f359d', 'biz_content': \"{'phone': '18657738815', 'type': 1}\", 'client': 'android', 'client_version': '4.0.1', 'device_id': '123123', 'method': 'user.send_verification_code', 'timestamp': '2019-9-25 2:35:56', 'version': '1.0', 'sign': '90fb8b854364d50b83427952666a996f'}",
+                "检查点:{'code and message'}",
+                "返回数据:{'code': 0, 'request_id': 'C94A3CF11B0F47FF8C1BEBB6FD026CFD'}",
                 ""
             ]
         },
         {
-            "className": "Test_buygoods",
-            "methodName": "test7_getOrder",
-            "description": "\n        获取订单详情\n        :return:\n        ",
+            "className": "Lgoin",
+            "methodName": "test5_login_errorMsgCode",
+            "description": "\n        登录:输入错误验证码\n        :return:\n        ",
+            "spendTime": "0.033 s",
+            "status": "成功",
+            "log": [
+                "url:http://124.160.35.34:8091/service.do/",
+                "请求方法:post",
+                "请求参数:{'app_id': 'b1044830052f359d', 'biz_content': \"{'phone': '18657738815', 'verification_code': '000000'}\", 'client': 'android', 'client_version': '4.0.1', 'device_id': '123123', 'method': 'user.login_by_verification_code', 'timestamp': '2019-9-25 2:35:56', 'version': '1.0', 'sign': '8e64845c2174c11934f389cf24d7af35'}",
+                "检查点:{'code and message'}",
+                "返回数据:{'code': 110001, 'request_id': '7D41444C155D427F86199DB27252BDE3', 'message': '验证码错误'}",
+                ""
+            ]
+        },
+        {
+            "className": "Lgoin",
+            "methodName": "test6_login_rightMsgCode",
+            "description": "\n        登录:输入正确验证码\n        :return:\n        ",
+            "spendTime": "0.374 s",
+            "status": "成功",
+            "log": [
+                "216342",
+                "url:http://124.160.35.34:8091/service.do/",
+                "请求方法:post",
+                "请求参数:{'app_id': 'b1044830052f359d', 'biz_content': \"{'phone': '18657738815', 'verification_code': '216342'}\", 'client': 'android', 'client_version': '4.0.1', 'device_id': '123123', 'method': 'user.login_by_verification_code', 'timestamp': '2019-9-25 2:35:56', 'version': '1.0', 'sign': 'f956c89ee602685583cec07da7d4f320'}",
+                "检查点:{'code and message'}",
+                "返回数据:{'code': 0, 'data': {'wallet_id': 'walletIdTest', 'max_recharge_account': 1, 'register_time': 1569720953162, 'is_company': 0, 'user_id': '15d6aa852800318', 'token': 'i9p8c78X3pvYIR7D-15d6aa852800318', 'phone': '18657738815', 'vehicle_list': [{'vehicle_number': '浙AJ1800', 'vehicle_model': '法拉利', 'vehicle_id': '16c0337c38000fa', 'user_id': '15d6aa852800318'}]}, 'request_id': '14C42BA79DE9453DA799DE486485B7E3'}",
+                ""
+            ]
+        },
+        {
+            "className": "Lgoin",
+            "methodName": "test7_loginOut",
+            "description": "\n        登出\n        :return:\n        ",
             "spendTime": "0.03 s",
             "status": "成功",
             "log": [
-                "url:http://124.160.35.34:8091/open/api/getOrder",
+                "url:http://124.160.35.34:8091/service.do/",
                 "请求方法:post",
-                "请求参数:{'appKey': 'b1044830052f359d', 'version': '1.0.0', 'clientName': 'android', 'clientVersion': '4.0.0', 'deviceId': '', 'timeStamp': '20190825184158', 'data': \"{'orderId': '316'}\", 'requestId': '', 'sign': '8faddc5001606723bde54b2343b616fe'}",
-                "检查点:{'code': 0, 'message': None}",
-                "返回数据:{'code': 0, 'data': {'paymentNum': '201908251841726927859', 'orderId': 316, 'orderStatus': 2}, 'requestId': 'D7BF7B042C06400996BD09152312D5BD', 'message': None}",
+                "请求参数:{'access_token': 'i9p8c78X3pvYIR7D-15d6aa852800318', 'app_id': 'b1044830052f359d', 'biz_content': \"{'token': 'i9p8c78X3pvYIR7D-15d6aa852800318'}\", 'client': 'android', 'client_version': '4.0.1', 'device_id': '123123', 'method': 'user.logout', 'timestamp': '2019-9-25 2:35:56', 'version': '1.0', 'sign': '62f45996194f48a3f2bd8a406b9192ce'}",
+                "检查点:{'code and message'}",
+                "返回数据:{'code': 0, 'request_id': 'AACC372D1DBF4197AC6DD0364C05B704'}",
                 ""
             ]
         },
         {
-            "className": "Test_CreatOrder",
-            "methodName": "test1_GoodsCreate_once",
-            "description": "\n        购买商品-创建订单(已注册的手机号-第一次购买)\n        :return:\n        ",
-            "spendTime": "0.068 s",
+            "className": "Lgoin",
+            "methodName": "test8_query_user_by_user_id",
+            "description": "\n        根据userId查询_无登录Token\n        :return:\n        ",
+            "spendTime": "0.022 s",
             "status": "成功",
             "log": [
-                "执行成功",
-                "url:http://124.160.35.34:8091/open/api/shop.goods.create",
+                "url:http://124.160.35.34:8091/service.do/",
                 "请求方法:post",
-                "请求参数:{'appKey': 'b1044830052f359d', 'version': '1.0', 'clientName': 'android', 'clientVersion': '4.0.0', 'deviceId': '', 'timeStamp': '20190825184159', 'data': '{\"goods_id\":1,\"user_id\":15654,\"company_id\":1,\"phone\":\"18657738815\"}', 'requestId': '', 'sign': 'c4e1c514c032b3fad5f8a0e8f96b088f'}",
-                "检查点:{'code': 0, 'message': None}",
-                "返回数据:{'code': 0, 'data': {'paymentNum': '2019082518411177945413', 'orderId': 317, 'orderStatus': 2}, 'requestId': '30BA25F293AD425D82F19558AB8F0DEE', 'message': None}",
+                "请求参数:{'access_token': 'None', 'app_id': 'b1044830052f359d', 'biz_content': \"{'userId': '15d6aa852800318'}\", 'client': 'android', 'client_version': '4.0.1', 'device_id': '123123', 'method': 'user.logout', 'timestamp': '2019-9-25 2:35:56', 'version': '1.0', 'sign': '879e7ed0c810616a75175bd9fe95ef28'}",
+                "检查点:{'code and message'}",
+                "返回数据:{'code': 1000, 'message': 'token', 'request_id': '3D6640E7EB784DA49BFE2D022B3240E2'}",
                 ""
             ]
         },
         {
-            "className": "Test_CreatOrder",
-            "methodName": "test2_GoodsCreate_repeat",
-            "description": "\n        购买商品-创建订单(已注册的手机号-重复购买)\n        :return:\n        ",
-            "spendTime": "0.055 s",
-            "status": "成功",
-            "log": [
-                "url:http://124.160.35.34:8091/open/api/shop.goods.create",
-                "请求方法:post",
-                "请求参数:{'appKey': 'b1044830052f359d', 'version': '1.0', 'clientName': 'android', 'clientVersion': '4.0.0', 'deviceId': '', 'timeStamp': '20190825184159', 'data': '{\"goods_id\":1,\"user_id\":15654,\"company_id\":1,\"phone\":\"18657738815\"}', 'requestId': '', 'sign': 'c4e1c514c032b3fad5f8a0e8f96b088f'}",
-                "检查点:{'code': 0, 'message': None}",
-                "返回数据:{'code': 0, 'data': {'paymentNum': '201908251841843236404', 'orderId': 318, 'orderStatus': 2}, 'requestId': 'DBE72E6D6C944B599972A36CA5908590', 'message': None}",
-                ""
-            ]
-        },
-        {
-            "className": "Test_CreatOrder",
-            "methodName": "test3_GoodsCreate_NoPhone",
-            "description": "\n        购买商品-创建订单(未注册的手机号)\n        :return:\n        ",
-            "spendTime": "0.017 s",
-            "status": "成功",
-            "log": [
-                "url:http://124.160.35.34:8091/open/api/shop.goods.create",
-                "请求方法:post",
-                "请求参数:{'appKey': 'b1044830052f359d', 'version': '1.0', 'clientName': 'android', 'clientVersion': '4.0.0', 'deviceId': '', 'timeStamp': '20190825184159', 'data': '{\"goods_id\":1,\"user_id\":,\"company_id\"1:,\"phone\":\"19000000001\"}', 'requestId': '', 'sign': '9801f15c79e8be381cd8454db3ef6627'}",
-                "检查点:{'code': 0, 'message': None}",
-                "返回数据:{'code': 1003, 'message': 'syntax error, pos 25, line 1, column 26{\"goods_id\":1,\"user_id\":,\"company_id\"1:,\"phone\":\"19000000001\"}', 'requestId': None}",
-                ""
-            ]
-        },
-        {
-            "className": "Test_CreatOrder",
-            "methodName": "test4_GoodsCreate_NoGoodsId",
-            "description": "\n        购买商品-创建订单(没有商品id)\n        :return:\n        ",
-            "spendTime": "0.02 s",
-            "status": "成功",
-            "log": [
-                "url:http://124.160.35.34:8091/open/api/shop.goods.create",
-                "请求方法:post",
-                "请求参数:{'appKey': 'b1044830052f359d', 'version': '1.0', 'clientName': 'android', 'clientVersion': '4.0.0', 'deviceId': '', 'timeStamp': '20190825184159', 'data': '{\"goods_id\":111111,\"user_id\":15654,\"company_id\":1,\"phone\":\"18657738815\"}', 'requestId': '', 'sign': '6755dad51698eaa3a95132504ac27e04'}",
-                "检查点:{'code': 0, 'message': None}",
-                "返回数据:{'code': 20201, 'data': None, 'requestId': '2741EF352ED245978025DE022D8D2441', 'message': 'Goods info not found'}",
-                ""
-            ]
-        },
-        {
-            "className": "Test_CreatOrder",
-            "methodName": "test5_GoodsCreate_NoCompanyId",
-            "description": "\n        购买商品-创建订单(没有分公司id)\n        :return:\n        ",
+            "className": "Lgoin",
+            "methodName": "test8_query_user_by_user_id_1",
+            "description": "\n        根据userId查询_有登录Token\n        :return:\n        ",
             "spendTime": "0.048 s",
             "status": "成功",
             "log": [
-                "url:http://124.160.35.34:8091/open/api/shop.goods.create",
+                "url:http://124.160.35.34:8091/service.do/",
                 "请求方法:post",
-                "请求参数:{'appKey': 'b1044830052f359d', 'version': '1.0', 'clientName': 'android', 'clientVersion': '4.0.0', 'deviceId': '', 'timeStamp': '20190825184159', 'data': '{\"goods_id\":1,\"user_id\":15654,\"company_id\":1111111,\"phone\":\"18657738815\"}', 'requestId': '', 'sign': 'ce067d365a0b2f0edf99c93dcb5f8abc'}",
-                "检查点:{'code': 0, 'message': None}",
-                "返回数据:{'code': 0, 'data': {'paymentNum': '2019082518412091829098', 'orderId': 319, 'orderStatus': 2}, 'requestId': 'ECD7CAEE2F18494884E7A898CE4B826C', 'message': None}",
+                "请求参数:{'access_token': 'i9p8c78X3pvYIR7D-15d6aa852800318', 'app_id': 'b1044830052f359d', 'biz_content': \"{'userId': '15d6aa852800318'}\", 'client': 'android', 'client_version': '4.0.1', 'device_id': '123123', 'method': 'user.query_user_by_user_id', 'timestamp': '2019-9-25 2:35:56', 'version': '1.0', 'sign': '6978f0d21fa25224b27a64619c42f518'}",
+                "检查点:{'code and message'}",
+                "返回数据:{'code': 0, 'data': {'wallet_id': 'walletIdTest', 'max_recharge_account': 1, 'register_time': 1569720953162, 'is_company': 0, 'user_id': '15d6aa852800318', 'phone': '18657738815', 'vehicle_list': [{'vehicle_number': '浙AJ1800', 'vehicle_model': '法拉利', 'vehicle_id': '16c0337c38000fa', 'user_id': '15d6aa852800318'}]}, 'request_id': 'DFAD7609C11F43898A4836A5C7F0C160'}",
                 ""
             ]
         },
         {
-            "className": "Test_memberinfo",
-            "methodName": "test1_getMemberInfo_ship0",
-            "description": "\n        获取会员信息-用户非会员\n        :return:\n        ",
-            "spendTime": "0.021 s",
+            "className": "Station",
+            "methodName": "test1_query_station_list_all",
+            "description": "\n        查询站点列表信息:查询所有\n        :return:\n        ",
+            "spendTime": "0.214 s",
+            "status": "失败",
+            "log": [
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 615, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\p\\Desktop\\66ifuel\\AllCase\\test3_getstioninfo.py\", line 73, in test1_query_station_list_all\n    self.assertTrue(res['code'] == 0, msg=\"校验code错误\")\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 692, in assertTrue\n    raise self.failureException(msg)\n",
+                "AssertionError: False is not true : 校验code错误\n"
+            ]
+        },
+        {
+            "className": "Station",
+            "methodName": "test2_query_station_list_10",
+            "description": "\n        查询站点列表信息:查询分页\n        :return:\n        ",
+            "spendTime": "0.126 s",
+            "status": "失败",
+            "log": [
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 615, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\p\\Desktop\\66ifuel\\AllCase\\test3_getstioninfo.py\", line 96, in test2_query_station_list_10\n    self.assertTrue(res['code'] == 0, msg=\"校验code错误\")\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 692, in assertTrue\n    raise self.failureException(msg)\n",
+                "AssertionError: False is not true : 校验code错误\n"
+            ]
+        },
+        {
+            "className": "Station",
+            "methodName": "test3_query_station_list_1",
+            "description": "\n        查询站点列表信息:查询单个\n        :return:\n        ",
+            "spendTime": "0.094 s",
+            "status": "失败",
+            "log": [
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 615, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\p\\Desktop\\66ifuel\\AllCase\\test3_getstioninfo.py\", line 120, in test3_query_station_list_1\n    self.assertTrue(res['code'] == 0, msg=\"校验code错误\")\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 692, in assertTrue\n    raise self.failureException(msg)\n",
+                "AssertionError: False is not true : 校验code错误\n"
+            ]
+        },
+        {
+            "className": "Station",
+            "methodName": "test4_query_station_by_id",
+            "description": "\n        查询单个站点信息\n        :return:\n        ",
+            "spendTime": "0.0 s",
+            "status": "跳过",
+            "log": [
+                "未完成用例，跳过"
+            ]
+        },
+        {
+            "className": "Station",
+            "methodName": "test5_query_periphery_list",
+            "description": "\n        查询站点周边服务信息\n        :return: \n        ",
+            "spendTime": "0.036 s",
             "status": "成功",
             "log": [
-                "url:http://124.160.35.34:8091/open/api/getMemberInfo",
+                "url:http://124.160.35.34:8091/service.do/",
                 "请求方法:post",
-                "请求参数:{'appKey': 'b1044830052f359d', 'version': '1.0.0', 'clientName': 'android', 'clientVersion': '4.0.0', 'deviceId': '', 'timeStamp': '20190825184159', 'data': '{\"user_id\":00000,\"company_id\":1}', 'requestId': '', 'sign': 'e2453c9cf103d9e5fbba18b03aed3aad'}",
-                "检查点:{'code': 0,'hasMemberShip': 0}",
-                "返回数据:{'code': 0, 'data': {'companyId': None, 'electricityPrice': 0, 'savingAmout': None, 'hasMemberShip': 0, 'endAt': None, 'startAt': None, 'savedAmount': None, 'remainDays': None}, 'requestId': 'F0812F664BF9415984DF600EDD23E051', 'message': None}",
+                "请求参数:{'access_token': 'Gwn83k1gTQUsPn0t-15d6aa852800318', 'app_id': 'b1044830052f359d', 'biz_content': \"{'operator_id': '359705330', 'station_id': '15855f931400082'}\", 'client': 'android', 'client_version': '4.0.1', 'device_id': '123123', 'method': 'station.query_periphery_list', 'timestamp': '2019-9-25 2:35:56', 'version': '1.0', 'sign': 'dd3bb19731d89b0c23677525480b3fe7'}",
+                "检查点:{'code and message'}",
+                "返回数据:{'code': 0, 'data': {'1': [{'periphery_id': '15b205973c0028d', 'address': '肯德基的具体地址', 'distance': 50, 'periphery_name': '肯德基', 'price': 33, 'image_url': 'imageUrl1/imageUrl2,imageUrl3/imageUrl4', 'periphery_type': 1, 'operator_id': '359705330', 'station_id': '15855f931400082'}, {'periphery_id': '15b21e65e40027e', 'address': '麦当劳的具体地址', 'distance': 60, 'periphery_name': '麦当劳', 'price': 39, 'image_url': 'imageUrl1/imageUrl2', 'periphery_type': 1, 'operator_id': '359705330', 'station_id': '15855f931400082'}], '2': [{'periphery_id': '15b2342e24000c7', 'address': '出门右转100mi', 'distance': 100, 'periphery_name': '普通洗手间', 'image_url': 'imageUrl1/imageUrl2', 'periphery_type': 2, 'operator_id': '359705330', 'station_id': '15855f931400082'}, {'periphery_id': '15b236fc2800109', 'address': '出门左转101米', 'distance': 120, 'periphery_name': '豪华洗手间', 'image_url': 'imageUrl1/imageUrl2', 'periphery_type': 2, 'operator_id': '359705330', 'station_id': '15855f931400082'}]}, 'request_id': 'C08BCB5CC52741E9875F5F8C6928214C'}",
                 ""
             ]
         },
         {
-            "className": "Test_memberinfo",
-            "methodName": "test2_getMemberInfo_ship1",
-            "description": "\n        获取会员信息-用户是会员\n        :return:\n        ",
-            "spendTime": "0.018 s",
+            "className": "Station",
+            "methodName": "test6_query_connector_status_by_station_id",
+            "description": "\n        查询站点终端列表\n        :return:\n        ",
+            "spendTime": "0.052 s",
             "status": "成功",
             "log": [
-                "url:http://124.160.35.34:8091/open/api/getMemberInfo",
+                "url:http://124.160.35.34:8091/service.do/",
                 "请求方法:post",
-                "请求参数:{'appKey': 'b1044830052f359d', 'version': '1.0.0', 'clientName': 'android', 'clientVersion': '4.0.0', 'deviceId': '', 'timeStamp': '20190825184159', 'data': '{\"user_id\":16731,\"company_id\":1}', 'requestId': '', 'sign': 'a393cc5644a7039124dc52c4adbd5984'}",
-                "检查点:{'code': 0, 'hasMemberShip': 1}",
-                "返回数据:{'code': 0, 'data': {'companyId': 1, 'electricityPrice': 136, 'savingAmout': 996, 'hasMemberShip': 1, 'endAt': '2020-01-22 17:03:49', 'startAt': '2019-08-25 17:03:49', 'savedAmount': 0, 'remainDays': 150}, 'requestId': 'B1B621D68C63439689504EFF53C1EB8C', 'message': None}",
+                "请求参数:{'access_token': 'Gwn83k1gTQUsPn0t-15d6aa852800318', 'app_id': 'b1044830052f359d', 'biz_content': \"{'page': '1', 'station_id': '15855f931400082', 'operator_id': '359705330'}\", 'client': 'android', 'client_version': '4.0.1', 'device_id': '123123', 'method': 'station.query_connector_status_by_station_id', 'timestamp': '2019-9-25 2:35:56', 'version': '1.0', 'sign': '6a843f916fcb981ab8db2be57b9eafab'}",
+                "检查点:{'code and message'}",
+                "返回数据:{'code': 0, 'request_id': 'CEE6870C56774A8AA3407C1BD13330B6', 'data_list': [{'rated_power': 2000, 'connector_number': 1, 'connector_id': '159dbb8e1400347', 'station_name': '站点1', 'state': 0}, {'rated_power': 2000, 'connector_number': 2, 'connector_id': '159dbe7fcc0023f', 'station_name': '站点1', 'state': 1}, {'rated_power': 2000, 'connector_number': 3, 'connector_id': '159dc0378400349', 'station_name': '站点1', 'state': 1}, {'rated_power': 1000, 'connector_number': 4, 'connector_id': '15c585f52c00258', 'station_name': '站点1', 'state': 1}], 'total_count': 4}",
                 ""
             ]
         },
         {
-            "className": "Test_memberinfo",
-            "methodName": "test1_incrementSavedAmount_101",
-            "description": "\n        查询订单节约金额信息\n        :return:\n        ",
-            "spendTime": "0.034 s",
-            "status": "成功",
-            "log": [
-                "url:http://124.160.35.34:8091/open/api/incrementSavedAmount",
-                "请求方法:post",
-                "请求参数:{'appKey': 'b1044830052f359d', 'version': '1.0.0', 'clientName': 'android', 'clientVersion': '4.0.0', 'deviceId': '', 'timeStamp': '20190825184159', 'data': '{\"user_id\":15654,\"company_id\":1,\"saved_amount\":101}', 'requestId': '', 'sign': '58226a0408eadcd214ea9e8d34067eea'}",
-                "检查点:{'code': 0,'message': None}",
-                "返回数据:{'code': 0, 'requestId': 'D5F8CCBE8F9D4CE681885D835ABA712E', 'message': None}",
-                ""
-            ]
-        },
-        {
-            "className": "Test_memberinfo",
-            "methodName": "test2_incrementSavedAmount_0",
-            "description": "\n        查询会员已节约金额-saved_0\n        :return:\n        ",
-            "spendTime": "0.028 s",
-            "status": "成功",
-            "log": [
-                "url:http://124.160.35.34:8091/open/api/incrementSavedAmount",
-                "请求方法:post",
-                "请求参数:{'appKey': 'b1044830052f359d', 'version': '1.0.0', 'clientName': 'android', 'clientVersion': '4.0.0', 'deviceId': '', 'timeStamp': '20190825184159', 'data': '{\"user_id\":15654,\"company_id\":1,\"saved_amount\":0}', 'requestId': '', 'sign': 'c6a8553a2a46217623a3a335efc96cac'}",
-                "检查点:{'code': 0,'message': None}",
-                "返回数据:{'code': 0, 'requestId': 'FEAD558E3B1842AC8619E5815ABA3B83', 'message': None}",
-                ""
-            ]
-        },
-        {
-            "className": "Test_memberinfo",
-            "methodName": "test3_incrementSavedAmount_fushu",
-            "description": "\n        查询会员已节约金额-(-100)\n        :return:\n        ",
+            "className": "Car",
+            "methodName": "test1_create_vehicle_notoken",
+            "description": "\n        新增/修改车辆信息:无token\n        :return:\n        ",
             "spendTime": "0.027 s",
             "status": "成功",
             "log": [
-                "url:http://124.160.35.34:8091/open/api/incrementSavedAmount",
+                "url:http://124.160.35.34:8091/service.do/",
                 "请求方法:post",
-                "请求参数:{'appKey': 'b1044830052f359d', 'version': '1.0.0', 'clientName': 'android', 'clientVersion': '4.0.0', 'deviceId': '', 'timeStamp': '20190825184159', 'data': '{\"user_id\":15654,\"company_id\":1,\"saved_amount\":-101}', 'requestId': '', 'sign': 'd8cea6e4e504ed7f89006eca8f147a01'}",
-                "检查点:{'code': 0,'message': None}",
-                "返回数据:{'code': 0, 'requestId': '1992DF5691D24C9FBFB9A09904AD6DAF', 'message': None}",
+                "请求参数:{'access_token': 'None', 'app_id': 'b1044830052f359d', 'biz_content': \"{'user_id': '15d6aa852800318', 'vehicle_number': '浙AJ1800', 'vehicle_model': '法拉利'}\", 'client': 'android', 'client_version': '4.0.1', 'device_id': '123123', 'method': 'vehicle.create_vehicle', 'timestamp': '2019-9-25 2:35:56', 'version': '1.0', 'sign': '09b3cff64d99b01695d5f022219aef62'}",
+                "检查点:{'code and message'}",
+                "返回数据:{'code': 100001, 'message': '用户未登陆或已过期', 'request_id': 'C592FC09037343989C9D735399BCAD3B'}",
                 ""
             ]
         },
         {
-            "className": "Test_memberinfo",
-            "methodName": "test4_incrementSavedAmount_null",
-            "description": "\n        查询会员已节约金额-(null)\n        :return:\n        ",
-            "spendTime": "0.021 s",
+            "className": "Car",
+            "methodName": "test2_create_vehicle_number_exist",
+            "description": "\n        新增/修改车辆信息:有token_车牌号不存在\n        :return:\n        ",
+            "spendTime": "0.047 s",
             "status": "成功",
             "log": [
-                "url:http://124.160.35.34:8091/open/api/incrementSavedAmount",
+                "执行成功",
+                "url:http://124.160.35.34:8091/service.do/",
                 "请求方法:post",
-                "请求参数:{'appKey': 'b1044830052f359d', 'version': '1.0.0', 'clientName': 'android', 'clientVersion': '4.0.0', 'deviceId': '', 'timeStamp': '20190825184159', 'data': '{\"user_id\":15654,\"company_id\":1,\"saved_amount\":null}', 'requestId': '', 'sign': '172b4e7c16b883a808882799e4b68e51'}",
-                "检查点:{'code': 0}",
-                "返回数据:{'code': 1009, 'message': 'saved_amount', 'requestId': '3B22415781A44767AE0BC6027549B601'}",
+                "请求参数:{'access_token': 'fqYehSQe2yQ04b7B-15d6aa852800318', 'app_id': 'b1044830052f359d', 'biz_content': \"{'user_id': '15d6aa852800318', 'vehicle_number': '浙AJ1800', 'vehicle_model': '法拉利'}\", 'client': 'android', 'client_version': '4.0.1', 'device_id': '123123', 'method': 'vehicle.create_vehicle', 'timestamp': '2019-9-25 2:35:56', 'version': '1.0', 'sign': '555e8adacf202e64fcccafae1e52fef8'}",
+                "检查点:{'code and message'}",
+                "返回数据:{'code': 0, 'data': '16c0f3682800372', 'request_id': 'F5D9A5A0555446C4AF96C05E52C71D64'}",
                 ""
             ]
         },
         {
-            "className": "Test_memberinfo",
-            "methodName": "test5_incrementSavedAmount_novip",
-            "description": "\n        查询订单节约金额信息-非会员\n        :return:\n        ",
-            "spendTime": "0.029 s",
+            "className": "Car",
+            "methodName": "test3_create_vehicle_right",
+            "description": "\n        新增/修改车辆信息:有token_车牌号已存在\n        :return:\n        ",
+            "spendTime": "0.04 s",
             "status": "成功",
             "log": [
-                "url:http://124.160.35.34:8091/open/api/incrementSavedAmount",
+                "url:http://124.160.35.34:8091/service.do/",
                 "请求方法:post",
-                "请求参数:{'appKey': 'b1044830052f359d', 'version': '1.0.0', 'clientName': 'android', 'clientVersion': '4.0.0', 'deviceId': '', 'timeStamp': '20190825184159', 'data': '{\"user_id\":7,\"company_id\":1,\"saved_amount\":100}', 'requestId': '', 'sign': '996ed0b92f9d0d6633a14987dc457723'}",
-                "检查点:{'code': 0,'message': None}",
-                "返回数据:{'code': 201404, 'requestId': '5918CAAA83F04D038DB932A42EDD060C', 'message': 'entity is not found'}",
+                "请求参数:{'access_token': 'fqYehSQe2yQ04b7B-15d6aa852800318', 'app_id': 'b1044830052f359d', 'biz_content': \"{'user_id': '15d6aa852800318', 'vehicle_number': '浙AJ1800', 'vehicle_model': '法拉利'}\", 'client': 'android', 'client_version': '4.0.1', 'device_id': '123123', 'method': 'vehicle.create_vehicle', 'timestamp': '2019-9-25 2:35:56', 'version': '1.0', 'sign': '555e8adacf202e64fcccafae1e52fef8'}",
+                "检查点:{'code and message'}",
+                "返回数据:{'code': 124001, 'request_id': 'F133252F947F47FEB934405E691A6D08', 'message': '车牌号已存在'}",
                 ""
             ]
         },
         {
-            "className": "Test_memberinfo",
-            "methodName": "test6_incrementSavedAmount_noCompanyid",
-            "description": "\n        查询订单节约金额信息-没有分公司id\n        :return:\n        ",
-            "spendTime": "0.018 s",
+            "className": "Car",
+            "methodName": "test4_query_vehicle_by_user_id",
+            "description": "\n        查询车辆信息\n        :return:\n        ",
+            "spendTime": "0.037 s",
             "status": "成功",
             "log": [
-                "url:http://124.160.35.34:8091/open/api/incrementSavedAmount",
+                "url:http://124.160.35.34:8091/service.do/",
                 "请求方法:post",
-                "请求参数:{'appKey': 'b1044830052f359d', 'version': '1.0.0', 'clientName': 'android', 'clientVersion': '4.0.0', 'deviceId': '', 'timeStamp': '20190825184159', 'data': '{\"user_id\":15654,\"company_id\":1111,\"saved_amount\":100}', 'requestId': '', 'sign': 'b9336c5c86c26094ad5c355798c665e5'}",
-                "检查点:{'code': 0,'message': None}",
-                "返回数据:{'code': 201404, 'requestId': '26B7878714D542F180E583E59C12244C', 'message': 'entity is not found'}",
+                "请求参数:{'access_token': 'fqYehSQe2yQ04b7B-15d6aa852800318', 'app_id': 'b1044830052f359d', 'biz_content': \"{'user_id': '15d6aa852800318'}\", 'client': 'android', 'client_version': '4.0.1', 'device_id': '123123', 'method': 'vehicle.query_vehicle_by_user_id', 'timestamp': '2019-9-25 2:35:56', 'version': '1.0', 'sign': '355a208e2db28524a84b20007ee8685e'}",
+                "检查点:{'code and message'}",
+                "返回数据:{'code': 0, 'request_id': '242F0EEC25F14F43BAB88FA4DFA90C38', 'data_list': [{'vehicle_number': '浙AJ1800', 'vehicle_model': '法拉利', 'vehicle_id': '16c0f3682800372', 'user_id': '15d6aa852800318'}]}",
                 ""
+            ]
+        },
+        {
+            "className": "Coupon",
+            "methodName": "test1_user_coupon_count",
+            "description": "\n        查询优惠券数量\n        :return:\n        ",
+            "spendTime": "0.034 s",
+            "status": "失败",
+            "log": [
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 615, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\p\\Desktop\\66ifuel\\AllCase\\test5_coupon.py\", line 72, in test1_user_coupon_count\n    self.assertTrue(res['code'] == 0, msg=\"校验code错误\")\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 692, in assertTrue\n    raise self.failureException(msg)\n",
+                "AssertionError: False is not true : 校验code错误\n"
+            ]
+        },
+        {
+            "className": "Coupon",
+            "methodName": "test2_user_coupon_list_Notused",
+            "description": "\n        查询优惠券列表-未使用\n        :return:\n        ",
+            "spendTime": "0.028 s",
+            "status": "失败",
+            "log": [
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 615, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\p\\Desktop\\66ifuel\\AllCase\\test5_coupon.py\", line 96, in test2_user_coupon_list_Notused\n    self.assertTrue(res['code'] == 0, msg=\"校验code错误\")\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 692, in assertTrue\n    raise self.failureException(msg)\n",
+                "AssertionError: False is not true : 校验code错误\n"
+            ]
+        },
+        {
+            "className": "Coupon",
+            "methodName": "test2_user_coupon_list_used",
+            "description": "\n        查询优惠券列表-未使用\n        :return:\n        ",
+            "spendTime": "0.026 s",
+            "status": "失败",
+            "log": [
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 615, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\p\\Desktop\\66ifuel\\AllCase\\test5_coupon.py\", line 120, in test2_user_coupon_list_used\n    self.assertTrue(res['code'] == 0, msg=\"校验code错误\")\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 692, in assertTrue\n    raise self.failureException(msg)\n",
+                "AssertionError: False is not true : 校验code错误\n"
+            ]
+        },
+        {
+            "className": "Coupon",
+            "methodName": "test3_user_coupon_list_Expired",
+            "description": "\n        查询优惠券列表-已过期\n        :return:\n        ",
+            "spendTime": "0.028 s",
+            "status": "失败",
+            "log": [
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 615, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\p\\Desktop\\66ifuel\\AllCase\\test5_coupon.py\", line 144, in test3_user_coupon_list_Expired\n    self.assertTrue(res['code'] == 0, msg=\"校验code错误\")\n",
+                "  File \"F:\\Program Files\\python37\\lib\\unittest\\case.py\", line 692, in assertTrue\n    raise self.failureException(msg)\n",
+                "AssertionError: False is not true : 校验code错误\n"
             ]
         }
     ],
     "testName": "66快充流程接口报告",
-    "testAll": 20,
-    "testFail": 0,
-    "beginTime": "2019-08-25 18:41:58",
-    "totalTime": "1s",
-    "testSkip": 0,
+    "testAll": 45,
+    "testFail": 23,
+    "beginTime": "2019-10-10 18:33:34",
+    "totalTime": "3s",
+    "testSkip": 5,
     "testError": 0
 };
 
