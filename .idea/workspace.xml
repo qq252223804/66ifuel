@@ -4,27 +4,8 @@
     <bookmark url="file://$PROJECT_DIR$/Case_Operators/test3__Charge_order.py" description="    # def test2_query_start_charge(self):&#10;" line="102" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b3e795a-3aaa-4556-b03c-309e2a7f875f" name="Default Changelist" comment="新增新架构接口&#10;封装redis">
-      <change afterPath="$PROJECT_DIR$/AllCase/test1_register_user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AllCase/test2_login.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AllCase/test3_getstioninfo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AllCase/test4_car.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AllCase/test5_coupon.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Run_all.py" afterDir="false" />
+    <list default="true" id="1b3e795a-3aaa-4556-b03c-309e2a7f875f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AallCase/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/AllCase/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AallCase/test1_send_message.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Case/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case_Operators/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Case_Operators/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case_Operators/test1_get_AccessToken.py" beforeDir="false" afterPath="$PROJECT_DIR$/Case_Operators/test1_get_AccessToken.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case_Operators/test2_station_status_stats.py" beforeDir="false" afterPath="$PROJECT_DIR$/Case_Operators/test2_station_status_stats.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case_Operators/test3__Charge_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/Case_Operators/test3__Charge_order.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/AES_CBC_PKCS5.py" beforeDir="false" afterPath="$PROJECT_DIR$/Common/AES_CBC_PKCS5.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/SQL_execute.py" beforeDir="false" afterPath="$PROJECT_DIR$/Common/SQL_execute.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/redis_operate.py" beforeDir="false" afterPath="$PROJECT_DIR$/Common/redis_operate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/conf.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Config/conf.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report_html/测试报告.html" beforeDir="false" afterPath="$PROJECT_DIR$/Report_html/测试报告.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Run/Run_all.py" beforeDir="false" afterPath="$PROJECT_DIR$/Run/Run_all.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,44 +30,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Case_goods/test4_incrementSavedAmount.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Common/hmacmd5.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="587">
+              <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/AES_CBC_PKCS5.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="85" column="19" lean-forward="true" selection-start-line="85" selection-start-column="19" selection-end-line="85" selection-end-column="19" />
-              <folding>
-                <element signature="e#161#190#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/log/2019_11_05.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-287" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/img/test2_zhoujielun.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Config/Varibales.yaml">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -101,34 +51,73 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Case_Operators/__init__.py">
+        <entry file="file://$PROJECT_DIR$/Config/conf.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="330">
+              <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="58" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Common/SQL_execute.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Common/variables_func.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Base/api_method.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Base/runmethod.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="168" lean-forward="true" selection-start-line="168" selection-end-line="168" />
+            <state relative-caret-position="902">
+              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Common/AES_CBC_PKCS5.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-704">
+              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
               <folding>
-                <element signature="e#129#140#0" expanded="true" />
-                <marker date="1573201320214" expanded="true" signature="4458:4865" ph="..." />
+                <element signature="e#161#190#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Case_Operators/test3__Charge_order.py">
+        <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/requests/api.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="34" column="45" lean-forward="true" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="45" />
+            <state relative-caret-position="1628">
+              <caret line="74" column="44" selection-start-line="74" selection-start-column="38" selection-end-line="74" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AllCase/test5_coupon.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3564">
+              <caret line="166" column="102" selection-start-line="166" selection-start-column="102" selection-end-line="166" selection-end-column="102" />
               <folding>
-                <element signature="e#164#175#0" expanded="true" />
+                <element signature="e#121#145#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AllCase/test4_car.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="e#117#141#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -168,7 +157,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Case_goods/__init__.py" />
         <option value="$PROJECT_DIR$/Common/Email.py" />
         <option value="$PROJECT_DIR$/Case_goods/test3_BeecloundPay.py" />
         <option value="$PROJECT_DIR$/Case_goods/test4_getMemberInfo.py" />
@@ -193,8 +181,6 @@
         <option value="$PROJECT_DIR$/venv/Lib/site-packages/requests/__init__.py" />
         <option value="F:/Program Files/python37/Lib/site-packages/redis_py_cluster-2.0.0-py3.7.egg/rediscluster/nodemanager.py" />
         <option value="$PROJECT_DIR$/AallCase/test1_send_message.py" />
-        <option value="$PROJECT_DIR$/Config/conf.yaml" />
-        <option value="$PROJECT_DIR$/Common/redis_operate.py" />
         <option value="$PROJECT_DIR$/AallCase/test1_register_user.py" />
         <option value="$PROJECT_DIR$/AallCase/test3_getstioninfo.py" />
         <option value="$PROJECT_DIR$/AallCase/test2_login.py" />
@@ -213,27 +199,29 @@
         <option value="$PROJECT_DIR$/AllCase/test3_getstioninfo.py" />
         <option value="$PROJECT_DIR$/AllCase/test5_coupon.py" />
         <option value="$PROJECT_DIR$/AllCase/test1_register_user.py" />
-        <option value="$PROJECT_DIR$/Common/AES_CBC_PKCS5.py" />
         <option value="$PROJECT_DIR$/Case_Operators/__init__.py" />
         <option value="$PROJECT_DIR$/Case_Operators/test1_get_AccessToken.py" />
-        <option value="$PROJECT_DIR$/Case_Operators/test2_station_status_stats.py" />
-        <option value="$PROJECT_DIR$/Case_Operators/test3__Charge_order.py" />
         <option value="$PROJECT_DIR$/Common/SQL_execute.py" />
+        <option value="$PROJECT_DIR$/Case_Operators/test2_station_status_stats.py" />
+        <option value="$PROJECT_DIR$/Common/AES_CBC_PKCS5.py" />
+        <option value="$PROJECT_DIR$/Case_Operators/test3__Charge_order.py" />
+        <option value="$PROJECT_DIR$/Config/conf.yaml" />
+        <option value="$PROJECT_DIR$/AllCase/test6_activity.py" />
+        <option value="$PROJECT_DIR$/Common/redis_operate.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-54" />
-    <option name="y" value="-19" />
-    <option name="width" value="1343" />
-    <option name="height" value="788" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="34" />
+    <option name="y" value="-982" />
+    <option name="width" value="1366" />
+    <option name="height" value="898" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -244,7 +232,17 @@
             <path>
               <item name="66ifuel" type="b2602c69:ProjectViewProjectNode" />
               <item name="66ifuel" type="462c0819:PsiDirectoryNode" />
-              <item name="Case_Operators" type="462c0819:PsiDirectoryNode" />
+              <item name="AllCase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="66ifuel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="66ifuel" type="462c0819:PsiDirectoryNode" />
+              <item name="Base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="66ifuel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="66ifuel" type="462c0819:PsiDirectoryNode" />
+              <item name="Case_goods" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="66ifuel" type="b2602c69:ProjectViewProjectNode" />
@@ -275,12 +273,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/AllCase" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -306,51 +305,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.SQL_execute">
-    <configuration name="SQL_execute" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="66ifuel" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Common/SQL_execute.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="66ifuel" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Case_Operators/__init__.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.hmacmd5">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="66ifuel" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -373,19 +328,48 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test3__Charge_order.Test_Charge_order.test4_query_notification_start_charge_result" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="hmacmd5" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="66ifuel" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Case_Operators" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test3__Charge_order.Test_Charge_order.test4_query_notification_start_charge_result&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Common/hmacmd5.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="redis_operate" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="66ifuel" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Common/redis_operate.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration name="Unittests in test2_station_status_stats.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
@@ -418,13 +402,28 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests in test6_activity.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="66ifuel" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AllCase" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/AllCase/test6_activity.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.SQL_execute" />
+        <item itemvalue="Python.hmacmd5" />
+        <item itemvalue="Python.redis_operate" />
+        <item itemvalue="Python tests.Unittests in test6_activity.py" />
         <item itemvalue="Python tests.Unittests in test3__Charge_order.py" />
-        <item itemvalue="Python tests.Unittests for test3__Charge_order.Test_Charge_order.test4_query_notification_start_charge_result" />
         <item itemvalue="Python tests.Unittests in test2_station_status_stats.py" />
-        <item itemvalue="Python.__init__" />
       </list>
     </recent_temporary>
   </component>
@@ -475,7 +474,14 @@
       <workItem from="1571380645522" duration="6048000" />
       <workItem from="1572681135929" duration="6928000" />
       <workItem from="1572937129326" duration="12959000" />
-      <workItem from="1573179249743" duration="19174000" />
+      <workItem from="1573179249743" duration="19964000" />
+      <workItem from="1573453085446" duration="1162000" />
+      <workItem from="1574232075478" duration="1612000" />
+      <workItem from="1574416639463" duration="1904000" />
+      <workItem from="1574420702602" duration="6252000" />
+      <workItem from="1575360976715" duration="27046000" />
+      <workItem from="1577254887926" duration="1328000" />
+      <workItem from="1577341432162" duration="207000" />
     </task>
     <task id="LOCAL-00001" summary="更新了bug">
       <created>1564460221283</created>
@@ -533,43 +539,57 @@
       <option name="project" value="LOCAL" />
       <updated>1569515463367</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="1.批量插入数据初始化&#10;2.cec接口调用测试">
+      <created>1573301600492</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1573301600492</updated>
+    </task>
+    <task id="LOCAL-00010" summary="环境ip改动">
+      <created>1575871199710</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1575871199710</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test3__Charge_order_py - 2019.11.05 at 18h 34m 26s.xml">
-      <configuration name="Unittests in test3__Charge_order.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test6_activity_py - 2019.12.03 at 19h 02m 41s.xml">
+      <configuration name="Unittests in test6_activity.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test3__Charge_order_py - 2019.11.05 at 18h 38m 27s.xml">
-      <configuration name="Unittests in test3__Charge_order.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test6_activity_py - 2019.12.03 at 19h 02m 50s.xml">
+      <configuration name="Unittests in test6_activity.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test3__Charge_order_py - 2019.11.05 at 18h 38m 50s.xml">
-      <configuration name="Unittests in test3__Charge_order.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test6_activity_py - 2019.12.03 at 19h 04m 39s.xml">
+      <configuration name="Unittests in test6_activity.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test3__Charge_order_Test_Charge_order_test4_query_notification_start_charge_result - 2019.11.05 at 18h 39m 33s.xml">
-      <configuration name="Unittests for test3__Charge_order.Test_Charge_order.test4_query_notification_start_charge_result" configurationId="tests" />
+    <history-entry file="Unittests_in_test6_activity_py - 2019.12.03 at 19h 05m 31s.xml">
+      <configuration name="Unittests in test6_activity.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test3__Charge_order_py - 2019.11.05 at 18h 39m 37s.xml">
-      <configuration name="Unittests in test3__Charge_order.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test6_activity_py - 2019.12.04 at 09h 40m 31s.xml">
+      <configuration name="Unittests in test6_activity.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test3__Charge_order_py - 2019.11.05 at 18h 40m 03s.xml">
-      <configuration name="Unittests in test3__Charge_order.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test6_activity_py - 2019.12.04 at 09h 41m 09s.xml">
+      <configuration name="Unittests in test6_activity.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test3__Charge_order_py - 2019.11.05 at 18h 41m 42s.xml">
-      <configuration name="Unittests in test3__Charge_order.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test6_activity_py - 2019.12.04 at 09h 43m 50s.xml">
+      <configuration name="Unittests in test6_activity.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test3__Charge_order_py - 2019.11.05 at 18h 42m 05s.xml">
-      <configuration name="Unittests in test3__Charge_order.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test6_activity_py - 2019.12.04 at 09h 44m 28s.xml">
+      <configuration name="Unittests in test6_activity.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test3__Charge_order_py - 2019.11.05 at 18h 43m 07s.xml">
-      <configuration name="Unittests in test3__Charge_order.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test6_activity_py - 2019.12.05 at 16h 16m 53s.xml">
+      <configuration name="Unittests in test6_activity.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test3__Charge_order_py - 2019.11.05 at 18h 47m 03s.xml">
-      <configuration name="Unittests in test3__Charge_order.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test6_activity_py - 2019.12.05 at 16h 47m 43s.xml">
+      <configuration name="Unittests in test6_activity.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="250539000" />
+    <option name="totallyTimeSpent" value="290840000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -581,14 +601,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="34" y="-982" width="1366" height="898" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21482602" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20061256" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.5355522" visible="true" weight="0.6988543" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5355522" weight="0.3385621" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.38175675" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -599,7 +619,7 @@
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.5253683" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.3289689" />
       <window_info anchor="bottom" id="SVN Repositories" order="12" weight="0.3289689" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.46293494" weight="0.42880523" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.46293494" weight="0.42786884" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -659,11 +679,13 @@
     <MESSAGE value="import" />
     <MESSAGE value="1.新增会员接口&#10;2.修改mysql封装层&#10;3.更换beautiful报告&#10;4.新增selenium错误用例生成报告" />
     <MESSAGE value="新增新架构接口&#10;封装redis" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增新架构接口&#10;封装redis" />
+    <MESSAGE value="1.批量插入数据初始化&#10;2.cec接口调用测试" />
+    <MESSAGE value="环境ip改动" />
+    <option name="LAST_COMMIT_MESSAGE" value="环境ip改动" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/66ifuel$Unittests_in_test2_creat_user_py.coverage" NAME="Unittests in test2_creat_user.py Coverage Results" MODIFIED="1565057795484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Case" />
-    <SUITE FILE_PATH="coverage/66ifuel$hmacmd5.coverage" NAME="hmacmd5 Coverage Results" MODIFIED="1569461419609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/66ifuel$hmacmd5.coverage" NAME="hmacmd5 Coverage Results" MODIFIED="1577341592567" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/66ifuel$runmethod.coverage" NAME="runmethod Coverage Results" MODIFIED="1569476613452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/66ifuel$Unittests_for_test3_getstioninfo_Lgoin_test1_query_station_list.coverage" NAME="Unittests for test3_getstioninfo.Lgoin.test1_query_station_list Coverage Results" MODIFIED="1570602045183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AallCase" />
     <SUITE FILE_PATH="coverage/66ifuel$Unittests_in_test1_processApi_py.coverage" NAME="Unittests in test1_processApi.py Coverage Results" MODIFIED="1567998644159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Case_goods" />
@@ -672,7 +694,7 @@
     <SUITE FILE_PATH="coverage/66ifuel$Unittests_for_test2_station_status_stats_Test_statinon_info_test1_query_stations_info.coverage" NAME="Unittests for test2_station_status_stats.Test_statinon_info.test1_query_stations_info Coverage Results" MODIFIED="1572687857316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Case_Operators" />
     <SUITE FILE_PATH="coverage/66ifuel$dubbo_telnet.coverage" NAME="dubbo_telnet Coverage Results" MODIFIED="1564580628719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/66ifuel$Run_all__3_.coverage" NAME="Run_all (3) Coverage Results" MODIFIED="1570697767648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/66ifuel$Unittests_in_test3__Charge_order_py.coverage" NAME="Unittests in test3__Charge_order.py Coverage Results" MODIFIED="1572950821830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Case_Operators" />
+    <SUITE FILE_PATH="coverage/66ifuel$Unittests_in_test3__Charge_order_py.coverage" NAME="Unittests in test3__Charge_order.py Coverage Results" MODIFIED="1575362421528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Case_Operators" />
     <SUITE FILE_PATH="coverage/66ifuel$Unittests_for_test1_get_AccessToken_Test_get_AccessToken.coverage" NAME="Unittests for test1_get_AccessToken.Test_get_AccessToken Coverage Results" MODIFIED="1572687231022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Case_Operators" />
     <SUITE FILE_PATH="coverage/66ifuel$__init____1_.coverage" NAME="__init__ (1) Coverage Results" MODIFIED="1570700155776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/66ifuel$Unittests_in_test3_getstioninfo_py.coverage" NAME="Unittests in test3_getstioninfo.py Coverage Results" MODIFIED="1570762255200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AllCase" />
@@ -680,18 +702,19 @@
     <SUITE FILE_PATH="coverage/66ifuel$pyhession.coverage" NAME="pyhession Coverage Results" MODIFIED="1564637931802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/66ifuel$Unittests_for_test1_register_user_Register_test1.coverage" NAME="Unittests for test1_register_user.Register.test1 Coverage Results" MODIFIED="1569667290387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AallCase" />
     <SUITE FILE_PATH="coverage/66ifuel$Unittests_in_test6_py.coverage" NAME="Unittests in 111.py Coverage Results" MODIFIED="1570700556341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AllCase" />
-    <SUITE FILE_PATH="coverage/66ifuel$Unittests_in_test2_station_status_stats_py.coverage" NAME="Unittests in test2_station_status_stats.py Coverage Results" MODIFIED="1572946224433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Case_Operators" />
+    <SUITE FILE_PATH="coverage/66ifuel$Unittests_in_test2_station_status_stats_py.coverage" NAME="Unittests in test2_station_status_stats.py Coverage Results" MODIFIED="1575361772515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Case_Operators" />
     <SUITE FILE_PATH="coverage/66ifuel$Run_all__4_.coverage" NAME="Run_all (4) Coverage Results" MODIFIED="1570700577518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/66ifuel$Unittests_in_test1_buy_py.coverage" NAME="Unittests in test1_processApi.py Coverage Results" MODIFIED="1566717803666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Case_goods" />
-    <SUITE FILE_PATH="coverage/66ifuel$SQL_execute.coverage" NAME="SQL_execute Coverage Results" MODIFIED="1573201331470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/66ifuel$SQL_execute.coverage" NAME="SQL_execute Coverage Results" MODIFIED="1573453934689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/66ifuel$Unittests_in_test6_activity_py.coverage" NAME="Unittests in test6_activity.py Coverage Results" MODIFIED="1575535661834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AllCase" />
     <SUITE FILE_PATH="coverage/66ifuel$variables_func.coverage" NAME="variables_func Coverage Results" MODIFIED="1566708436078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/66ifuel$Email.coverage" NAME="Email Coverage Results" MODIFIED="1566720239321" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/66ifuel$redis_operate.coverage" NAME="redis_operate Coverage Results" MODIFIED="1569739458635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/66ifuel$redis_operate.coverage" NAME="redis_operate Coverage Results" MODIFIED="1575855947880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/66ifuel$Unittests_in_addmage_py.coverage" NAME="Unittests in addmage.py Coverage Results" MODIFIED="1569515176687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Case" />
     <SUITE FILE_PATH="coverage/66ifuel$Unittests_in_test1_register_user_py.coverage" NAME="Unittests in test1_register_user.py Coverage Results" MODIFIED="1570758616853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AllCase" />
     <SUITE FILE_PATH="coverage/66ifuel$Unittests_in_test4_getMemberInfo_py.coverage" NAME="Unittests in test4_getMemberInfo.py Coverage Results" MODIFIED="1566721865017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Case_goods" />
     <SUITE FILE_PATH="coverage/66ifuel$nodemanager__1_.coverage" NAME="nodemanager (1) Coverage Results" MODIFIED="1569511869105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/66ifuel$Unittests_in_test1_get_AccessToken_py.coverage" NAME="Unittests in test1_get_AccessToken.py Coverage Results" MODIFIED="1572938468775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Case_Operators" />
+    <SUITE FILE_PATH="coverage/66ifuel$Unittests_in_test1_get_AccessToken_py.coverage" NAME="Unittests in test1_get_AccessToken.py Coverage Results" MODIFIED="1574420967526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Case_Operators" />
     <SUITE FILE_PATH="coverage/66ifuel$AES_CBC_PKCS5.coverage" NAME="AES_CBC_PKCS5 Coverage Results" MODIFIED="1572688077199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/66ifuel$nodemanager.coverage" NAME="nodemanager Coverage Results" MODIFIED="1569510321697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/66ifuel$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1572942272119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -717,90 +740,7 @@
     <SUITE FILE_PATH="coverage/66ifuel$Run_all.coverage" NAME="Run_all Coverage Results" MODIFIED="1570703612678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://F:/Program Files/python37/Lib/site-packages/redis-3.0.1-py3.7.egg/redis/connection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21098">
-          <caret line="967" selection-start-line="967" selection-end-line="967" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/Program Files/python37/Lib/site-packages/redis-3.0.1-py3.7.egg/redis/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8756">
-          <caret line="422" column="38" selection-start-line="422" selection-start-column="38" selection-end-line="422" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/yaml/parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/yaml/composer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/_jb_unittest_runner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/Program Files/python37/Lib/unittest/case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="694" column="34" lean-forward="true" selection-start-line="694" selection-start-column="34" selection-end-line="694" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/Program Files/python37/Lib/site-packages/redis_py_cluster-2.0.0-py3.7.egg/rediscluster/nodemanager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="173" selection-start-line="173" selection-end-line="173" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Case_goods/test3_getMemberInfo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-621">
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/hmacmd5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../station.js" />
-    <entry file="file://$PROJECT_DIR$/Base/api_method.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-198" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Case/test1_login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="13" selection-end-column="35" />
-          <folding>
-            <element signature="e#63#87#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Base/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -829,26 +769,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AllCase/test2_login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="20" column="118" selection-start-line="20" selection-start-column="118" selection-end-line="20" selection-end-column="118" />
-          <folding>
-            <element signature="e#119#143#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AllCase/test4_car.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="19" column="118" selection-start-line="19" selection-start-column="118" selection-end-line="19" selection-end-column="118" />
-          <folding>
-            <element signature="e#117#141#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -894,68 +814,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Case/test4_station_pile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Case/test3_sms.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/AllCase/test3_getstioninfo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3212">
-          <caret line="151" column="33" selection-start-line="151" selection-start-column="33" selection-end-line="151" selection-end-column="33" />
-          <folding>
-            <element signature="e#128#152#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Case_Operators/test2_station_status_stats.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="66" column="52" selection-start-line="66" selection-start-column="48" selection-end-line="66" selection-end-column="52" />
-          <folding>
-            <element signature="e#170#195#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Case_goods/test1_processApi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3036">
-          <caret line="144" column="17" selection-start-line="144" selection-start-column="17" selection-end-line="144" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/redis_operate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="89" column="20" lean-forward="true" selection-start-line="89" selection-start-column="20" selection-end-line="89" selection-end-column="20" />
-          <folding>
-            <element signature="e#102#114#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Common/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Config/conf.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-110">
-          <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Run_all.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -977,87 +840,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Case_goods/test2_GoodsCreate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="104" column="16" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Case/addmage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
             <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AllCase/test5_coupon.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="164" column="49" selection-start-line="164" selection-start-column="49" selection-end-line="164" selection-end-column="49" />
-          <folding>
-            <element signature="e#121#145#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Case_goods/test4_incrementSavedAmount.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/AES_CBC_PKCS5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="85" column="19" lean-forward="true" selection-start-line="85" selection-start-column="19" selection-end-line="85" selection-end-column="19" />
-          <folding>
-            <element signature="e#161#190#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/2019_11_05.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-287" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/test2_zhoujielun.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Config/Varibales.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Config/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Case_Operators/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Case_Operators/test3__Charge_order.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="34" column="45" lean-forward="true" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="45" />
-          <folding>
-            <element signature="e#164#175#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1069,16 +856,250 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Common/SQL_execute.py">
+    <entry file="file://$PROJECT_DIR$/Case_Operators/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="168" lean-forward="true" selection-start-line="168" selection-end-line="168" />
+        <state relative-caret-position="154">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/2019_11_05.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Config/Varibales.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/dubbo_telnet.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Case_Operators/test2_station_status_stats.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-935">
+          <caret line="33" column="76" selection-start-line="33" selection-start-column="76" selection-end-line="33" selection-end-column="76" />
           <folding>
-            <element signature="e#129#140#0" expanded="true" />
-            <marker date="1573201320214" expanded="true" signature="4458:4865" ph="..." />
+            <element signature="e#170#195#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/img/test2_zhoujielun.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Case_Operators/test3__Charge_order.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="80" column="8" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
+          <folding>
+            <element signature="e#164#175#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Case_goods/test1_processApi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2023">
+          <caret line="143" column="20" selection-start-line="143" selection-start-column="20" selection-end-line="143" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Case_goods/test2_GoodsCreate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-472">
+          <caret line="104" column="16" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Case/test1_login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-110">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="13" selection-end-column="35" />
+          <folding>
+            <element signature="e#63#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Case/test4_station_pile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1300">
+          <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/redis_operate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="98" column="66" selection-start-line="98" selection-start-column="66" selection-end-line="98" selection-end-column="66" />
+          <folding>
+            <element signature="e#102#114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../weblog_rsa" />
+    <entry file="file://$PROJECT_DIR$/Case_goods/test4_incrementSavedAmount.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="27" column="15" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Case_goods/test3_getMemberInfo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AllCase/test3_getstioninfo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3212">
+          <caret line="151" column="33" selection-start-line="151" selection-start-column="33" selection-end-line="151" selection-end-column="33" />
+          <folding>
+            <element signature="e#128#152#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AllCase/test6_activity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1012">
+          <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
+          <folding>
+            <element signature="e#123#147#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/SQL_execute.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3058">
+          <caret line="142" column="178" selection-start-line="142" selection-start-column="178" selection-end-line="142" selection-end-column="178" />
+          <folding>
+            <element signature="e#129#140#0" expanded="true" />
+            <marker date="1573453934582" expanded="true" signature="4458:4855" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/requests/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="29" column="24" lean-forward="true" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AllCase/test2_login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+          <folding>
+            <element signature="e#119#143#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Config/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Config/conf.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/variables_func.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Base/api_method.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/requests/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1628">
+          <caret line="74" column="44" selection-start-line="74" selection-start-column="38" selection-end-line="74" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AllCase/test5_coupon.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3564">
+          <caret line="166" column="102" selection-start-line="166" selection-start-column="102" selection-end-line="166" selection-end-column="102" />
+          <folding>
+            <element signature="e#121#145#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AllCase/test4_car.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#117#141#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Base/runmethod.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="902">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/AES_CBC_PKCS5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-704">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding>
+            <element signature="e#161#190#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/hmacmd5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="587">
+          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

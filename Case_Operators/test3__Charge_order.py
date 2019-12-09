@@ -25,9 +25,9 @@ class Test_Charge_order(unittest.TestCase):
     times = time.strftime("%Y%m%d%H%M%S", time.localtime())
     # order_StartTime=time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
     # order_EndTime=
-    DataSecret = '78BxIeGT7zQYuN12'
-    SigSecret = 'b8aEBQGiyFyPmjSc'
-    operator_id = '359705330'
+    DataSecret = '2019092301abcdef'
+    SigSecret = '2019092301abcdef'
+    operator_id = 'MA005DBW1'
     uid = uuid.uuid1()
     uid1 = uuid.uuid1()
     # order='745467123024005023X0L80J7FG'
@@ -42,7 +42,7 @@ class Test_Charge_order(unittest.TestCase):
     def setUpClass(cls):
         host = cls.host
         lujing = 'query_token'
-        text = '{"OperatorID":"359705330","OperatorSecret":"gZjHb3GK5ye5en1v"}'
+        text = '{"OperatorID":"MA005DBW1","OperatorSecret":"2019092301abcdef"}'
         encrypt_data = encrypt(cls.DataSecret, text)
         data = {"OperatorID": cls.operator_id,
                 "Data": "{}".format(encrypt_data),
@@ -151,7 +151,7 @@ class Test_Charge_order(unittest.TestCase):
         # self.assertTrue(res['Ret'] == 0, msg="状态码不正确")
         # self.assertTrue(res['Msg'] == "请求成功", msg="返回msg不正确")
     # @unittest.skip('跳过')
-    def test2_query_equip_charge_status(self):
+    def test5_query_equip_charge_status(self):
         '''
         查询充电状态
         :return:

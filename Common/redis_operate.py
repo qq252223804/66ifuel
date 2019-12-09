@@ -80,7 +80,7 @@ def many_Redis_coon(nodes):
     # 集群redis
     # '''
     try:
-        conn = RedisCluster(startup_nodes=nodes, password='66ifuel-test')
+        conn = RedisCluster(startup_nodes=nodes, password='66ifuel')
         return conn
     except Exception as e:
         print("Connect Error!",e)
@@ -96,17 +96,17 @@ def get_cluster_value(key,nodes=None,):
 
 if __name__ == '__main__':
 
-    cont={"host":'192.168.3.143',"password":'66ifuel-test', "port":7001,"db":0}
-    a = get_simple_value("forget_password_13185097298",**cont)
+    cont={"host":'47.100.123.94',"password":'66ifuel', "port":7000,"db":0}
+    a = get_simple_value("register_13409916679",**cont)
     print(a)
-
+    #
     # nodes = [
-    #     {"host": "192.168.3.143", "port": "7001"},
-    #     {"host": "192.168.3.143", "port": "7002"},
-    #     {"host": "192.168.3.143", "port": "7003"},
+    #     {"host": "47.100.123.94", "port": "7000"},
+    #     {"host": "47.100.123.94", "port": "7001"},
+    #     {"host": "47.100.123.94", "port": "7002"},
     # ]
-    # print(get_cluster_value("register_18000000000",nodes=nodes))
-    # print(b("register_18687342651"))
+    # print(get_cluster_value("register_13409916679",nodes=nodes))
+
 
     # list = [
     #     '02200000001',

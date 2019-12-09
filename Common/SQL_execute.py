@@ -9,21 +9,21 @@ import pymysql
 from Common.log import Log
 #连接数据库
 #4.0测试数据库
-# config={
-#     "host":"rm-uf6fbtdzug5024j6z1o.mysql.rds.aliyuncs.com",
-#     "user":"ifuel_new",
-#     "port":3306,
-#     "password":"ifuel66-new",
-#     "database":"", #分库分表无需设置数据库
-#     "charset": "utf8"}
-#4.0线上
 config={
-    "host":"rm-uf6fc2xm4p8d7y13fwo.mysql.rds.aliyuncs.com",
-    "user":"taojian_test1",
+    "host":"rm-uf6fbtdzug5024j6z1o.mysql.rds.aliyuncs.com",
+    "user":"ifuel_new",
     "port":3306,
-    "password":"taojian_test1",
+    "password":"ifuel66-new",
     "database":"", #分库分表无需设置数据库
     "charset": "utf8"}
+#4.0线上
+# config={
+#     "host":"rm-uf6fc2xm4p8d7y13fwo.mysql.rds.aliyuncs.com",
+#     "user":"taojian_test1",
+#     "port":3306,
+#     "password":"taojian_test1",
+#     "database":"", #分库分表无需设置数据库
+#     "charset": "utf8"}
 #外网测试数据库
 #连接数据库 port必须为int %d类型
 # config={
@@ -138,10 +138,10 @@ if __name__ == '__main__':
         price_id.append(c)
     for cost_id,station_id,item_id,price_id in zip(cost_id,station_id,item_id,price_id):
         # 批量设置成本电价 两条sql
-        # sql="INSERT INTO `ifuel66-price`.`t_cost_electricity_price` VALUES (0,'{}','成本',{}, 1573178414000, 4102416000000, 1573178465936, 1573178465936, 0);".format(cost_id,station_id)
-        # print(sql)
-        # sql2="INSERT INTO `ifuel66-price`.`t_electricity_price_item` VALUES (0, '{}', '{}', 1, '成本区间', 0, 48, 16000, 0, 1573190680091, 1573190680091, 0);".format(item_id,station_id)
-        # print(sql2)
+        sql="INSERT INTO `ifuel66-price`.`t_cost_electricity_price` VALUES (0,'{}','成本',{}, 1573178414000, 4102416000000, 1573178465936, 1573178465936, 0);".format(cost_id,station_id)
+        print(sql)
+        sql2="INSERT INTO `ifuel66-price`.`t_electricity_price_item` VALUES (0, '{}', '{}', 1, '成本区间', 0, 48, 16000, 0, 1573190680091, 1573190680091, 0);".format(cost_id,price_id)
+        print(sql2)
         # # 批量设置通用标牌价格
         # sql3="INSERT INTO `ifuel66-price`.`t_electricity_price_item` VALUES (0, '{}', '{}', 0, '标牌价格', 0, 48, 100, 60, 1573199318714, 1573199318714, 0);".format(item_id,price_id)
         # print(sql3)
@@ -158,10 +158,10 @@ if __name__ == '__main__':
         # sql8="INSERT INTO `ifuel66-price`.`t_station_electricity_price` VALUES (0, '{}', '全天会员标牌', '{}', NULL, NULL, 20, 0, 1573199755000, 4102416000000, 1573199778911, 1573199778911, 0);".format(price_id,station_id)
         # print(sql8)
         # # # 批量设置会员销售价格
-        sql9="INSERT INTO `ifuel66-price`.`t_electricity_price_item` VALUES (0, '{}', '{}', 0, '会员价格', 0, 48, 100, 36, 1573199980116, 1573199980116, 0);".format(item_id, price_id)
-        print(sql9)
-        sql10="INSERT INTO `ifuel66-price`.`t_station_electricity_price` VALUES (0, '{}', '会员销售价', '{}', NULL, NULL, 20, 1, 1573199755000, 4102416000000, 1573199980116, 1573199980116, 0);".format(price_id,station_id)
-        print(sql10)
+        # sql9="INSERT INTO `ifuel66-price`.`t_electricity_price_item` VALUES (0, '{}', '{}', 0, '会员价格', 0, 48, 100, 36, 1573199980116, 1573199980116, 0);".format(item_id, price_id)
+        # print(sql9)
+        # sql10="INSERT INTO `ifuel66-price`.`t_station_electricity_price` VALUES (0, '{}', '会员销售价', '{}', NULL, NULL, 20, 1, 1573199755000, 4102416000000, 1573199980116, 1573199980116, 0);".format(price_id,station_id)
+        # print(sql10)
 # sql="select validCode FROM cp_messagecode WHERE phone='13279612508';"
 # sql="select id from cp_station where name='野风时代935'"
 # code=mysql_getrows(sql, number='one')[0]

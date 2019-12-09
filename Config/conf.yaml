@@ -13,7 +13,8 @@ app_host: 'http://124.160.35.34:8082'
 
 cms_host: 'http://192.168.3.213'
 #新架构测试环境 host
-new_app_host: 'http://124.160.35.34:8091/service.do/'
+new_app_host: 'https://api-newtest.66ifuel.com/service.do'
+
 
 #线上host 配置
 #app_host: 'https://service.66ifuel.com'

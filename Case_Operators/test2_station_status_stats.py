@@ -19,10 +19,10 @@ class Test_statinon_info(unittest.TestCase):
         "Content-Type": "application/json; charset=utf-8",
         "Authorization": ""}
     times = time.strftime("%Y%m%d%H%M%S", time.localtime())
-    DataSecret = '78BxIeGT7zQYuN12'
-    SigSecret = 'b8aEBQGiyFyPmjSc'
-    operator_id='359705330'
-    operatorSecret='gZjHb3GK5ye5en1v'
+    DataSecret = 'sJ806F554f6oyi16'
+    SigSecret = '673027jszeD4l3cp'
+    operator_id='MA59CU773'
+    operatorSecret='7iPn98cO06iK6oP7'
 
     stationID=22222
     connID = 12100
@@ -31,7 +31,7 @@ class Test_statinon_info(unittest.TestCase):
     def setUpClass(cls):
         host = cls.host
         lujing = 'query_token'
-        text = '{"OperatorID":"359705330","OperatorSecret":"gZjHb3GK5ye5en1v"}'
+        text = '{"OperatorID":"MA59CU773","OperatorSecret":"7iPn98cO06iK6oP7"}'
         encrypt_data = encrypt(cls.DataSecret, text)
         print(encrypt_data)
         data = {"OperatorID": cls.operator_id,

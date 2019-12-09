@@ -9,7 +9,7 @@ from Crypto.Cipher import AES
 import base64
 # 经常会变需更改
 # DataSecretIV='117239bf13a40cd0'
-DataSecretIV='Mdr5SjeP0Hcywdjo'
+DataSecretIV='2019092301abcdef'
 
 
 def pkcs5padding(text):
