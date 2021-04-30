@@ -11,4 +11,4 @@ requests==2.22.0
 shellescape==3.4.1
 singledispatch==3.4.0.3
 six==1.12.0
-urllib3==1.25.3
+urllib3==1.25.8
